@@ -4,7 +4,8 @@
   "description": "Hydrogen's marketing and documentation site.",
   "main": "npm.js",
   "scripts": {
-    "test": "npx gulp"
+    "dev": "npx gulp",
+    "build": "npx gulp build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   },
   "homepage": "https://github.com/hydrogen-design-system/documentation#readme",
   "dependencies": {
-    "@hydrogen-design-system/system": "0.0.20"
+    "@hydrogen-design-system/system": "0.0.21"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.3",

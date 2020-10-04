@@ -97,3 +97,82 @@ sass.compiler = require('sass');
     }
 
     exports.default = series(testScript, parallel(browserSync, watchTestFiles));
+
+    // Build Docs
+
+    // Move Test Project Files
+
+        // Move Test HMTL
+        function moveDocsHTML() {
+            return src("dev/index.html")
+            .pipe(dest("docs"));
+        }
+        // Move Test Sass
+        function moveDocsSass() {
+            return src("dev/app.scss")
+            .pipe(dest("docs"));
+        }
+        // Move Test JS
+        function moveDocsJS() {
+            return src("node_modules/@hydrogen-design-system/system/dist/cdn/h2-system.min.js")
+            .pipe(dest("docs"));
+        }
+        // Move Cash
+        function moveDocsCash() {
+            return src("node_modules/@hydrogen-design-system/system/dist/cdn/cash/cash.min.js")
+            .pipe(dest("docs"));
+        }
+        // Move Test Component JS
+        function moveDocsComponentJS() {
+            return src("node_modules/@hydrogen-design-system/component-accordion/dist/version/scripts/*.js")
+            .pipe(dest("docs"));
+        }
+        // Move Hydrogen JS
+        function moveDocsH2AppJS() {
+            return src("dev/app.js")
+            .pipe(dest("docs"));
+        }
+
+    // Compile
+    function compileDocsSass() {
+        return src('docs/app.scss')
+        .pipe(sass())
+        .pipe(postcss([autoprefixer()]))
+        .pipe(dest('docs'));
+    }
+
+    // Move images.
+    function moveDocsImages() {
+        return src('dev/img/**/*')
+        .pipe(dest('docs/img'));
+    }
+
+    // Move Favicons
+    function moveDocsFavicons() {
+        return src('dev/favicons/**/*')
+        .pipe(dest('docs/favicons'));
+    }
+
+    // Clean Cache
+    function cleanDocs() {
+        return del(['docs/**/*', '!docs/CNAME']);
+    }
+
+    // Clean Build Files
+    function cleanBuild() {
+        return del('app.scss');
+    }
+
+    exports.build = series(
+        cleanDocs, 
+        moveDocsHTML,
+        moveDocsSass,
+        moveDocsJS,
+        moveDocsCash,
+        moveDocsComponentJS,
+        moveDocsH2AppJS,
+        compileDocsSass,
+        moveDocsImages,
+        moveDocsFavicons,
+        cleanBuild
+    );
