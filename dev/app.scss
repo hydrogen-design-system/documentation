@@ -1,0 +1,26 @@
+@use "../node_modules/@hydrogen-design-system/system/dist/import/core/defaults" with (
+    $font-sans: canada-type-gibson,
+    $gray: rgba(200, 200, 200, 1),
+    $theme-color-2: #8E42FF,
+    $menu-bg-color: rgba(10, 10, 20, .7),
+    $menu-divider-color: black
+);
+@use "../node_modules/@hydrogen-design-system/system/dist/import/h2-system.scss";
+
+.hero-icon {
+    animation: spin 2s linear infinite;
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translate(-50%, 50%); 
+    width: 10rem;
+}
+
+@keyframes spin {
+    from {
+      transform: translate(-50%, 50%) rotate(0);
+    }
+    to {
+      transform: translate(-50%, 50%) rotate(360deg);
+    }
+  }
