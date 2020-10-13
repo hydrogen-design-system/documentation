@@ -18,11 +18,11 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
         <link rel="manifest" href="/favicons/site.webmanifest">
-        <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#c59fff">
+        <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#9d5cff">
         <link rel="shortcut icon" href="/favicons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#c59fff">
+        <meta name="msapplication-TileColor" content="#9d5cff">
         <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#c59fff">
+        <meta name="theme-color" content="#ffffff">
 
         <!-- CSS -->
         <link async rel="stylesheet" href="app.css">
@@ -30,10 +30,16 @@
         
     </head>
     <body data-h2-core data-h2-props>
+        <p>
+            <a 
+                data-h2-skip-to-content="c1"
+                href="#what" 
+                title="Skip to the main content.">Skip to Main Content</a>
+        </p>
         <div 
             data-h2-menu-wrapper="top(center, sticky)"
             data-h2-bg-color="mqb(black, 1)"
-            style="background-image: url('/img/hydrogen-icon-bg-v5.2.svg'); background-repeat: repeat; background-size: 80px; background-position: center;">
+            style="background-image: url('/img/hydrogen-icon-bg.svg'); background-repeat: repeat; background-size: 80px; background-position: center;">
             <button 
                 aria-label="This button opens the main navigation menu."
                 aria-expanded="false"
@@ -49,7 +55,7 @@
                 data-h2-bg-color="mqb(black, 1) mqm(black, .8)"
                 role="navigation">
                 <ul data-h2-main-menu>
-                    <li><a href="/" role="menuitem" data-h2-font-color="c4" title="Return to the home page."><img src="img/hydrogen-icon-v5.2.svg" alt="" data-h2-margin="mqb(right, .25)" style="width: 1rem;"/>Hydrogen</a></li>
+                    <li><a href="/" role="menuitem" data-h2-font-color="c4" title="Return to the home page."><img src="img/hydrogen-icon.svg" alt="" data-h2-margin="mqb(right, .25)" style="width: 1rem;"/>Hydrogen</a></li>
                     <li><a href="#what" role="menuitem" title="Learn more about what Hydrogen is.">What</a></li>
                     <li><a href="#why" role="menuitem" title="Learn more about why Hydrogen is different.">Why</a></li>
                     <li>
@@ -85,7 +91,7 @@
                             data-h2-font-size="mqb(h1)"
                             data-h2-font-color="mqb(white)"
                             data-h2-font-weight="mqb(600)"
-                            data-h2-margin="mqb(bottom, 1)">Hydrogen <div style="vertical-align: middle;" data-h2-tag="c4, pill, solid"><span data-h2-tag-label>ALPHA</span></div></h1>
+                            data-h2-margin="mqb(bottom, 1)">Hydrogen<div style="vertical-align: middle; margin-left: .5rem;" data-h2-tag="c4, pill, solid"><span data-h2-tag-label>ALPHA</span></div></h1>
                         <p 
                             data-h2-font-color="mqb(white)"
                             data-h2-margin="mqb(top, 2) mqb(bottom, 3) mqm(bottom, 4)">An open-source, modular component library and CSS utility.</p>
@@ -115,7 +121,7 @@
                             </a>
                         </div>
                     </div>
-                    <img src="img/hydrogen-icon-thin-v5.3.svg" alt="" class="hero-icon"/>
+                    <img src="img/hydrogen-icon.svg" alt="" class="hero-icon"/>
                 </div>
                 <div
                     data-h2-bg-color="mqb(white, 1)"
@@ -171,116 +177,103 @@
                             data-h2-align="mqb(center)"
                             data-h2-margin="mqb(bottom, 2) mqm(bottom, 3)"
                             data-h2-font-color="mqb(c2)">Hydrogen attempts to remain bias-free and technology agnostic while offering powerful control for any project.</p>
-                        <div 
-                            data-h2-accordion="left"
-                            data-h2-margin="mqb(top, .5)"
-                            data-h2-bg-color="mqb(white, 1)"
-                            data-h2-radius="mqb(round)">
-                            <button 
-                                aria-expanded="false" 
-                                data-h2-accordion-trigger 
-                                tabindex="0" 
-                                type="button">
-                                <span data-h2-accordion-trigger-label>Click to view...</span>
-                                <span 
-                                    aria-hidden="true" 
-                                    data-h2-accordion-add-icon
-                                    data-h2-font-size="mqb(h3)"
-                                    data-h2-font-color="mqb(c2)">+</span>
-                                <span 
-                                    aria-hidden="true" 
-                                    data-h2-accordion-remove-icon
-                                    data-h2-font-size="mqb(h3)"
-                                    data-h2-font-color="mqb(c2)">-</span>
-                                <div 
-                                    data-h2-padding="mqb(tb, 1)"
-                                    data-h2-accordion-trigger-content>
-                                    <p>Hydrogen doesn't cater to specific frameworks or technologies.</p>
-                                </div>
-                            </button>
-                            <div 
-                                aria-hidden="true" 
-                                data-h2-bg-color="mqb(gray, .3)"
-                                data-h2-padding="mqb(tb, 1) mqb(right, 1)"
-                                data-h2-accordion-content>
-                                <p>In the interest of allowing designers and developers to use the technologies that best suit their project and users, Hydrogen is built using the basic building blocks of the web: HTML, CSS (with help from Sass!), and JavaScript. The system can be installed on any project and is namespaced in a way that allows you to install it worry free - it will not affect any of your existing work until you tell it to.</p>
-                            </div>
-                        </div>
-                        <div 
-                            data-h2-accordion="left"
-                            data-h2-margin="mqb(top, .5)"
-                            data-h2-bg-color="mqb(white, 1)"
-                            data-h2-radius="mqb(round)">
-                            <button 
-                                aria-expanded="false"
-                                data-h2-accordion-trigger 
-                                tabindex="0" 
-                                type="button">
-                                <span data-h2-accordion-trigger-label>Click to view...</span>
-                                <span 
-                                    aria-hidden="true" 
-                                    data-h2-accordion-add-icon
-                                    data-h2-font-size="mqb(h3)"
-                                    data-h2-font-color="mqb(c2)">+</span>
-                                <span 
-                                    aria-hidden="true" 
-                                    data-h2-accordion-remove-icon
-                                    data-h2-font-size="mqb(h3)"
-                                    data-h2-font-color="mqb(c2)">-</span>
-                                <div 
-                                    data-h2-padding="mqb(tb, 1)"
-                                    data-h2-accordion-trigger-content>
-                                    <p>Hydrogen balances utility and size with clarity.</p>
-                                </div>
-                            </button>
-                            <div 
-                                aria-hidden="true" 
-                                data-h2-bg-color="mqb(gray, .3)"
-                                data-h2-padding="mqb(tb, 1) mqb(right, 1)"
-                                data-h2-accordion-content>
-                                <p data-h2-margin="mqb(bottom, 1)">Hydrogen's nomenclature is designed to be explicit yet concise. It works to balance size, speed, and customization with clarity and plain language.</p>
-                                <p>
-                                    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/hydrogen-design-system/system/dist/cdn/h2-system.min.css.gz?color=9864e8&label=CSS%20%28minified%2C%20gzipped%29">
-                                    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/hydrogen-design-system/system/dist/cdn/h2-system.min.js.gz?color=9864e8&label=JS%20%28minified%2C%20gzipped%29">
-                                </p>
-                            </div>
-                        </div>
-                        <div 
-                            data-h2-accordion="left"
-                            data-h2-margin="mqb(top, .5)"
-                            data-h2-bg-color="mqb(white, 1)"
-                            data-h2-radius="mqb(round)">
-                            <button 
-                                aria-expanded="false" 
-                                data-h2-accordion-trigger 
-                                tabindex="0" 
-                                type="button">
-                                <span data-h2-accordion-trigger-label>Click to view...</span>
-                                <span 
-                                    aria-hidden="true" 
-                                    data-h2-accordion-add-icon
-                                    data-h2-font-size="mqb(h3)"
-                                    data-h2-font-color="mqb(c2)">+</span>
-                                <span 
-                                    aria-hidden="true" 
-                                    data-h2-accordion-remove-icon
-                                    data-h2-font-size="mqb(h3)"
-                                    data-h2-font-color="mqb(c2)">-</span>
-                                <div 
-                                    data-h2-padding="mqb(tb, 1)"
-                                    data-h2-accordion-trigger-content>
-                                    <p>Hydrogen is modular and updating to newer versions is simpler than ever.</p>
-                                </div>
-                            </button>
-                            <div 
-                                aria-hidden="true" 
-                                data-h2-bg-color="mqb(gray, .3)"
-                                data-h2-padding="mqb(tb, 1) mqb(right, 1)"
-                                data-h2-accordion-content>
-                                <p data-h2-margin="mqb(bottom, 1)">Each piece of Hydrogen's system can be used as a standalone feature. If your project needs accordion components, for example, you can simply install Hydrogen's accordion to avoid bloating your project with unnecessary code. This modularity allows Hydrogen alleviate the ever-present issues that arise with updating to a new major version - if you don't have the resources to bugfix breaking changes, you can install a previous version of a component alongside the most recent update to ensure continuity until you're ready to upgrade.</p>
-                                <p data-h2-font-color="mqb(c2)">More information on how this works is on its way.</p>
-                            </div>
-                        </div>
+                        {% include "../components/accordion.twig" with {
+                            state: "closed",
+                            orientation: "left",
+                            title: "Hydrogen doesn't cater to specific frameworks or technologies.",
+                            content: "<p>In the interest of allowing designers and developers to use the technologies that best suit their project and users, Hydrogen is built using the basic building blocks of the web: HTML, CSS (with help from Sass!), and JavaScript. The system can be installed on any project and is namespaced in a way that allows you to install it worry free - it will not affect any of your existing work until you tell it to.</p>",
+                            classes: "",
+                            id: "",
+                            attributes: {
+                                accordion: [
+                                    "data-h2-margin='mqb(top, .5)'",
+                                    "data-h2-bg-color='mqb(white, 1)'",
+                                    "data-h2-radius='mqb(round)'"
+                                ],
+                                trigger: [
+                                    "data-h2-padding='mqb(tb, 1)'"
+                                ],
+                                expandIcon: [
+                                    "data-h2-font-size='mqb(h3)'",
+                                    "data-h2-font-color='mqb(c2)'"
+                                ],
+                                collapseIcon: [
+                                    "data-h2-font-size='mqb(h3)'",
+                                    "data-h2-font-color='mqb(c2)'"
+                                ],
+                                content: [
+                                    "data-h2-bg-color='mqb(gray, .3)'",
+                                    "data-h2-padding='mqb(tb, 1) mqb(right, 1)'"
+                                ]
+                            }
+                        } %}
+                        {% include "../components/accordion.twig" with {
+                            state: "closed",
+                            orientation: "left",
+                            title: "Hydrogen balances utility and size with clarity.",
+                            content: [
+                                "<p data-h2-margin='mqb(bottom, 1)'>Hydrogen's nomenclature is designed to be explicit yet concise. It works to balance size, speed, and customization with clarity and plain language.</p>",
+                                "<p>
+                                    <img alt='GitHub file size in bytes' src='https://img.shields.io/github/size/hydrogen-design-system/system/dist/cdn/h2-system.min.css.gz?color=9864e8&label=CSS%20%28minified%2C%20gzipped%29'>
+                                    <img alt='GitHub file size in bytes' src='https://img.shields.io/github/size/hydrogen-design-system/system/dist/cdn/h2-system.min.js.gz?color=9864e8&label=JS%20%28minified%2C%20gzipped%29'>
+                                </p>"
+                            ],
+                            classes: "",
+                            id: "",
+                            attributes: {
+                                accordion: [
+                                    "data-h2-margin='mqb(top, .5)'",
+                                    "data-h2-bg-color='mqb(white, 1)'",
+                                    "data-h2-radius='mqb(round)'"
+                                ],
+                                trigger: [
+                                    "data-h2-padding='mqb(tb, 1)'"
+                                ],
+                                expandIcon: [
+                                    "data-h2-font-size='mqb(h3)'",
+                                    "data-h2-font-color='mqb(c2)'"
+                                ],
+                                collapseIcon: [
+                                    "data-h2-font-size='mqb(h3)'",
+                                    "data-h2-font-color='mqb(c2)'"
+                                ],
+                                content: [
+                                    "data-h2-bg-color='mqb(gray, .3)'",
+                                    "data-h2-padding='mqb(tb, 1) mqb(right, 1)'"
+                                ]
+                            }
+                        } %}
+                        {% include "../components/accordion.twig" with {
+                            state: "closed",
+                            orientation: "left",
+                            title: "Hydrogen is modular and updating to newer versions is simpler than ever.",
+                            content: [
+                                "<p data-h2-margin='mqb(bottom, 1)'>Each piece of Hydrogen's system can be used as a standalone feature. If your project needs accordion components, for example, you can simply install Hydrogen's accordion to avoid bloating your project with unnecessary code. This modularity allows Hydrogen alleviate the ever-present issues that arise with updating to a new major version - if you don't have the resources to bugfix breaking changes, you can install a previous version of a component alongside the most recent update to ensure continuity until you're ready to upgrade.</p>",
+                                "<p data-h2-font-color='mqb(c2)'>More information on how this works is on its way.</p>"
+                            ],
+                            attributes: {
+                                accordion: [
+                                    "data-h2-margin='mqb(top, .5)'",
+                                    "data-h2-bg-color='mqb(white, 1)'",
+                                    "data-h2-radius='mqb(round)'"
+                                ],
+                                trigger: [
+                                    "data-h2-padding='mqb(tb, 1)'"
+                                ],
+                                expandIcon: [
+                                    "data-h2-font-size='mqb(h3)'",
+                                    "data-h2-font-color='mqb(c2)'"
+                                ],
+                                collapseIcon: [
+                                    "data-h2-font-size='mqb(h3)'",
+                                    "data-h2-font-color='mqb(c2)'"
+                                ],
+                                content: [
+                                    "data-h2-bg-color='mqb(gray, .3)'",
+                                    "data-h2-padding='mqb(tb, 1) mqb(right, 1)'"
+                                ]
+                            }
+                        } %}
                     </div>
                 </div>
                 <div
@@ -313,7 +306,7 @@
                                         <p>The most important next step for Hydrogen is the completion of the technical documentation. Documentation includes information on how to install the system, how to use components, how to use properties, how to theme the system, and how to contribute to the project.</p>
                                     </div>
                                     <div data-h2-grid-item="mqb(1of1) mqm(2of5)" style="display: flex; align-items: center;">
-                                        <img src="img/hydrogen-docs-graphic-purple-v1.0.svg" alt="" style="width: 100%;" />
+                                        <img src="img/hydrogen-docs-graphic-purple.svg" alt="" style="width: 100%;" />
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +328,7 @@
                                         <p>The project boilerplate will be a ready-to-use package with Hydrogen pre-installed and working. It will contain a basic static web page, Sass compiler set up, Twig templating, and instructions on how to get started.</p>
                                     </div>
                                     <div data-h2-grid-item="mqb(1of1) mqm(2of5)" style="display: flex; align-items: center;">
-                                        <img src="img/hydrogen-boiler-graphic-purple-v1.0.svg" alt="" style="width: 100%;" />
+                                        <img src="img/hydrogen-boiler-graphic-purple.svg" alt="" style="width: 100%;" />
                                     </div>
                                 </div>
                             </div>
@@ -366,7 +359,7 @@
                                     </div>
                                     <div data-h2-grid-item="mqb(1of1) mqm(2of5)" style="align-self: stretch; display: flex; align-items: center;">
                                         <div data-h2-bg-color="mqb(c3, .2)"></div>
-                                        <img src="img/hydrogen-new-graphic-purple-v1.0.svg" alt="" style="width: 100%;" />
+                                        <img src="img/hydrogen-new-graphic-purple.svg" alt="" style="width: 100%;" />
                                     </div>
                                 </div>
                             </div>
@@ -399,8 +392,7 @@
             role="dialog">
             <div 
                 data-h2-dialog-wrapper
-                data-h2-radius="mqb(round)"
-                style="transform: translateZ(0);">
+                data-h2-radius="mqb(round)">
                 <div 
                     data-h2-dialog-title
                     data-h2-padding="mqb(rl, 2) mqb(tb, 1)"
@@ -424,7 +416,7 @@
                     data-h2-dialog-content
                     data-h2-padding="mqb(rl, 2) mqb(tb, 1)">
                     <div id="getStartedContent">
-                        <p>Hydrogen can be used as standalone CSS and JS files imported into your project, or if you'd prefer to customize the theme, you can import it into any Sass enabled project using NPM.</p>
+                        <p data-h2-margin="mqb(bottom, 1)">Hydrogen can be used as standalone CSS and JS files imported into your project, or if you'd prefer to customize the theme, you can import it into any Sass enabled project using NPM.</p>
                         <div 
                             data-h2-accordion="left"
                             data-h2-margin="mqb(top, .5)"
@@ -466,7 +458,7 @@ https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/h2-system.min
                                 <pre data-h2-bg-color="mqb(gray, .4)" data-h2-margin="mqb(bottom, 1)" data-h2-padding="mqb(rl, 1) mqb(tb, .5)">
 https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/cash/cash.min.js 
 https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/h2-system.min.js</pre>
-                                <p>Once successfully imported, you can use any of Hydrogen's components. If you'd like to use its property utilities, ensure that you include <code>data-h2-props</code> on your body tag, or any element that wraps the elements you'd like to customize.</p>
+                                <p>Lastly, include <code>data-h2-core</code> and <code>data-h2-props</code> on your page's <code>body</code> element, or the elements you'd like to use Hydrogen with specifically.</p>
                             </div>
                         </div>
                         <div 
@@ -504,7 +496,7 @@ https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/h2-system.min
                                 data-h2-accordion-content>
                                 <p>To get started with Hydrogen on your Sass project, begin by installing it via NPM:</p>
                                 <pre data-h2-bg-color="mqb(gray, .4)" data-h2-margin="mqb(bottom, 1)" data-h2-padding="mqb(rl, 1) mqb(tb, .5)">
-npm install @hydrogen-design-system/system@0.0.19 --save-dev</pre>
+npm install @hydrogen-design-system/system --save-dev</pre>
                                 <p>Once intalled, you can load Hydrogen at the top of your project's Sass file using the following code:</p>
                                 <pre data-h2-bg-color="mqb(gray, .4)" data-h2-margin="mqb(bottom, 1)" data-h2-padding="mqb(rl, 1) mqb(tb, .5)">
 @use "../node_modules/@hydrogen-design-system/system/dist/import/core/defaults" with (

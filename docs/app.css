@@ -25554,13 +25554,11 @@ body[data-h2-core][id*="Trident/7.0"] a:hover {
 @media screen {
   [data-h2-props] [data-h2-font-style*="mqb(reset)"] {
     font-style: normal;
-    -webkit-text-decoration: none currentcolor solid;
-            text-decoration: none currentcolor solid;
+    text-decoration: none currentcolor solid;
   }
   [data-h2-props] [data-h2-font-style*="mqb(italic)"] {
     font-style: italic;
-    -webkit-text-decoration: none currentcolor solid;
-            text-decoration: none currentcolor solid;
+    text-decoration: none currentcolor solid;
   }
   [data-h2-props] [data-h2-font-style*="mqb(underline)"] {
     font-style: normal;
@@ -25570,13 +25568,11 @@ body[data-h2-core][id*="Trident/7.0"] a:hover {
 @media screen and (min-width: 48em) {
   [data-h2-props] [data-h2-font-style*="mqs(reset)"] {
     font-style: normal;
-    -webkit-text-decoration: none currentcolor solid;
-            text-decoration: none currentcolor solid;
+    text-decoration: none currentcolor solid;
   }
   [data-h2-props] [data-h2-font-style*="mqs(italic)"] {
     font-style: italic;
-    -webkit-text-decoration: none currentcolor solid;
-            text-decoration: none currentcolor solid;
+    text-decoration: none currentcolor solid;
   }
   [data-h2-props] [data-h2-font-style*="mqs(underline)"] {
     font-style: normal;
@@ -25586,13 +25582,11 @@ body[data-h2-core][id*="Trident/7.0"] a:hover {
 @media screen and (min-width: 64em) {
   [data-h2-props] [data-h2-font-style*="mqm(reset)"] {
     font-style: normal;
-    -webkit-text-decoration: none currentcolor solid;
-            text-decoration: none currentcolor solid;
+    text-decoration: none currentcolor solid;
   }
   [data-h2-props] [data-h2-font-style*="mqm(italic)"] {
     font-style: italic;
-    -webkit-text-decoration: none currentcolor solid;
-            text-decoration: none currentcolor solid;
+    text-decoration: none currentcolor solid;
   }
   [data-h2-props] [data-h2-font-style*="mqm(underline)"] {
     font-style: normal;
@@ -25602,13 +25596,11 @@ body[data-h2-core][id*="Trident/7.0"] a:hover {
 @media screen and (min-width: 100em) {
   [data-h2-props] [data-h2-font-style*="mql(reset)"] {
     font-style: normal;
-    -webkit-text-decoration: none currentcolor solid;
-            text-decoration: none currentcolor solid;
+    text-decoration: none currentcolor solid;
   }
   [data-h2-props] [data-h2-font-style*="mql(italic)"] {
     font-style: italic;
-    -webkit-text-decoration: none currentcolor solid;
-            text-decoration: none currentcolor solid;
+    text-decoration: none currentcolor solid;
   }
   [data-h2-props] [data-h2-font-style*="mql(underline)"] {
     font-style: normal;
@@ -39359,7 +39351,7 @@ a[data-h2-button*=c5][data-h2-button*=clear]:hover {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  width: 10rem;
+  width: 12rem;
 }
 
 @-webkit-keyframes spin {

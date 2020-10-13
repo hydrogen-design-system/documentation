@@ -9,6 +9,10 @@ const browsersync = require('browser-sync').create();
 const del = require('del');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
+const twig = require('gulp-twig');
+const gulpData = require('gulp-data');
+const htmlmin = require('gulp-htmlmin');
+const fs = require('fs');
 
 sass.compiler = require('sass');
 
@@ -17,13 +21,26 @@ sass.compiler = require('sass');
     // Move Test Project Files
 
         // Move Test HMTL
-        function moveTestHTML() {
-            return src("dev/index.html")
-            .pipe(dest("cache"));
+        // function moveTestHTML() {
+        //     return src("src/index.html")
+        //     .pipe(dest("cache"));
+        // }
+        // Twig
+        function template() {
+            return src('./src/markup/**/*.twig')
+            .pipe(gulpData(function(file) {
+                return JSON.parse(fs.readFileSync('./src/data/docs.json'));
+            }))
+            .pipe(twig())
+            .pipe(htmlmin({
+                collapseWhitespace: true,
+                removeComments: true
+            }))
+            .pipe(dest('cache'));
         }
         // Move Test Sass
         function moveTestSass() {
-            return src("dev/app.scss")
+            return src("src/app.scss")
             .pipe(dest("cache"));
         }
         // Move Test JS
@@ -43,7 +60,7 @@ sass.compiler = require('sass');
         }
         // Move Hydrogen JS
         function moveH2TestJS() {
-            return src("dev/app.js")
+            return src("src/app.js")
             .pipe(dest("cache"));
         }
 
@@ -57,13 +74,13 @@ sass.compiler = require('sass');
 
     // Move images.
     function moveImages() {
-        return src('dev/img/**/*')
+        return src('src/img/**/*')
         .pipe(dest('cache/img'));
     }
 
     // Move Favicons
     function moveDevFavicons() {
-        return src('dev/favicons/**/*')
+        return src('src/favicons/**/*')
         .pipe(dest('cache/favicons'));
     }
 
@@ -73,11 +90,11 @@ sass.compiler = require('sass');
     }
 
     // TestScript
-    const testScript = series(cleanCache, moveTestHTML, moveTestSass, moveTestJS, moveCash, moveH2TestJS, moveTestComponentJS, moveImages, moveDevFavicons, compileTestSass);
+    const testScript = series(cleanCache, template, moveTestSass, moveTestJS, moveCash, moveH2TestJS, moveTestComponentJS, moveImages, moveDevFavicons, compileTestSass);
 
     // Watch
     function watchTestFiles() {
-        watch(['dev/**/*'], series(testScript, browserSyncReload));
+        watch(['src/**/*'], series(testScript, browserSyncReload));
     }
 
     // Browsersync
@@ -103,13 +120,21 @@ sass.compiler = require('sass');
     // Move Test Project Files
 
         // Move Test HMTL
-        function moveDocsHTML() {
-            return src("dev/index.html")
-            .pipe(dest("docs"));
+        function docsTemplate() {
+            return src('./src/markup/**/*.twig')
+            .pipe(gulpData(function(file) {
+                return JSON.parse(fs.readFileSync('./src/data/docs.json'));
+            }))
+            .pipe(twig())
+            .pipe(htmlmin({
+                collapseWhitespace: true,
+                removeComments: true
+            }))
+            .pipe(dest('docs'));
         }
         // Move Test Sass
         function moveDocsSass() {
-            return src("dev/app.scss")
+            return src("src/app.scss")
             .pipe(dest("docs"));
         }
         // Move Test JS
@@ -129,7 +154,7 @@ sass.compiler = require('sass');
         }
         // Move Hydrogen JS
         function moveDocsH2AppJS() {
-            return src("dev/app.js")
+            return src("src/app.js")
             .pipe(dest("docs"));
         }
 
@@ -143,13 +168,13 @@ sass.compiler = require('sass');
 
     // Move images.
     function moveDocsImages() {
-        return src('dev/img/**/*')
+        return src('src/img/**/*')
         .pipe(dest('docs/img'));
     }
 
     // Move Favicons
     function moveDocsFavicons() {
-        return src('dev/favicons/**/*')
+        return src('src/favicons/**/*')
         .pipe(dest('docs/favicons'));
     }
 
@@ -165,7 +190,7 @@ sass.compiler = require('sass');
 
     exports.build = series(
         cleanDocs, 
-        moveDocsHTML,
+        docsTemplate,
         moveDocsSass,
         moveDocsJS,
         moveDocsCash,
