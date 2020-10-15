@@ -41,30 +41,39 @@
             data-h2-bg-color="mqb(black, 1)"
             style="background-image: url('/img/hydrogen-icon-bg.svg'); background-repeat: repeat; background-size: 80px; background-position: center;">
             <button 
-                aria-label="This button opens the main navigation menu."
                 aria-expanded="false"
+                aria-label="Use the enter key to open or close the main menu."
                 aria-haspopup="true"
-                data-h2-mobile-menu-trigger
                 data-h2-button="c2, square, medium, solid"
+                data-h2-mobile-menu-trigger
                 type="button" role="button">
                 <span data-h2-mobile-menu-trigger-open-label>Menu</span><span data-h2-mobile-menu-trigger-close-label>Close</span>
             </button>
             <nav 
+                aria-label="Use the enter key to select a menu item and travel to its page. Use the left and right arrow keys to navigate between menu and submenu items. Use the right arrow key to open submenus when they are available. Use the left arrow or escape keys to close a menu."
                 data-h2-menu
                 style="border-bottom: 1px solid black;"
-                data-h2-bg-color="mqb(black, 1) mqm(black, .8)"
-                role="navigation">
-                <ul data-h2-main-menu>
-                    <li><a href="/" role="menuitem" data-h2-font-color="c4" title="Return to the home page."><img src="img/hydrogen-icon.svg" alt="" data-h2-margin="mqb(right, .25)" style="width: 1rem;"/>Hydrogen</a></li>
-                    <li><a href="#what" role="menuitem" title="Learn more about what Hydrogen is.">What</a></li>
-                    <li><a href="#why" role="menuitem" title="Learn more about why Hydrogen is different.">Why</a></li>
-                    <li>
+                data-h2-bg-color="mqb(black, 1) mqm(black, .8)">
+                <ul 
+                    data-h2-menulist
+                    role="menu">
+                    <li role="presentation">
+                        <a href="/" role="menuitem" data-h2-font-color="c4" title="Return to the home page."><img src="img/hydrogen-icon.svg" alt="" data-h2-margin="mqb(right, .25)" style="width: 1rem;"/>Hydrogen</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#what" role="menuitem" title="Learn more about what Hydrogen is.">What</a></li>
+                    <li role="presentation">
+                        <a href="#why" role="menuitem" title="Learn more about why Hydrogen is different.">Why</a>
+                    </li>
+                    <li role="presentation">
                         <p 
                             data-h2-font-color="mqb(gray)"
                             role="menuitem" 
                             title="">Docs <span data-h2-font-color="mqb(c4)">(Coming Soon!)</span></p>
                     </li>
-                    <li><a href="#roadmap" role="menuitem" title="Find out what's coming to Hydrogen.">Roadmap</a></li>
+                    <li role="presentation">
+                        <a href="#roadmap" role="menuitem" title="Find out what's coming to Hydrogen.">Roadmap</a>
+                    </li>
                 </ul>
             </nav>
             <main>
@@ -75,7 +84,7 @@
                     <div
                         data-h2-padding="mqb(tb, 3) mqm(tb, 5)" 
                         data-h2-container="mqb(center, large)">
-                        <p data-h2-margin="mqb(bottom, 2)">
+                        <p data-h2-margin="mqb(bottom, 3)">
                             <img 
                                 alt="GitHub package.json version" 
                                 src="https://img.shields.io/github/package-json/v/hydrogen-design-system/system?color=9864e8&label=release"
@@ -94,7 +103,7 @@
                             data-h2-margin="mqb(bottom, 1)">Hydrogen<div style="vertical-align: middle; margin-left: .5rem;" data-h2-tag="c4, pill, solid"><span data-h2-tag-label>ALPHA</span></div></h1>
                         <p 
                             data-h2-font-color="mqb(white)"
-                            data-h2-margin="mqb(top, 2) mqb(bottom, 3) mqm(bottom, 4)">An open-source, modular component library and CSS utility.</p>
+                            data-h2-margin="mqb(bottom, 3) mqm(bottom, 4)">An open-source, modular component library and CSS utility.</p>
                         <div>
                             <button 
                                 data-h2-button="c1, round, medium, outline" 
@@ -177,7 +186,7 @@
                             data-h2-align="mqb(center)"
                             data-h2-margin="mqb(bottom, 2) mqm(bottom, 3)"
                             data-h2-font-color="mqb(c2)">Hydrogen attempts to remain bias-free and technology agnostic while offering powerful control for any project.</p>
-                        {% include "../components/accordion.twig" with {
+                        {% include "../../node_modules/@hydrogen-design-system/system/dist/reference/components/accordion/twig/h2-component-accordion.twig" with {
                             state: "closed",
                             orientation: "left",
                             title: "Hydrogen doesn't cater to specific frameworks or technologies.",
@@ -207,7 +216,7 @@
                                 ]
                             }
                         } %}
-                        {% include "../components/accordion.twig" with {
+                        {% include "../../node_modules/@hydrogen-design-system/system/dist/reference/components/accordion/twig/h2-component-accordion.twig" with {
                             state: "closed",
                             orientation: "left",
                             title: "Hydrogen balances utility and size with clarity.",
@@ -243,7 +252,7 @@
                                 ]
                             }
                         } %}
-                        {% include "../components/accordion.twig" with {
+                        {% include "../../node_modules/@hydrogen-design-system/system/dist/reference/components/accordion/twig/h2-component-accordion.twig" with {
                             state: "closed",
                             orientation: "left",
                             title: "Hydrogen is modular and updating to newer versions is simpler than ever.",
@@ -350,6 +359,7 @@
                                         <p>New components are always on the to-do list. These are a few that you might see in the future:</p>
                                         <div data-h2-margin="mqb(top, 1)">
                                             <ul data-h2-grid="mqb(top, auto, 0)">
+                                                <li data-h2-grid-item="mqb(1of1) mqm(1of2)">Table of Contents</li>
                                                 <li data-h2-grid-item="mqb(1of1) mqm(1of2)">Code Blocks</li>
                                                 <li data-h2-grid-item="mqb(1of1) mqm(1of2)">Toggle Inputs</li>
                                                 <li data-h2-grid-item="mqb(1of1) mqm(1of2)">Progress Bars</li>
