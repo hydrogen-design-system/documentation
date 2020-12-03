@@ -224,8 +224,8 @@
                             content: [
                                 "<p data-h2-margin='mqb(bottom, 1)'>Hydrogen's nomenclature is designed to be explicit yet concise. It works to balance size, speed, and customization with clarity and plain language.</p>",
                                 "<p>
-                                    <img alt='GitHub file size in bytes' src='https://img.shields.io/github/size/hydrogen-design-system/system/dist/cdn/h2-system.min.css.gz?color=9864e8&label=CSS%20%28minified%2C%20gzipped%29'>
-                                    <img alt='GitHub file size in bytes' src='https://img.shields.io/github/size/hydrogen-design-system/system/dist/cdn/h2-system.min.js.gz?color=9864e8&label=JS%20%28minified%2C%20gzipped%29'>
+                                    <img alt='GitHub file size in bytes' src='https://img.shields.io/github/size/hydrogen-design-system/system/dist/gzip/system.min.css.gz?color=9864e8&label=CSS%20%28minified%2C%20gzipped%29'>
+                                    <img alt='GitHub file size in bytes' src='https://img.shields.io/github/size/hydrogen-design-system/system/dist/gzip/system.min.js.gz?color=9864e8&label=JS%20%28minified%2C%20gzipped%29'>
                                 </p>"
                             ],
                             classes: "",
@@ -382,6 +382,7 @@
                                         <p>New components are always on the to-do list. These are a few that you might see in the future:</p>
                                         <div data-h2-margin="mqb(top, 1)">
                                             <ul data-h2-grid="mqb(top, expanded, flush, 0)">
+                                                <li data-h2-grid-item="mqb(1of1) mqm(1of2)">Tooltips</li>
                                                 <li data-h2-grid-item="mqb(1of1) mqm(1of2)">Table of Contents</li>
                                                 <li data-h2-grid-item="mqb(1of1) mqm(1of2)">Code Blocks</li>
                                                 <li data-h2-grid-item="mqb(1of1) mqm(1of2)">Toggle Inputs</li>
@@ -485,12 +486,11 @@
                                 <p data-h2-margin="mqb(bottom, 1)">To install Hydrogen without customizing it's look and feel, simply include the following in your <code>head</code> element:</p>
                                 <p>Hydrogen's CSS:</p>
                                 <pre data-h2-bg-color="mqb(gray, .4)" data-h2-margin="mqb(bottom, 1)" data-h2-padding="mqb(rl, 1) mqb(tb, .5)">
-https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/h2-system.min.css</pre>
-                                <p>Cash and Hydrogen's JavaScript:</p>
+https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/compiled/latest/system.min.css</pre>
+                                <p>Hydrogen's JavaScript:</p>
                                 <pre data-h2-bg-color="mqb(gray, .4)" data-h2-margin="mqb(bottom, 1)" data-h2-padding="mqb(rl, 1) mqb(tb, .5)">
-https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/cash/cash.min.js 
-https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/h2-system.min.js</pre>
-                                <p>Lastly, include <code>data-h2-core</code> and <code>data-h2-props</code> on your page's <code>body</code> element, or the elements you'd like to use Hydrogen with specifically.</p>
+https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/compiled/latest/system.min.js</pre>
+                                <p>Lastly, include <code>data-h2-system</code> on your page's <code>body</code> element, or the elements you'd like to use Hydrogen with specifically.</p>
                             </div>
                         </div>
                         <div 
@@ -531,17 +531,16 @@ https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/h2-system.min
 npm install @hydrogen-design-system/system --save-dev</pre>
                                 <p>Once intalled, you can load Hydrogen at the top of your project's Sass file using the following code:</p>
                                 <pre data-h2-bg-color="mqb(gray, .4)" data-h2-margin="mqb(bottom, 1)" data-h2-padding="mqb(rl, 1) mqb(tb, .5)">
-@use "../node_modules/@hydrogen-design-system/system/dist/import/core/defaults" with (
+@use "../node_modules/@hydrogen-design-system/system/dist/import/latest/core/styles/defaults" with (
     // Put custom variables here.
 );
-@use "../node_modules/@hydrogen-design-system/system/dist/import/h2-system.scss";</pre>
-                                <p data-h2-margin="mqb(bottom, 1)"><a href="https://github.com/hydrogen-design-system/core/blob/master/dev/styles/_defaults.scss" title="Find out what customizable variables are available to you." target="_blank" rel="noreferrer">Learn more about what custom variables are available.</a></p>
+@use "../node_modules/@hydrogen-design-system/system/dist/import/latest/system.scss";</pre>
+                                <p data-h2-margin="mqb(bottom, 1)"><a href="https://github.com/hydrogen-design-system/core/blob/master/src/styles/_defaults.scss" title="Find out what customizable variables are available to you." target="_blank" rel="noreferrer">Learn more about what custom variables are available.</a></p>
                                 <p>Next, you'll need to include Hydrogen's JavaScript:</p>
                                 <pre data-h2-bg-color="mqb(gray, .4)" data-h2-margin="mqb(bottom, 1)" data-h2-padding="mqb(rl, 1) mqb(tb, .5)">
-https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/cash/cash.min.js 
-https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/cdn/h2-system.min.js</pre>
-                                <p data-h2-margin="mqb(bottom, 1)">Lastly, include <code>data-h2-core</code> and <code>data-h2-props</code> on your page's <code>body</code> element, or the elements you'd like to use Hydrogen with specifically.</p>
-                                <p>You'll want to ensure that your project compiles Sass with <a href="https://autoprefixer.github.io/" title="Learn more about Autoprefixer." target="_blank" rel="noreferrer">Autoprefixer</a> to ensure the best compatibility possible.</p>
+https://cdn.jsdelivr.net/gh/hydrogen-design-system/system/dist/compiled/latest/system.min.js</pre>
+                                <p data-h2-margin="mqb(bottom, 1)">Lastly, include <code>data-h2-system</code> on your page's <code>body</code> element, or the elements you'd like to use Hydrogen with specifically.</p>
+                                <p>You'll want to ensure that your project compiles Sass with <a href="https://autoprefixer.github.io/" title="Learn more about Autoprefixer." target="_blank" rel="noreferrer">Autoprefixer</a> to ensure the best browser compatibility possible.</p>
                             </div>
                         </div>
                     </div>
