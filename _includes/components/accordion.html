@@ -1,0 +1,28 @@
+<div class="accordion">
+  <button 
+    aria-expanded="false" 
+    class="accordion-trigger" 
+    tabindex="0" 
+    type="button">
+    <span class="accordion-trigger-label">Click to view...</span>
+    <span 
+      aria-hidden="true" 
+      class="accordion-trigger-icon-add">▸</span>
+    <span 
+      aria-hidden="true" 
+      class="accordion-trigger-icon-remove">▾</span>
+    <div class="accordion-trigger-content">
+      <p>{{ include.title }}</p>
+      {% if include.subtitle %}
+        <p>{{ include.subtitle }}</p>
+      {% endif %}
+    </div>
+  </button>
+  <div 
+    aria-hidden="true" 
+    class="accordion-content">
+    <p>
+      {{ include.content }}
+    </p>
+  </div>
+</div>

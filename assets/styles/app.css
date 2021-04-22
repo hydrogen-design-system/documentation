@@ -1,0 +1,95 @@
+.accordion > .accordion-trigger {
+  background: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-bottom: 0;
+  padding-right: 0;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.accordion-trigger-label {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: 1px;
+}
+
+.accordion-trigger-icon-add {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: .5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+}
+
+.accordion-trigger-icon-remove {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: .5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+}
+
+.accordion > .accordion-content {
+  display: none;
+  padding-left: 1rem;
+}
+
+.accordion.accordion-active > .accordion-trigger .accordion-trigger-icon-add {
+  display: none;
+}
+
+.accordion.accordion-active > .accordion-trigger .accordion-trigger-icon-remove {
+  display: block;
+}
+
+.accordion.accordion-active > .accordion-content {
+  display: block;
+}
+
+.sidebar {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: inline-block;
+  margin: 0 0 .5rem 0;
+}
+
+.sidebar >a {
+  margin: 0 0 .5rem 1rem;
+}
+
+.sidebar >.accordion >.accordion-trigger{
+  margin: 0 0 .5rem 0;
+}
+
+.sidebar >.accordion .accordion >.accordion-trigger{
+  margin: 0 0 .5rem 0;
+}
+
+pre {
+  background: rgba(240, 240, 240, 1);
+  border-radius: 10px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+code {
+  background: rgba(240, 240, 240, 1);
+  border-radius: 5px;
+  padding: .05rem .3rem;
+}

@@ -1,0 +1,67 @@
+{
+  "debug": true,
+  "mediaWarnings": false,
+  "folders": {
+    "markup": [
+      "_layouts",
+      "_includes"
+    ],
+    "styles": "assets/styles"
+  },
+  "colors": [
+    {
+      "name": "white",
+      "color": "rgb(255, 255, 255)",
+      "opacity": false
+    },
+    {
+      "name": "black",
+      "color": "rgb(10, 10, 20)",
+      "opacity": true
+    },
+    {
+      "name": "theme-1",
+      "color": "#9D5CFF",
+      "opacity": false
+    },
+    {
+      "name": "theme-2",
+      "color": "#FF5C6D",
+      "opacity": false
+    },
+    {
+      "name": "theme-3",
+      "color": "#BEFF5C",
+      "opacity": false
+    },
+    {
+      "name": "theme-4",
+      "color": "#5CFFEE",
+      "opacity": false
+    },
+    {
+      "name": "theme-5",
+      "color": "#F7B452",
+      "opacity": false
+    }
+  ],
+  "flexgrid": {
+    "enabled": true
+  },
+  "gradients": [
+    {
+      "type": "linear",
+      "angle": "135deg",
+      "colorStops": [
+        {
+          "name": "1",
+          "color": "#9D5CFF"
+        },
+        {
+          "name": "2",
+          "color": "#FF5C6D"
+        }
+      ]
+    }
+  ]
+}

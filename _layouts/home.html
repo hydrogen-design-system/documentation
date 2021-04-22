@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body data-hydrogen>
+      <div 
+        data-h2-bg-color="base(black)"
+        data-h2-font-family="base(sans)">
+        <div 
+          data-h2-container="base(center, full)"
+          data-h2-padding="base(top-bottom, largest)"
+          data-h2-text-align="base(center)">
+          <img 
+            alt="Hydrogen's current release." 
+            src="https://img.shields.io/github/package-json/v/hydrogen-design-system/hydrogen.css?color=9864e8&label=release"
+            style="vertical-align: middle;">
+          <h1
+            data-h2-font-color="base(white)"
+            data-h2-font-size="base(h1)"
+            data-h2-margin="base(top-bottom, medium)"
+            data-h2-font-weight="base(900)">Hydrogen</h1>
+          <p data-h2-font-color="base(white)">An open-source, utility-first CSS tool.</p>
+        </div>
+      </div>
+      <div 
+        data-h2-container="base(center, full)"
+        data-h2-font-family="base(sans)">
+        <div data-h2-flex-grid="base(top, expanded, flush, medium) medium(stretch, expanded, flush, largest)">
+          <div data-h2-flex-item="base(1of1) medium(1of4)">
+            <div>
+              <div 
+                data-h2-position="medium(sticky)" 
+                data-h2-location="medium(top, none)"
+                data-h2-padding="base(bottom, largest)"
+                class="sidebar">
+                {% include sidebar.html %}
+              </div>
+            </div>
+          </div>
+          <div data-h2-flex-item="base(1of1) medium(3of4)">
+            <div>
+              {% include heading-2.html name="Installation" %}
+              <pre>npm install @hydrogen-design-system/hydrogen.css --save-dev</pre>
+              <pre>npx h2-init</pre>
+              {% include heading-2.html name="Basic Commands" %}
+              <pre>npx h2-watch</pre>
+              <pre>npx h2-compile</pre>
+              <pre>npx h2-build</pre>
+              {% include heading-2.html name="Configuration" %}
+              <p>After running <code>npx h2-init</code>, a <code>hydrogen.config.json</code> file will be located in the root of your project. In this file, you can specify a variety of options that will modify how Hydrogen works and the theme it applies to its stylesheet.</p>
+              {% include heading-3.html name="Functional Configuration" %}
+              <pre>folders</pre>
+              <pre>media</pre>
+              <pre>mediaWarnings</pre>
+              <pre>debug</pre>
+              {% include heading-3.html name="Theme Configuration" %}
+              <pre>borderWeights</pre>
+              <pre>colors</pre>
+              <pre>containers</pre>
+              <pre>flexgrid</pre>
+              <pre>fonts</pre>
+              <pre>fontBaseSize</pre>
+              <pre>fontScale</pre>
+              <pre>gradients</pre>
+              <pre>radius</pre>
+              <pre>shadows</pre>
+              <pre>whitespaceScale</pre>
+              {% include heading-2.html name="Basic Usage" %}
+              <pre>data-hydrogen</pre>
+              {% include heading-3.html name="Media Queries" %}
+              {% include heading-3.html name="Color and Gradients" %}
+              {% include heading-2.html name="Style Attributes" %}
+              {% assign groups = site.attributes | group_by: "category" | sort: "name" %}
+              {% for group in groups %}
+                {% assign counter = 0 %}
+                {% for item in group.items %}
+                  {% assign counter = counter | plus: 1 %}
+                  {% if group.name == item.title %}
+                    {% if counter == 1 %}
+                      {% include heading-3.html name=group.name id=item.pageID %}
+                    {% endif %}
+                    {% include attribute.html 
+                      pageID=item.pageID
+                      name=item.title
+                      description=item.description
+                      syntax=item.syntax
+                      options=item.options
+                      examples=item.examples
+                      content=item.content %}
+                  {% else %}
+                    {% if counter == 1 %}
+                      {% include heading-3.html name=group.name %}
+                    {% endif %}
+                    {% include attribute.html 
+                      type="child"
+                      pageID=item.pageID
+                      name=item.title
+                      description=item.description
+                      syntax=item.syntax
+                      options=item.options
+                      examples=item.examples
+                      content=item.content %}
+                  {% endif %}
+                {%endfor%}
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+      {% include scripts.html %}
+    </body>
+</html>
