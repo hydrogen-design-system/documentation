@@ -7,7 +7,26 @@ category: "Overflow"
 title: Overflow
 description: Sets an overflow value on an element to hide or show its children.
 syntax: 
-  - data-h2-overflow="MEDIA(OVERFLOW)"
+  - data-h2-overflow="MEDIA(ORIENTATION, OVERFLOW)"
 notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ORIENTATION
+    type: custom
+    content: "<pre>
+      all\n
+      x\n
+      y
+    </pre>"
+  - title: OVERFLOW
+    type: custom
+    content: "<pre>
+      visible\n
+      hidden\n
+      scroll\n
+      auto
+    </pre>"
 examples:
 ---

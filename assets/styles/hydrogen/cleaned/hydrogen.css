@@ -1,0 +1,350 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+@font-face {}[data-hydrogen] [data-h2-flex-grid]>[data-h2-flex-item]{flex:0 0 100%;max-width:100%;min-width:0}html{font-size:112.5%}[data-hydrogen] body,body[data-hydrogen]{margin:0;max-width:100%;min-height:100vh;position:relative;width:100%}[data-hydrogen],[data-hydrogen] *{box-sizing:border-box}[data-hydrogen] blockquote,[data-hydrogen] dl,[data-hydrogen] fieldset,[data-hydrogen] figure{margin:0}[data-hydrogen] iframe,[data-hydrogen] img{max-width:100%}[data-hydrogen] h1,[data-hydrogen] h2,[data-hydrogen] h3,[data-hydrogen] h4,[data-hydrogen] h5,[data-hydrogen] h6,[data-hydrogen] p{font-weight:400;margin:0}[data-hydrogen] h1{font-size:3.05176rem}[data-hydrogen] h2{font-size:2.44141rem}[data-hydrogen] h3{font-size:1.95313rem}[data-hydrogen] h4{font-size:1.5625rem}[data-hydrogen] h5{font-size:1.25rem}[data-hydrogen] div,[data-hydrogen] h6,[data-hydrogen] p{font-size:1rem}[data-hydrogen] span{font-weight:inherit}[data-hydrogen] em,[data-hydrogen] span{color:inherit;font-family:inherit;font-size:inherit}[data-hydrogen] em{font-style:italic}[data-hydrogen] strong{font-weight:600}[data-hydrogen] a,[data-hydrogen] strong{color:inherit;font-family:inherit;font-size:inherit}[data-hydrogen] a{font-weight:inherit;text-decoration:underline;transition:color .2s ease}[data-hydrogen] ol,[data-hydrogen] ul{margin:0}[data-hydrogen] ol li,[data-hydrogen] ul li{color:inherit;font-family:inherit;font-size:inherit}[data-hydrogen] ol li:last-child,[data-hydrogen] ul li:last-child{margin-bottom:0}[data-hydrogen] [data-h2-container]{margin:0 auto;width:90%}@media screen {[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"]{align-items:flex-start;display:flex;flex-wrap:wrap;margin:calc((1.5rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"] > [data-h2-flex-item]{padding:calc(1.5rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-3)"]{background-color:#BEFF5C}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-4)"]{background-color:#5CFFEE}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(linear-135[1][2])"]{background-image:linear-gradient(135deg,#9D5CFF,#FF5C6D)}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"]{align-items:flex-start;display:flex;flex-wrap:wrap;margin:calc((1.5rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"] > [data-h2-flex-item]{padding:calc(1.5rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-border*="b(theme-1, all, solid, small)"]{border-color:#9D5CFF;border-style:solid;border-width:1px}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-border*="b(theme-2, top, dashed, large)"]{border-top-color:#FF5C6D;border-top-style:dashed;border-top-width:1rem}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-border*="b(theme-3, top-bottom, solid, medium)"]{border-top-color:#BEFF5C;border-bottom-color:#BEFF5C;border-top-style:solid;border-bottom-style:solid;border-top-width:0.5rem;border-bottom-width:0.5rem}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-border*="b(theme-4, all, dashed, small)"]{border-color:#5CFFEE;border-style:dashed;border-width:1px}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-border*="b(theme-5, all, solid, large)"]{border-color:#F7B452;border-style:solid;border-width:1rem}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-bg-color*="b(linear-135[1][2])"]{background-image:linear-gradient(135deg,#9D5CFF,#FF5C6D)}[data-hydrogen] [data-h2-padding*="b(top-bottom, large)"]{padding-top:2.25rem;padding-bottom:2.25rem}[data-hydrogen] [data-h2-container*="b(center, small)"]{margin:0 auto;max-width:39rem}[data-hydrogen] [data-h2-bg-color*="b(black)"]{background-color:#0a0a14}[data-hydrogen] [data-h2-padding*="b(top-bottom, large)"]{padding-top:2.25rem;padding-bottom:2.25rem}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"]{align-items:flex-start;display:flex;flex-wrap:wrap;margin:calc((1.5rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"] > [data-h2-flex-item]{padding:calc(1.5rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of3)"]{flex:0 0 calc(1 / 3 * 100%);max-width:33.3333333333%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of3)"]{flex:0 0 calc(1 / 3 * 100%);max-width:33.3333333333%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of3)"]{flex:0 0 calc(1 / 3 * 100%);max-width:33.3333333333%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-bg-color*="b(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-position*="b(relative)"]{position:relative}[data-hydrogen] [data-h2-padding*="b(all, largest)"]{padding:5.0625rem}[data-hydrogen] [data-h2-location*="b(top-right, medium)"]{top:1.5rem;right:1.5rem}[data-hydrogen] [data-h2-position*="b(absolute)"]{position:absolute}[data-hydrogen] [data-h2-bg-color*="b(black)"]{background-color:#0a0a14}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"]{align-items:flex-start;display:flex;flex-wrap:wrap;margin:calc((1.5rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"] > [data-h2-flex-item]{padding:calc(1.5rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(medium)"]{border-radius:50rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(large)"]{border-radius:100%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small, small, large, large)"]{border-radius:10px 10px 100% 100%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(large, small, medium, large)"]{border-radius:100% 10px 50rem 100%}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"]{align-items:flex-start;display:flex;flex-wrap:wrap;margin:calc((1.5rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"] > [data-h2-flex-item]{padding:calc(1.5rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(white)"]{background-color:white}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-shadow*="b(smaller)"]{box-shadow:0 0.1rem 0.2rem 0 rgba(0,0,0,.2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(white)"]{background-color:white}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-shadow*="b(small)"]{box-shadow:0 0.25rem 0.5rem -0.05rem rgba(0,0,0,.2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(white)"]{background-color:white}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-shadow*="b(medium)"]{box-shadow:0 0.4rem 0.7rem -0.1rem rgba(0,0,0,.2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(white)"]{background-color:white}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-shadow*="b(large)"]{box-shadow:0 0.55rem 1rem -0.2rem rgba(0,0,0,.2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-bg-color*="b(white)"]{background-color:white}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-radius*="b(small)"]{border-radius:10px}[data-hydrogen] [data-h2-shadow*="b(larger)"]{box-shadow:0 0.7rem 1.5rem -0.3rem rgba(0,0,0,.2)}[data-hydrogen] [data-h2-bg-color*="b(black)"]{background-color:#0a0a14}[data-hydrogen] [data-h2-font-family*="b(Gibson)"]{font-family:canada-type-gibson,sans-serif}[data-hydrogen] [data-h2-container*="b(center, full)"]{margin:0 auto;max-width:none}[data-hydrogen] [data-h2-padding*="b(top-bottom, largest)"]{padding-top:5.0625rem;padding-bottom:5.0625rem}[data-hydrogen] [data-h2-text-align*="b(center)"]{text-align:center}[data-hydrogen] [data-h2-font-color*="b(white)"]{color:white}[data-hydrogen] [data-h2-font-size*="b(h1)"]{font-size:calc(calc(calc(calc(calc(1rem*1.25)*1.25)*1.25)*1.25)*1.25)}[data-hydrogen] [data-h2-margin*="b(top-bottom, medium)"]{margin-top:1.5rem;margin-bottom:1.5rem}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-font-color*="b(white)"]{color:white}[data-hydrogen] [data-h2-container*="b(center, full)"]{margin:0 auto;max-width:none}[data-hydrogen] [data-h2-font-family*="b(Gibson)"]{font-family:canada-type-gibson,sans-serif}[data-hydrogen] [data-h2-font-color*="b(font)"]{color:#323232}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, small)"]{align-items:flex-start;display:flex;flex-wrap:wrap;margin:calc((1rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, small)"] > [data-h2-flex-item]{padding:calc(1rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-padding*="b(bottom, largest)"]{padding-bottom:5.0625rem}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-bg-color*="b(black)"]{background-color:#0a0a14}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-bg-color*="b(black)"]{background-color:#0a0a14}[data-hydrogen] [data-h2-bg-color*="b(black)"]{background-color:#0a0a14}[data-hydrogen] [data-h2-padding*="b(all, large)"]{padding:2.25rem}[data-hydrogen] [data-h2-margin*="b(bottom, medium)"]{margin-bottom:1.5rem}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"]{align-items:flex-start;display:flex;flex-wrap:wrap;margin:calc((1.5rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="b(top, expanded, flush, medium)"] > [data-h2-flex-item]{padding:calc(1.5rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-bg-color*="b(theme-1[.1])"]{background-color:rgba(157,92,255,0.1)}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-border*="b(theme-1, all, solid, small)"]{border-color:#9D5CFF;border-style:solid;border-width:1px}[data-hydrogen] [data-h2-padding*="b(all, medium)"]{padding:1.5rem}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-margin*="b(top, medium)"]{margin-top:1.5rem}[data-hydrogen] [data-h2-margin*="b(bottom, smallest)"]{margin-bottom:0.4444444444rem}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-margin*="b(top, medium)"]{margin-top:1.5rem}[data-hydrogen] [data-h2-margin*="b(bottom, smallest)"]{margin-bottom:0.4444444444rem}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-margin*="b(top, medium)"]{margin-top:1.5rem}[data-hydrogen] [data-h2-margin*="b(bottom, smallest)"]{margin-bottom:0.4444444444rem}[data-hydrogen] [data-h2-bg-color*="b(black)"]{background-color:#0a0a14}[data-hydrogen] [data-h2-font-family*="b(Gibson)"]{font-family:canada-type-gibson,sans-serif}[data-hydrogen] [data-h2-container*="b(center, full)"]{margin:0 auto;max-width:none}[data-hydrogen] [data-h2-padding*="b(top-bottom, large)"]{padding-top:2.25rem;padding-bottom:2.25rem}[data-hydrogen] [data-h2-flex-grid*="b(middle, expanded, flush, small)"]{align-items:center;display:flex;flex-wrap:wrap;margin:calc((1rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="b(middle, expanded, flush, small)"] > [data-h2-flex-item]{padding:calc(1rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-text-align*="b(center)"]{text-align:center}[data-hydrogen] [data-h2-font-color*="b(white)"]{color:white}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="b(1of1)"]{flex:0 0 calc(1 / 1 * 100%);max-width:100%}[data-hydrogen] [data-h2-text-align*="b(center)"]{text-align:center}[data-hydrogen] [data-h2-font-color*="b(white)"]{color:white}[data-hydrogen] [data-h2-text-align*="b(center)"]{text-align:center}[data-hydrogen] [data-h2-font-family*="b(Gibson)"]{font-family:canada-type-gibson,sans-serif}[data-hydrogen] [data-h2-font-size*="b(h2)"]{font-size:calc(calc(calc(calc(1rem*1.25)*1.25)*1.25)*1.25)}[data-hydrogen] [data-h2-font-color*="b(black)"]{color:#0a0a14}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-padding*="b(top, larger)"]{padding-top:3.375rem}[data-hydrogen] [data-h2-padding*="b(bottom, smaller)"]{padding-bottom:0.6666666667rem}[data-hydrogen] [data-h2-font-size*="b(h3)"]{font-size:calc(calc(calc(1rem*1.25)*1.25)*1.25)}[data-hydrogen] [data-h2-font-size*="b(h3)"]{font-size:calc(calc(calc(1rem*1.25)*1.25)*1.25)}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-font-weight*="b(200)"]{font-weight:200}[data-hydrogen] [data-h2-padding*="b(top, larger)"]{padding-top:3.375rem}[data-hydrogen] [data-h2-padding*="b(bottom, smaller)"]{padding-bottom:0.6666666667rem}[data-hydrogen] [data-h2-font-size*="b(h4)"]{font-size:calc(calc(1rem*1.25)*1.25)}[data-hydrogen] [data-h2-font-color*="b(black)"]{color:#0a0a14}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}[data-hydrogen] [data-h2-padding*="b(top, larger)"]{padding-top:3.375rem}[data-hydrogen] [data-h2-padding*="b(bottom, smaller)"]{padding-bottom:0.6666666667rem}[data-hydrogen] [data-h2-font-size*="b(h5)"]{font-size:calc(1rem*1.25)}[data-hydrogen] [data-h2-padding*="b(top, larger)"]{padding-top:3.375rem}[data-hydrogen] [data-h2-padding*="b(bottom, small)"]{padding-bottom:1rem}[data-hydrogen] [data-h2-font-color*="b(theme-1)"]{color:#9D5CFF}[data-hydrogen] [data-h2-font-weight*="b(600)"]{font-weight:600}}@media screen and (min-width: 48em) {[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="s(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}}@media screen and (min-width: 64em) {[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of8)"]{flex:0 0 calc(1 / 8 * 100%);max-width:12.5%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of8)"]{flex:0 0 calc(1 / 8 * 100%);max-width:12.5%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of8)"]{flex:0 0 calc(1 / 8 * 100%);max-width:12.5%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of8)"]{flex:0 0 calc(1 / 8 * 100%);max-width:12.5%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of8)"]{flex:0 0 calc(1 / 8 * 100%);max-width:12.5%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of8)"]{flex:0 0 calc(1 / 8 * 100%);max-width:12.5%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of8)"]{flex:0 0 calc(1 / 8 * 100%);max-width:12.5%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of8)"]{flex:0 0 calc(1 / 8 * 100%);max-width:12.5%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of6)"]{flex:0 0 calc(1 / 6 * 100%);max-width:16.6666666667%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of5)"]{flex:0 0 calc(1 / 5 * 100%);max-width:20%}[data-hydrogen] [data-h2-flex-grid*="m(stretch, expanded, flush, largest)"]{align-items:stretch;display:flex;flex-wrap:wrap;margin:calc((5.0625rem/2) * -1)}[data-hydrogen] [data-h2-flex-grid*="m(stretch, expanded, flush, largest)"] > [data-h2-flex-item]{padding:calc(5.0625rem/2)}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of4)"]{flex:0 0 calc(1 / 4 * 100%);max-width:25%}[data-hydrogen] [data-h2-position*="m(sticky)"]{position:sticky}[data-hydrogen] [data-h2-location*="m(top, none)"]{top:0}[data-hydrogen] [data-h2-padding*="m(bottom, largest)"]{padding-bottom:5.0625rem}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(3of4)"]{flex:0 0 calc(3 / 4 * 100%);max-width:75%}[data-hydrogen] [data-h2-bg-color*="m(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-bg-color*="m(theme-1)"]{background-color:#9D5CFF}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-text-align*="m(left)"]{text-align:left}[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="m(1of2)"]{flex:0 0 calc(1 / 2 * 100%);max-width:50%}[data-hydrogen] [data-h2-text-align*="m(right)"]{text-align:right}[data-hydrogen] [data-h2-text-align*="m(left)"]{text-align:left}}@media screen and (min-width: 100em) {[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item*="l(1of12)"]{flex:0 0 calc(1 / 12 * 100%);max-width:8.3333333333%}[data-hydrogen] [data-h2-bg-color*="l(theme-2)"]{background-color:#FF5C6D}[data-hydrogen] [data-h2-bg-color*="l(theme-2)"]{background-color:#FF5C6D}}

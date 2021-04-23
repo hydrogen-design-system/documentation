@@ -21,21 +21,21 @@ options:
     type: color
     content: 
 examples:
-  - "<div data-h2-flex-grid='base(top, expanded, flush, medium)'>
-      <div data-h2-flex-item='base(1of1) medium(1of5)'>
-        <div data-h2-bg-color='base(theme-1)' data-h2-padding='base(all, medium)' data-h2-radius='base(small)'></div>
+  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
       </div>
-      <div data-h2-flex-item='base(1of1) medium(1of5)'>
-        <div data-h2-bg-color='base(theme-2)' data-h2-padding='base(all, medium)' data-h2-radius='base(small)'></div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
       </div>
-      <div data-h2-flex-item='base(1of1) medium(1of5)'>
-        <div data-h2-bg-color='base(theme-3)' data-h2-padding='base(all, medium)' data-h2-radius='base(small)'></div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-3)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
       </div>
-      <div data-h2-flex-item='base(1of1) medium(1of5)'>
-        <div data-h2-bg-color='base(theme-4)' data-h2-padding='base(all, medium)' data-h2-radius='base(small)'></div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-4)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
       </div>
-      <div data-h2-flex-item='base(1of1) medium(1of5)'>
-        <div data-h2-bg-color='base(linear-135[1][2])' data-h2-padding='base(all, medium)' data-h2-radius='base(small)'></div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(linear-135[1][2])' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
       </div>
     </div>"
 ---

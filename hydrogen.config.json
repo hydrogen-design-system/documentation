@@ -3,6 +3,7 @@
   "mediaWarnings": false,
   "folders": {
     "markup": [
+      "_attributes",
       "_layouts",
       "_includes"
     ],
@@ -17,12 +18,17 @@
     {
       "name": "black",
       "color": "rgb(10, 10, 20)",
-      "opacity": true
+      "opacity": false
+    },
+    {
+      "name": "font",
+      "color": "rgb(50, 50, 50)",
+      "opacity": false
     },
     {
       "name": "theme-1",
       "color": "#9D5CFF",
-      "opacity": false
+      "opacity": true
     },
     {
       "name": "theme-2",
@@ -48,6 +54,13 @@
   "flexgrid": {
     "enabled": true
   },
+  "fonts": [
+    {
+      "name": "Gibson",
+      "loadType": "webfont",
+      "value": "canada-type-gibson, sans-serif"
+    }
+  ],
   "gradients": [
     {
       "type": "linear",

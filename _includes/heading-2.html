@@ -1,4 +1,11 @@
 <h2
-  data-h2-font-size="base(h2)"
-  data-h2-font-color="base(theme-1)"
-  data-h2-padding="base(top, larger) base(bottom, smaller)">{{ include.name }}</h2>
+  id="{{ include.id }}"
+  data-h2-text-align="b(center) m(left)"
+  data-h2-font-family="b(Gibson)"
+  data-h2-font-size="b(h2)"
+  data-h2-font-color="b(black)"
+  data-h2-font-weight="b(600)"
+  data-h2-padding="b(top, larger) b(bottom, smaller)">
+  {% if include.icon %}<span data-h2-font-size="b(h3)">{{ include.icon }} </span>{% endif %}
+  {{ include.name }}
+</h2>

@@ -9,5 +9,17 @@ description: Aligns the element's text.
 syntax: 
   - data-h2-text-align="MEDIA(ALIGNMENT)"
 notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ALIGNMENT
+    type: custom
+    content: "<pre>
+      center\n
+      justify\n
+      right\n
+      left
+    </pre>"
 examples:
 ---

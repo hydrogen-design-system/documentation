@@ -18,7 +18,7 @@
   },
   "homepage": "https://hydrogen.design",
   "dependencies": {
-    "@hydrogen-design-system/hydrogen.css": "0.0.38"
+    "@hydrogen-design-system/hydrogen.css": "0.0.41"
   },
   "browserslist": [
     "last 1 version and not dead"

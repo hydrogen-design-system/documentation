@@ -9,5 +9,18 @@ description: Sets an element's position value.
 syntax: 
   - data-h2-position="MEDIA(POSITION)"
 notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: POSITION
+    type: custom
+    content: "<pre>
+      static\n
+      relative\n
+      fixed\n
+      absolute\n
+      sticky
+    </pre>"
 examples:
 ---

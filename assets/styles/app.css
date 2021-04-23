@@ -4,7 +4,7 @@
   border-radius: 0;
   cursor: pointer;
   padding-top: 0;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   padding-bottom: 0;
   padding-right: 0;
   position: relative;
@@ -19,6 +19,10 @@
   top: 0;
   left: -100vw;
   width: 1px;
+}
+
+.accordion-trigger-content p {
+  line-height: 1;
 }
 
 .accordion-trigger-icon-add {
@@ -65,11 +69,12 @@
 
 .sidebar a {
   display: inline-block;
-  margin: 0 0 .5rem 0;
+  line-height: 1;
+  margin: 0 0 .5rem 1.5rem;
 }
 
 .sidebar >a {
-  margin: 0 0 .5rem 1rem;
+  margin: 0 0 .6rem 1.5rem;
 }
 
 .sidebar >.accordion >.accordion-trigger{
@@ -88,8 +93,29 @@ pre {
   padding: 1rem;
 }
 
+p+p {
+  margin-top: 1rem !important;
+}
+
 code {
   background: rgba(240, 240, 240, 1);
   border-radius: 5px;
   padding: .05rem .3rem;
+}
+
+h2 + h3,
+h3 + h4 {
+  /* padding-top: 2rem !important; */
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  margin: .5rem 0 !important;
+}
+
+ul li {
+  margin: 0 0 .5rem 0;
 }

@@ -9,8 +9,8 @@
 {% endif %}
 <p>{{ include.description }}</p>
 <p
-  data-h2-font-weight="base(600)"
-  data-h2-margin="base(top, medium) base(bottom, smallest)">Syntax:</p>
+  data-h2-font-weight="b(600)"
+  data-h2-margin="b(top, medium) b(bottom, smallest)">Syntax:</p>
 {% for syntax in include.syntax %}
   <pre>{{ syntax }}</pre>
 {% endfor %}
@@ -19,19 +19,19 @@
 {% endfor %}
 {% if include.options %}
   <p
-    data-h2-font-weight="base(600)"
-    data-h2-margin="base(top, medium) base(bottom, smallest)">Default Arguments:</p>
+    data-h2-font-weight="b(600)"
+    data-h2-margin="b(top, medium) b(bottom, smallest)">Default Arguments:</p>
 {% endif %}
 {% for option in include.options %}
   {% capture codeTitle %}<code>{{ option.title }}</code>{% endcapture %}
   {% if option.type == "color" %}
     {% capture colorContent %}
-      <p>Please see the <a href="#colors">color section</a> for default colors.</p>
+      <p>Please see the <a href="#colors">color section</a> for how to use colors.</p>
     {% endcapture %}
     {% include components/accordion.html title=codeTitle content=colorContent %}
   {% elsif option.type == "media" %}
     {% capture mediaContent %}
-      <p>Please see the <a href="#mediaQueries">media query section</a> for default media queries.</p>
+      <p>Please see the <a href="#mediaQueries">media query section</a> for how to use media queries.</p>
     {% endcapture %}
     {% include components/accordion.html title=codeTitle content=mediaContent %}
   {% elsif option.type == "whitespace" %}
@@ -70,8 +70,8 @@ bottom-left
 {% endfor %}
 {% if include.examples %}
   <p
-    data-h2-font-weight="base(600)"
-    data-h2-margin="base(top, medium) base(bottom, smallest)">Examples:</p>
+    data-h2-font-weight="b(600)"
+    data-h2-margin="b(top, medium) b(bottom, smallest)">Examples:</p>
 {% endif %}
 {% for example in include.examples %}
   {{ example }}

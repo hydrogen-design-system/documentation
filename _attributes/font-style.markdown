@@ -9,5 +9,16 @@ description: Sets one of a few various style options on the element's text.
 syntax: 
   - data-h2-font-style="MEDIA(STYLE)"
 notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: STYLE
+    type: custom
+    content: "<pre>
+      reset\n
+      italic\n
+      underline
+    </pre>"
 examples:
 ---

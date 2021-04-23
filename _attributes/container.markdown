@@ -29,7 +29,7 @@ options:
       full
     </pre>"
 examples:
-  - <div data-h2-bg-color='base(linear-135[1][2])' data-h2-padding='base(top-bottom, large)'>
-      <div data-h2-container='base(center, small)' data-h2-bg-color='base(black)' data-h2-padding='base(top-bottom, large)'></div>
+  - <div data-h2-bg-color='b(linear-135[1][2])' data-h2-padding='b(top-bottom, large)'>
+      <div data-h2-container='b(center, small)' data-h2-bg-color='b(black)' data-h2-padding='b(top-bottom, large)'></div>
     </div>
 ---

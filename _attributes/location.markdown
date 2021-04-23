@@ -7,10 +7,20 @@ category: "Positioning"
 title: Location
 description: Sets an element's top, right, bottom, and left values.
 syntax: 
-  - data-h2-location="MEDIA(SIDE, VALUE)"
+  - data-h2-location="MEDIA(SIDE, WHITESPACE)"
 notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: SIDE
+    type: side
+    content: 
+  - title: WHITESPACE
+    type: whitespace
+    content: 
 examples:
-  - <div data-h2-bg-color='base(theme-1)' data-h2-position='base(relative)' data-h2-padding='base(all, largest)'>
-      <div data-h2-location='base(top-right, medium)' data-h2-position='base(absolute)' data-h2-bg-color='base(black)' data-h2-padding='base(all, large)'></div>
+  - <div data-h2-bg-color='b(theme-1)' data-h2-position='b(relative)' data-h2-padding='b(all, largest)'>
+      <div data-h2-location='b(top-right, medium)' data-h2-position='b(absolute)' data-h2-bg-color='b(black)' data-h2-padding='b(all, large)'></div>
     </div>
 ---

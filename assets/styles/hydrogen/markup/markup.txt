@@ -1,0 +1,1533 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: backgroundColor
+category: "Background Colors"
+title: "Background Colors"
+description: "Sets a color or gradient as the element's background color value."
+syntax: 
+  - data-h2-bg-color="MEDIA(COLOR)"
+  - data-h2-bg-color="MEDIA(GRADIENT)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: COLOR
+    type: color
+    content: 
+  - title: GRADIENT
+    type: color
+    content: 
+examples:
+  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-3)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-4)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(linear-135[1][2])' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+      </div>
+    </div>"
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: borders
+category: "Borders"
+title: "Borders"
+description: "Sets a border on the element."
+syntax: 
+  - data-h2-border="MEDIA(COLOR, SIDE, STYLE, WEIGHT)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: COLOR
+    type: color
+    content:
+  - title: SIDE
+    type: side
+    content: 
+  - title: STYLE
+    type: custom
+    content: "<pre>
+      solid\n
+      dashed
+    </pre>"
+  - title: WEIGHT
+    type: custom
+    content: "<pre>
+      small\n
+      medium\n
+      large
+    </pre>"
+examples:
+  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+        <div data-h2-flex-item='b(1of1) m(1of5)'>
+          <div data-h2-border='b(theme-1, all, solid, small)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        </div>
+        <div data-h2-flex-item='b(1of1) m(1of5)'>
+          <div data-h2-border='b(theme-2, top, dashed, large)' data-h2-padding='b(all, medium)'></div>
+        </div>
+        <div data-h2-flex-item='b(1of1) m(1of5)'>
+          <div data-h2-border='b(theme-3, top-bottom, solid, medium)' data-h2-padding='b(all, medium)'></div>
+        </div>
+        <div data-h2-flex-item='b(1of1) m(1of5)'>
+          <div data-h2-border='b(theme-4, all, dashed, small)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        </div>
+        <div data-h2-flex-item='b(1of1) m(1of5)'>
+          <div data-h2-border='b(theme-5, all, solid, large)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        </div>
+      </div>"
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: containers
+category: "Containers"
+title: Containers
+description: Adds fixed margins to the element so that its content is contained within the space. No container will exceed more than 90% of the viewport.
+syntax: 
+  - data-h2-container="MEDIA(ALIGNMENT, SIZE)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ALIGNMENT
+    type: custom
+    content: "<pre>
+      left\n
+      center\n
+      right
+    </pre>"
+  - title: SIZE
+    type: custom
+    content: "<pre>
+      small\n
+      medium\n
+      large\n
+      full
+    </pre>"
+examples:
+  - <div data-h2-bg-color='b(linear-135[1][2])' data-h2-padding='b(top-bottom, large)'>
+      <div data-h2-container='b(center, small)' data-h2-bg-color='b(black)' data-h2-padding='b(top-bottom, large)'></div>
+    </div>
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: display
+category: "Display"
+title: Display
+description: Sets the element's display value.
+syntax: 
+  - data-h2-display="MEDIA(DISPLAY)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: DISPLAY
+    type: custom
+    content: "<pre>
+      block\n
+      inline\n
+      inline-block\n
+      flex\n
+      inline-flex\n
+      grid\n
+      inline-grid\n
+      flow-root\n
+      none\n
+      contents\n
+      table\n
+      table-row\n
+      list-item
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: flexAlignContent
+category: "Flex Properties"
+title: Align Content
+description: Sets the element's align-content value.
+syntax: 
+  - data-h2-align-content="MEDIA(ALIGNMENT)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ALIGNMENT
+    type: custom
+    content: "<pre>
+      center\n
+      flex-end\n
+      flex-start\n
+      space-around\n
+      space-between\n
+      stretch
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: flexAlignItems
+category: "Flex Properties"
+title: Align Items
+description: Sets the element's align-items value.
+syntax: 
+  - data-h2-align-items="MEDIA(ALIGNMENT)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ALIGNMENT
+    type: custom
+    content: "<pre>
+      baseline\n
+      center\n
+      flex-end\n
+      flex-start\n
+      stretch
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: flexAlignSelf
+category: "Flex Properties"
+title: Align Self
+description: Sets the element's align-self value.
+syntax: 
+  - data-h2-align-self="MEDIA(ALIGNMENT)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ALIGNMENT
+    type: custom
+    content: "<pre>
+      auto\n
+      baseline\n
+      center\n
+      inherit\n
+      initial\n
+      flex-end\n
+      flex-start\n
+      stretch
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: flexDirection
+category: "Flex Properties"
+title: Flex Direction
+description: Sets the element's flex-direction value.
+syntax: 
+  - data-h2-flex-direction="MEDIA(DIRECTION)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: DIRECTION
+    type: custom
+    content: "<pre>
+      column
+      column-reverse
+      row
+      row-reverse
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: flexGrid
+category: "Flex Grid"
+title: Flex Grids
+description: Flexbox grids are disabled by default, but can be enabled in your Hydrogen configuration file. Flexbox grids are generated by specifying a couple options on the wrapper (<code>data-h2-flex-grid</code>) and then defining how each child should be distributed within the column setup.
+syntax: 
+  - data-h2-flex-grid="MEDIA(ALIGNMENT, EXPANSION, GRID-PADDING, GUTTER)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ALIGNMENT
+    type: custom
+    content: "<pre>
+      top\n
+      middle\n
+      bottom
+    </pre>"
+  - title: EXPANSION
+    type: custom
+    content: "<pre>
+      contained\n
+      expanded
+    </pre>"
+  - title: GRID-PADDING
+    type: custom
+    content: "<pre>
+      flush\n
+      padded
+    </pre>"
+  - title: GUTTER
+    type: whitespace
+    content:
+examples:
+  - <div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+      <div data-h2-flex-item='b(1of3)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of3)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of3)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of2) m(1of8)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of2) m(1of8)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of2) m(1of8)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of2) m(1of8)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of2) m(1of8)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of2) m(1of8)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of2) m(1of8)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of2) m(1of8)'>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+      </div>
+    </div>
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: flexItem
+category: "Flex Grid"
+title: Flex Items
+description: By default H2 offers a 12 column grid, meaning you can specify flex items using a range of 1 to 12.<br>e.g. <code>data-h2-flex-item="b(1of1) s(1of2) m(1of6) l(1of12)"</code><br>These values are calculated as percentages, so <code>1of2</code> meaning that the item will span 1 of the columns if the grid were 2 columns wide (meaning this item would span 50% of the available space). Similarly, <code>1of3</code> would span 33% of the grid, while <code>2of5</code> would span 40% of the grid.
+syntax: 
+  - data-h2-flex-item="MEDIA(XofY)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: X, Y
+    type: custom
+    content: "<pre>
+      1\n
+      2\n
+      3\n
+      ...\n
+      12
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: flexJustifyContent
+category: "Flex Properties"
+title: Justify Content
+description: Sets the element's justify-content value.
+syntax: 
+  - data-h2-justify-content="MEDIA(JUSTIFICATION)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: JUSTIFICATION
+    type: custom
+    content: "<pre>
+      center\n
+      flex-end
+      flex-start\n
+      space-around\n
+      space-between
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: flexWrap
+category: "Flex Properties"
+title: Flex Wrap
+description: Sets the element's flex-wrap value.
+syntax: 
+  - data-h2-flex-wrap="MEDIA(WRAP)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: WRAP
+    type: custom
+    content: "<pre>
+      nowrap\n
+      wrap\n
+      wrap-reverse
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: fontColor
+category: "Font Properties"
+title: Font Color
+description: Sets a color value on the element's text.
+syntax: 
+  - data-h2-font-color="MEDIA(COLOR)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: COLOR
+    type: color
+    content: 
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: fontFamily
+category: "Font Properties"
+title: Font Families
+description: Sets a font family value on the element's text.
+syntax: 
+  - data-h2-font-family="MEDIA(FAMILY)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: FAMILY
+    type: custom
+    content: "<pre>
+      sans\n
+      serif\n
+      script\n
+      mono
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: fontSize
+category: "Font Properties"
+title: Font Size
+description: Sets a font size value on the element's text.
+syntax: 
+  - data-h2-font-size="MEDIA(SIZE)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: SIZE
+    type: custom
+    content: "<pre>
+      caption\n
+      normal\n
+      h6\n
+      h5\n
+      h4\n
+      h3\n
+      h2\n
+      h1
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: fontStyle
+category: "Font Properties"
+title: Font Style
+description: Sets one of a few various style options on the element's text.
+syntax: 
+  - data-h2-font-style="MEDIA(STYLE)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: STYLE
+    type: custom
+    content: "<pre>
+      reset\n
+      italic\n
+      underline
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: fontWeight
+category: "Font Properties"
+title: Font Weight
+description: Sets a numeric font weight on the element's text.
+syntax: 
+  - data-h2-font-weight="MEDIA(WEIGHT)"
+notes:
+  - Please note that font weight availability will depend on the font family you're using on your project. If the font doesn't support certain weights, the value will not work as expected.
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: WEIGHT
+    type: custom
+    content: "<pre>
+      100\n
+      200\n
+      300\n
+      400\n
+      500\n
+      600\n
+      700\n
+      800\n
+      900
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: location
+category: "Positioning"
+title: Location
+description: Sets an element's top, right, bottom, and left values.
+syntax: 
+  - data-h2-location="MEDIA(SIDE, WHITESPACE)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: SIDE
+    type: side
+    content: 
+  - title: WHITESPACE
+    type: whitespace
+    content: 
+examples:
+  - <div data-h2-bg-color='b(theme-1)' data-h2-position='b(relative)' data-h2-padding='b(all, largest)'>
+      <div data-h2-location='b(top-right, medium)' data-h2-position='b(absolute)' data-h2-bg-color='b(black)' data-h2-padding='b(all, large)'></div>
+    </div>
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: margin
+category: "Whitespace"
+title: Margins
+description: Sets a margin value on the specified side(s) of the element.
+syntax: 
+  - data-h2-margin="MEDIA(SIDE, WHITESPACE)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: SIDE
+    type: side
+    content: 
+  - title: WHITESPACE
+    type: whitespace
+    content: 
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: overflow
+category: "Overflow"
+title: Overflow
+description: Sets an overflow value on an element to hide or show its children.
+syntax: 
+  - data-h2-overflow="MEDIA(ORIENTATION, OVERFLOW)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ORIENTATION
+    type: custom
+    content: "<pre>
+      all\n
+      x\n
+      y
+    </pre>"
+  - title: OVERFLOW
+    type: custom
+    content: "<pre>
+      visible\n
+      hidden\n
+      scroll\n
+      auto
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: padding
+category: "Whitespace"
+title: Padding
+description: Sets a padding value on the specified side(s) of the element.
+syntax: 
+  - data-h2-padding="MEDIA(SIDE, WHITESPACE)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: SIDE
+    type: side
+    content: 
+  - title: WHITESPACE
+    type: whitespace
+    content: 
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: position
+category: "Positioning"
+title: Position
+description: Sets an element's position value.
+syntax: 
+  - data-h2-position="MEDIA(POSITION)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: POSITION
+    type: custom
+    content: "<pre>
+      static\n
+      relative\n
+      fixed\n
+      absolute\n
+      sticky
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: radius
+category: "Radius"
+title: Radius
+description: Sets the element's corner radius values.
+syntax: 
+  - data-h2-radius="MEDIA(RADIUS)"
+  - data-h2-radius="MEDIA(RADIUS, RADIUS, RADIUS, RADIUS)"
+notes:
+  - When assigning different values to each corner, the order is top-left, top-right, bottom-right, bottom-left.
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: RADIUS
+    type: custom
+    content: "<pre>
+      small\n
+      medium\n
+      large
+    </pre>"
+examples:
+  - <div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(medium)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small, small, large, large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(large, small, medium, large)'></div>
+      </div>
+    </div>
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: shadows
+category: "Shadows"
+title: Shadows
+description: Adds a drop shadow effect to the element.
+syntax: 
+  - data-h2-shadow="MEDIA(SHADOW)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: SHADOW
+    type: custom
+    content: "<pre>
+      small\n
+      medium\n
+      large
+    </pre>"
+examples:
+  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(smaller)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(small)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(medium)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(large)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of1) m(1of5)'>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(larger)'></div>
+      </div>
+    </div>"
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: textAlign
+category: "Font Properties"
+title: Text Align
+description: Aligns the element's text.
+syntax: 
+  - data-h2-text-align="MEDIA(ALIGNMENT)"
+notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: ALIGNMENT
+    type: custom
+    content: "<pre>
+      center\n
+      justify\n
+      right\n
+      left
+    </pre>"
+examples:
+---
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+pageID: visibility
+category: "Visibility"
+title: Visibility
+description: Sets a handful of CSS properties that affects the element's visibility to users and machines.
+syntax: 
+  - data-h2-visibility="MEDIA(VISIBILITY)"
+notes: 
+  - Note that <code>invisible</code> hides the element visually, but it will still be found by assistive technologies. To hide the element entirely, use <code>hidden</code>.
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: VISIBILITY
+    type: custom
+    content: "<pre>
+      invisible\n
+      hidden\n
+      visible
+    </pre>"
+examples:
+---
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body data-hydrogen>
+      <div 
+        data-h2-bg-color="b(black)"
+        data-h2-font-family="b(Gibson)">
+        <div 
+          data-h2-container="b(center, full)"
+          data-h2-padding="b(top-bottom, largest)"
+          data-h2-text-align="b(center)">
+          <img 
+            alt="Hydrogen's current release." 
+            src="https://img.shields.io/github/package-json/v/hydrogen-design-system/hydrogen.css?color=9864e8&label=release"
+            style="vertical-align: middle;">
+          <h1
+            data-h2-font-color="b(white)"
+            data-h2-font-size="b(h1)"
+            data-h2-margin="b(top-bottom, medium)"
+            data-h2-font-weight="b(600)">Hydrogen</h1>
+          <p data-h2-font-color="b(white)">An open-source, utility-first CSS tool.</p>
+        </div>
+      </div>
+      <div 
+        data-h2-container="b(center, full)"
+        data-h2-font-family="b(Gibson)"
+        data-h2-font-color="b(font)">
+        <div data-h2-flex-grid="b(top, expanded, flush, small) m(stretch, expanded, flush, largest)">
+          <div data-h2-flex-item="b(1of1) m(1of4)">
+            <div>
+              <div 
+                data-h2-position="m(sticky)" 
+                data-h2-location="m(top, none)"
+                data-h2-padding="m(bottom, largest)"
+                class="sidebar">
+                {% include sidebar.html %}
+              </div>
+            </div>
+          </div>
+          <div data-h2-flex-item="b(1of1) m(3of4)">
+            <div data-h2-padding="b(bottom, largest)">
+              {% include sections/about.html %}
+              {% include heading-2.html icon="💬" name="How to Use Hydrogen" %}
+              {% include heading-3.html name="Installation" id="install" %}
+              <p>First, we'll need to install <a href="https://nodejs.org/en/" title="Learn more about installing Node and NPM." target="_blank">NPM</a> if you don't already have it on your machine. From there, in a command prompt/terminal window, navigate to the root of your project and enter:</p>
+              <pre>npm install @hydrogen-design-system/hydrogen.css --save-dev</pre>
+              <p>After the installation completes, you can run:</p>
+              <pre>npx h2-init</pre>
+              <p>The above command will prompt you to enter two folder locations: your markup folder and your styles/CSS folder. Simply enter the path from the root of your project (e.g. <code>src/my/markup</code>). Once you've submitted these paths, Hydrogen will automagically create a <code>hydrogen.config.json</code> file in the root of your project. <span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This file will be where you can customize Hydrogen's settings and theme.</span></p>
+              {% include heading-3.html name="Getting Started" id="usage" %}
+              <p>In order to start using Hydrogen, you need to enable it on your project. <a href="#commands" title="Learn more about compiling Hydrogen.">After compiling Hydrogen</a>, a complete CSS file will appear in your specified styles folder, so include this file in your page's <code>head</code> element. Once this is done, enable Hydrogen's styles by placing the <code>data-hydrogen</code> attribute on your page's <code>body</code> element or any other particular element where you need Hydrogen's properties.</p>
+<pre>&lt;head&gt;
+  &lt;link rel="stylesheet" href="path/to/hydrogen.css"&gt;
+&lt;/head&gt;
+&lt;body data-hydrogen&gt;
+  &lt;div data-h2-bg-color="b(black)"&gt;
+    &lt;span data-h2-font-color="b(theme-1)"&gt;My Hydrogen styles work here!&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</pre>
+              {% include heading-3.html name="Syntax" id="syntax" %}
+              <p>To begin, let's disect how a Hydrogen attribute works so that we can better understand how to use them.</p>
+              <pre>data-h2-PROPERTY="MEDIA(ARGUMENTS)"</pre>
+              <p>Hydrogen attributes have 4 distinct pieces to them:</p>
+              <ul>
+                <li><code>data-h2-</code>: this is how custom <code>data-attributes</code> are defined in HTML. The <code>h2</code> bit ensures that Hydrogen's attributes are namespaced and won't interfere with other frameworks.</li>
+                <li><code>PROPERTY</code>: the property portion is where we specify which CSS property we want to style. <a href="#backgroundColor" title="View a list of properties available in Hydrogen.">A list can be found starting with background color below.</a></li>
+                <li><code>MEDIA()</code>: this is how we define at which media query we want our styles to apply at. You can learn more about how to use media queries and which ones are installed by default below.</li>
+                <li><code>ARGUMENTS</code>: each property has its own special set of arguments, outlined in the documentation below, that will define how the element is styled.</li>
+              </ul>
+              {% include heading-3.html name="Media Queries" id="mediaQueries" %}
+              <p>Media queries in Hydrogen are designed to allow you to granularly control each property when you need it. Rather than being forced to write unique styles for a particular element, you can directly target that element's property at the exact query you need right in your markup.</p>
+              <p>Hydrogen comes with a default set of 4 media queries out of the box:</p>
+<pre>
+b
+s (48em)
+m (64em)
+l (100em)
+</pre>
+              <p>Using a media query is simple:</p>
+              <pre>data-h2-bg-color="b(black) m(theme-1) l(theme-2)"</pre>
+              <p>Renders something like this (try resizing your screen!):</p>
+              <div data-h2-bg-color="b(black) m(theme-1) l(theme-2)" data-h2-padding="b(all, large)" data-h2-margin="b(bottom, medium)"></div>
+              <p>If the built in media queries don't suit your needs, you can <a href="#configMedia" title="Learn more about setting custom media values in your configuration file.">customize them</a> in your <code>hydrogen.config.json</code> file.</p>
+              {% include heading-3.html name="Color and Gradients" id="colors" %}
+              <p>Hydrogen comes with a set of 5 pre-installed colors, but we know that color is almost always something you're going to want to control. In this section, we want to explain how color is used in the context of property arguments, rather than highlight the colors themselves. <a href="#configThemeColors" title="Learn more about configuring colors.">You can customize the exact palette for your application by following the instructions in the Themes section.</a></p>
+<pre>
+black
+white
+purple
+blue
+pink
+</pre>
+              <p>When colors are built in Hydrogen, a light and dark version of each colors is created, and there is the option for each one to enable automatic generation of opacity variations. Hydrogen's default colors have this opacity option disabled, but these can be extremely helpful if your application frequently uses variations in its UI.</p>
+              <p><span data-h2-font-color="b(theme-1)" data-h2-font-weight="b(600)">The simplest way to reference a color in a property argument is to simply use its name</span>: <code>data-h2-bg-color="b(purple)"</code>. Sometimes however, we want to tap into the automatically created lighter, darker, or transparent versions of a color, and to so, colors have some prefix and suffix syntax that can be optionally included:</p>
+              <ul>
+                <li><code>[dark]COLOR</code> for light/dark versions</li>
+                <li><code>COLOR[.6]</code> for referencing an opacity</li>
+              </ul>
+              <div data-h2-flex-grid="b(top, expanded, flush, medium)">
+                <div data-h2-flex-item="b(1of1) m(1of2)">
+                  <p>For referencing light and dark variations of your color, you can use the following:</p>
+<pre>
+light
+dark
+
+
+
+
+
+</pre>
+                </div>
+                <div data-h2-flex-item="b(1of1) m(1of2)">
+                  <p>For referencing opacity values when you've enabled them, you can use the following increments:</p>
+<pre>
+0
+.1
+.2
+...
+.8
+.9
+1
+</pre>
+                </div>
+              </div>
+              <p>These values can even be combined to target a transparent dark variation, for example: <code>data-bg-color="b([dark]purple[.5])"</code></p>
+              {% include heading-4.html name="Gradients" id="gradients" %}
+              <p>Hydrogen doesn't ship with any gradients enabled by default, but you can optionally configure them in the <a href="#configThemeGradients" title="Learn more about configuring gradients.">gradients section of your configuration file</a>.</p>
+              <p>Gradients are supported by the following properties:</p>
+<pre>
+bg-color
+</pre>
+              <p>When they are enabled, you can reference them in place of a color value by using the following syntax: <code>TYPE-ANGLE[COLORSTOP1][COLORSTOP2]</code>.</p>
+              <p>More specifically, radial gradients will not accept an angle value, while linear gradients require them. These angle values are assigned in your configuration file.</p>
+              <p data-h2-font-weight="b(600)">Examples:</p>
+<pre>
+linear-45[purple][blue]
+radial[pink][purple]
+linear-270[purple][blue][pink]
+</pre>
+              {% include heading-3.html name="Whitespace" id="whitespace" %}
+              <p>Whitespace in Hydrogen works within certain constraints. In order to help ensure the flow of whitespace is consistent in your app and you aren't worrying about arbitary values for margins, padding, and the like, Hydrogen generates a set of whitespace values for you using the <code>whitespaceScale</code> option in your configuration file.</p>
+              <p>By default, the <code>whitespaceScale</code> value is set to 1.5, and this means that, starting with <code>1rem</code>, whitespace values are calculated like this:</p>
+<pre>
+none (0rem)
+smallest (0.4444rem)
+smaller (0.6666rem)
+small (1rem)
+medium (1.5rem)
+large (2.25rem)
+larger (3.375rem)
+largest (5.0625rem)
+</pre>
+              <p>These values can be used in any property that has a <code>WHITESPACE</code> argument.</p>
+              {% include heading-2.html icon="📃" name="Commands" id="commands" %}
+              {% include heading-3.html name="Watch" %}
+              <p><code>npx h2-watch</code> will tell Hydrogen to continuously watch for changes to your <code>hydrogen.config.json</code> file and will automatically compile Hydrogen with your new changes. This is useful for when you need to make a lot of changes to your theme and want to see real output while you're working.</p>
+              {% include heading-3.html name="Compile" %}
+              <p><code>npx h2-compile</code> will tell Hydrogen to compile its whole CSS file once, based on your current configuration. <span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This is probably the command you'll use most</span> and is helpful if you're actively developing on your project.</p>
+              {% include heading-3.html name="Build" %}
+              <p><code>npx h2-build</code> is where the magic truly happens. You should use this command when you're ready to deploy your project, as it will compile Hydrogen by searching through your markup and creating a CSS file that contains only the parts of Hydrogen that you've used, rather than the whole system, thus reducing Hydrogen's file size drastically. You can learn more about this in the "<a href="#what" title="Learn about how Hydrogen creates its production file.">What is Hydrogen?</a>" section.</p>
+              {% include heading-2.html icon="🔨" name="Configuration and Themes" %}
+              <p>After running <code>npx h2-init</code>, a <code>hydrogen.config.json</code> file will be located in the root of your project. In this file, you can specify a variety of options that will modify how Hydrogen works and the theme it applies to its stylesheet.</p>
+              {% include heading-3.html name="Functional Configuration" %}
+              {% include heading-4.html name="Setting Up Project Folders" id="configFolders" %}
+              <p>If you have run <code>npx h2-init</code> these configuration lines are probably already set. These options indicate to Hydrogen where it should find your markup and where it should spit out its final CSS file.</p>
+<pre>"folders": {
+  "markup": "path/to/markup/folder",
+  "styles": "path/to/css/folder"
+}</pre>
+              <p>While by default the folders configuration contains only one option for markup, this configuration can also be set to an array if your project has multiple markup locations:</p>
+<pre>"folders": {
+  "markup": [
+    "first/path/to/markup/folder",
+    "second/path/to/markup/folder"
+  ],
+  "styles": "path/to/css/folder"
+}</pre>
+              {% include heading-4.html name="Choosing Media Queries" id="configMedia" %}
+              <p>By default, Hydrogen comes with 4 default media queries, one of which (<code>b</code> for "base") will always be available on your project. You can configure your own media queries by modifying the list below in your configuration file to suit your project's needs. If you're happy with the default options, you can omit this from your configuration file.</p>
+<pre>"media": [
+  {
+    "name": "s",
+    "value": "48em"
+  },
+  {
+    "name": "m",
+    "value": "64em"
+  },
+  {
+    "name": "l",
+    "value": "100em"
+  }
+]</pre>
+              {% include heading-4.html name="Media Query Warnings" id="configMediaWarnings" %}
+              <p>This option is set to <code>false</code> by default. Setting this to <code>true</code> will allow warning messages to appear in your console during a production build to indicate if there are media queries being used in your markup that aren't included in the <code>media</code> configuration outlined above. These messages can be helpful to find typos or queries that simply don't exist.</p>
+              <pre>"mediaWarnings": true,</pre>
+              {% include heading-4.html name="Debug Settings" id="configDebug" %}
+              <p>This option is set to <code>false</code> by default. Setting this to <code>true</code> will prevent Hydrogen from cleaning up its cache (found in your CSS folder). This can be helpful to inspect the various output files during Hydrogen's build to locate problems or bugs.</p>
+              <pre>"debug": true,</pre>
+              {% include heading-3.html name="Theme Settings" %}
+              {% include heading-4.html name="Border Settings" id="configThemeBorders" %}
+              <p>This setting allows you to create custom, named border weights. The <code>name</code> value will be how you reference border weight in your attribute arguments, while the <code>weight</code> value will be the corresponding value in CSS. Below are the default settings.</p>
+<pre>
+"borderWeights": [
+  {
+    "name": "small",
+    "weight": "1px"
+  },
+  {
+    "name": "medium",
+    "weight": ".5rem"
+  },
+  {
+    "name": "large",
+    "weight": "1rem"
+  }
+]
+</pre>
+              {% include heading-4.html name="Colors" id="configThemeColors" %}
+              <p>This setting allows you to theme Hydrogen's colors. The <code>name</code> value will be how you reference color in your attribute arguments, the <code>color</code> value will be the corresponding value in CSS and can accept RGB, RGBA, and HEX values, and finally, the <code>opacity</code> value can be set to true or false, which tells Hydrogen to build an opacity map for that color, so that it can be <a href="#color" title="Learn more about how opacity works.">referenced using the opacity suffixes</a>. Below are the default values.</p>
+<pre>
+"colors": [
+  {
+    "name": "white",
+    "color": "rgba(255, 255, 255, 1)",
+    "opacity": false
+  },
+  {
+    "name": "black",
+    "color": "rgba(20, 20, 30, 1)",
+    "opacity": false
+  },
+  {
+    "name": "purple",
+    "color": "#9D5CFF",
+    "opacity": false
+  },
+  {
+    "name": "blue",
+    "color": "#5CFFEE",
+    "opacity": false
+  },
+  {
+    "name": "pink",
+    "color": "#FF5C6D",
+    "opacity": false
+  }
+]
+</pre>
+              {% include heading-4.html name="Containers" id="configThemeContainers" %}
+              <p>This setting allows you to create custom container widths. The <code>name</code> value will be how you reference widths in your attribute arguments, while the <code>maxWidth</code> value will be the container's maximum width. Hydrogen will automatically generate alignments for all of your containers. Below are the default values.</p>
+<pre>
+"containers": [
+  {
+    "name": "small",
+    "maxWidth": "39rem"
+  },
+  {
+    "name": "medium",
+    "maxWidth": "60rem"
+  },
+  {
+    "name": "large",
+    "maxWidth": "80rem"
+  }
+]
+</pre>
+              {% include heading-4.html name="Flex Grid Settings" id="configThemeFlexGrid" %}
+              <p>This setting allows you to enable the flex grid and set how many columns it should generate. Below are the default values.</p>
+<pre>
+"flexgrid": {
+  "enabled": false,
+  "columns": 12
+},
+</pre>
+              {% include heading-4.html name="Font Families" id="configThemeFonts" %}
+              <p>This setting allows you to create distinct, named font families. The <code>name</code> value will be how you reference the font family in your attribute arguments. The <code>loadType</code> value can be set to <code>system</code>, <code>webfont</code>, or <code>font-face</code> to tell Hydrogen how it should be loaded. The <code>value</code> option is the CSS you want to be used to display this font - don't forget to include a system fallback in this line! Finally, the <code>url</code> value will tell font-face style families where the font files should be loaded from. Below are the default values.</p>
+<pre>
+"fonts": [
+  {
+    "name": "sans",
+    "loadType": "system",
+    "value": "sans-serif",
+    "url": null
+  },
+  {
+    "name": "serif",
+    "loadType": "system",
+    "value": "serif",
+    "url": null
+  },{
+    "name": "script",
+    "loadType": "system",
+    "value": "script",
+    "url": null
+  },
+  {
+    "name": "mono",
+    "loadType": "system",
+    "value": "monospace",
+    "url": null
+  }
+]
+</pre>
+              {% include heading-4.html name="Font Base Size" id="configThemeFontBaseSize" %}
+              <p>This option will set a font size value on your project's <code>&lt;html&gt;</code> element and determines the base size of type on your page. By default, browsers set the default font size (1rem) to 16px. By using a percentage value, you can choose to make this 16px larger (over 100%) or smaller (under 100%). Below is the default value.</p>
+<pre>
+"fontBaseSize": "112.5%"
+</pre>
+              {% include heading-4.html name="Font Scale" id="configThemeFontScale" %}
+              <p>This option determines the exponential rate at which the typography sizes are generated. Heading sizes are determined by multiplying the font base size by this value on a scale. You can learn more about choosing a value for your font scale using <a href="https://type-scale.com/" title="Learn more about choosing a type scale." target="_blank">this handy Type Scale tool</a>.</p>
+<pre>
+"fontScale": "1.25"
+</pre>
+              {% include heading-4.html name="Gradients" id="configThemeGradients" %}
+              <p>Hydrogen doesn't come with gradients enabled by default, but using this setting, you can create custom gradients and make them available for properties that accept them. Below are examples of both radial and linear gradients. The <code>type</code> value allows you to select the gradient type. The <code>angle</code> value is only applicable for linear gradients and determines that angle at which the gradient will travel. The <code>colorStops</code> array allows you to define as many color stops as you need, as well as their position. These gradient configurations will automatically generate a gradient option following the <a href="#colors" title="Learn more about how gradients are produced.">syntax outlined in the color section</a>.</p>
+<pre>
+"gradients": [
+  {
+    "type": "radial",
+    "colorStops": [
+      {
+        "name": "purple",
+        "color": "#9D5CFF"
+      },
+      {
+        "name": "blue",
+        "color": "#5CFFEE"
+      },
+      {
+        "name": "pink",
+        "color": "#FF5C6D"
+      }
+    ]
+  },
+  {
+    "type": "linear",
+    "angle": "135deg",
+    "colorStops": [
+      {
+        "name": "purple",
+        "color": "#9D5CFF"
+      },
+      {
+        "name": "blue",
+        "color": "#5CFFEE"
+      }
+    ]
+  }
+]
+</pre>
+              {% include heading-4.html name="Radius" id="configThemeRadius" %}
+              <p>This option allows you to set custom radius values. The <code>name</code> will be how you reference the radius in your attribute arguments. The <code>value</code> option is the radius CSS value you want. Below are the default options.</p>
+<pre>
+"radius": [
+  {
+    "name": "small",
+    "value": "10px"
+  },
+  {
+    "name": "medium",
+    "value": "50rem"
+  },{
+    "name": "large",
+    "value": "100%"
+  }
+]
+</pre>
+              {% include heading-4.html name="Shadows" id="configThemeShadows" %}
+              <p>This setting allows you to create custom shadow values. The <code>name</code> will be how you reference the shadow in your attribute arguments. The <code>value</code> option is the <code>box-shadow</code> CSS you want your shadow to use. Below are the default options.</p>
+<pre>
+"shadows": [
+  {
+    "name": "smaller",
+    "value": "0 0.1rem 0.2rem 0 rgba(0, 0, 0, .2)"
+  },
+  {
+    "name": "small",
+    "value": "0 0.25rem 0.5rem -0.05rem rgba(0, 0, 0, .2)"
+  },
+  {
+    "name": "medium",
+    "value": "0 0.4rem 0.7rem -0.1rem rgba(0, 0, 0, .2)"
+  },
+  {
+    "name": "large",
+    "value": "0 0.55rem 1rem -0.2rem rgba(0, 0, 0, .2)"
+  },
+  {
+    "name": "larger",
+    "value": "0 0.7rem 1.5rem -0.3rem rgba(0, 0, 0, .2)"
+  }
+]
+</pre>
+              {% include heading-4.html name="Whitespace Scale" id="configThemeWhitespace" %}
+              <p>This setting allows you to control the exponential values of how <a href="#whitespace" title="Learn more about how whitespace works in Hydrogen.">whitespace</a> is calculated.</p>
+<pre>
+"whitespaceScale": "1.5"
+</pre>
+              {% include heading-2.html icon="🎨" name="Style Attributes" %}
+              {% assign groups = site.attributes | group_by: "category" | sort: "name" %}
+              {% for group in groups %}
+                {% assign counter = 0 %}
+                {% for item in group.items %}
+                  {% assign counter = counter | plus: 1 %}
+                  {% if group.name == item.title %}
+                    {% if counter == 1 %}
+                      {% include heading-3.html name=group.name id=item.pageID %}
+                    {% endif %}
+                    {% include attribute.html 
+                      pageID=item.pageID
+                      name=item.title
+                      description=item.description
+                      syntax=item.syntax
+                      notes=item.notes
+                      options=item.options
+                      examples=item.examples
+                      content=item.content %}
+                  {% else %}
+                    {% if counter == 1 %}
+                      {% include heading-3.html name=group.name %}
+                    {% endif %}
+                    {% include attribute.html 
+                      type="child"
+                      pageID=item.pageID
+                      name=item.title
+                      description=item.description
+                      syntax=item.syntax
+                      notes=item.notes
+                      options=item.options
+                      examples=item.examples
+                      content=item.content %}
+                  {% endif %}
+                {%endfor%}
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+      {% include footer.html %}
+      {% include scripts.html %}
+    </body>
+</html>
+
+<div class="accordion">
+  <button 
+    aria-expanded="false" 
+    class="accordion-trigger" 
+    tabindex="0" 
+    type="button">
+    <span class="accordion-trigger-label">Click to view...</span>
+    <span 
+      aria-hidden="true" 
+      class="accordion-trigger-icon-add"
+      data-h2-font-color="b(theme-1)">▸</span>
+    <span 
+      aria-hidden="true" 
+      class="accordion-trigger-icon-remove"
+      data-h2-font-color="b(theme-1)">▾</span>
+    <div class="accordion-trigger-content">
+      <p>{{ include.title }}</p>
+      {% if include.subtitle %}
+        <p>{{ include.subtitle }}</p>
+      {% endif %}
+    </div>
+  </button>
+  <div 
+    aria-hidden="true" 
+    class="accordion-content">
+    <p>
+      {{ include.content }}
+    </p>
+  </div>
+</div>
+{% include heading-2.html icon="💡" name="What is Hydrogen?" id="what" %}
+<div
+  data-h2-bg-color="b(theme-1[.1])"
+  data-h2-font-color="b(theme-1)"
+  data-h2-border="b(theme-1, all, solid, small)"
+  data-h2-padding="b(all, medium)">
+  <p 
+    data-h2-font-color="b(theme-1)"
+    data-h2-font-weight="b(600)">Hydrogen is a design and development tool for building coherent web interfaces without writing any CSS.</p>
+</div>
+<p>Here are the core concepts behind Hydrogen:</p>
+<ul>
+  <li>Hydrogen uses HTML5 custom <code>data-attributes</code> to allow you to style your web project.</li>
+  <li>It is a utility style tool that generates a CSS file based on a JSON configuration file.</li>
+</ul>
+{% if include.type == 'child' %}
+  {% capture title %}{{ include.name }}{% endcapture %}
+  {% capture pageID %}{{ include.pageID }}{% endcapture %}
+  {% include heading-4.html name=title id=pageID %}
+{% else %}
+  <!-- {% capture title %}{{ include.name }}{% endcapture %}
+  {% capture pageID %}{{ include.pageID }}{% endcapture %}
+  {% include heading-3.html name=title id=pageID%} -->
+{% endif %}
+<p>{{ include.description }}</p>
+<p
+  data-h2-font-weight="b(600)"
+  data-h2-margin="b(top, medium) b(bottom, smallest)">Syntax:</p>
+{% for syntax in include.syntax %}
+  <pre>{{ syntax }}</pre>
+{% endfor %}
+{% for note in include.notes %}
+  <p>{{ note }}</p>
+{% endfor %}
+{% if include.options %}
+  <p
+    data-h2-font-weight="b(600)"
+    data-h2-margin="b(top, medium) b(bottom, smallest)">Default Arguments:</p>
+{% endif %}
+{% for option in include.options %}
+  {% capture codeTitle %}<code>{{ option.title }}</code>{% endcapture %}
+  {% if option.type == "color" %}
+    {% capture colorContent %}
+      <p>Please see the <a href="#colors">color section</a> for how to use colors.</p>
+    {% endcapture %}
+    {% include components/accordion.html title=codeTitle content=colorContent %}
+  {% elsif option.type == "media" %}
+    {% capture mediaContent %}
+      <p>Please see the <a href="#mediaQueries">media query section</a> for how to use media queries.</p>
+    {% endcapture %}
+    {% include components/accordion.html title=codeTitle content=mediaContent %}
+  {% elsif option.type == "whitespace" %}
+    {% capture whitespaceContent %}
+<pre>
+smallest
+smaller
+small
+medium
+large
+larger
+largest
+</pre>
+    {% endcapture %}
+    {% include components/accordion.html title=codeTitle content=whitespaceContent %}
+  {% elsif option.type == "side" %}
+    {% capture sideContent %}
+<pre>
+all
+top
+right
+bottom
+left
+top-bottom
+top-right
+top-left
+right-left
+bottom-right
+bottom-left
+</pre>
+    {% endcapture %}
+    {% include components/accordion.html title=codeTitle content=sideContent %}
+  {% else %}
+    {% include components/accordion.html title=codeTitle content=option.content %}
+  {% endif %}
+{% endfor %}
+{% if include.examples %}
+  <p
+    data-h2-font-weight="b(600)"
+    data-h2-margin="b(top, medium) b(bottom, smallest)">Examples:</p>
+{% endif %}
+{% for example in include.examples %}
+  {{ example }}
+{% endfor %}
+{{ include.content }}
+<footer 
+  data-h2-bg-color="b(black)"
+  data-h2-font-family="b(Gibson)">
+  <div 
+    data-h2-container="b(center, full)"
+    data-h2-padding="b(top-bottom, large)">
+    <div data-h2-flex-grid="b(middle, expanded, flush, small)">
+      <div 
+        data-h2-flex-item="b(1of1) m(1of2)"
+        data-h2-text-align="b(center) m(left)">
+        <p data-h2-font-color="b(white)">Made with <span data-h2-font-color="b(theme-1)">❤</span> by <a href="https://github.com/hydrogen-design-system" title="Find out more about Hydrogen on Github." target="_blank">humans like you</a>.</p>
+      </div>
+      <div 
+        data-h2-flex-item="b(1of1) m(1of2)"
+        data-h2-text-align="b(center) m(right)">
+        <p data-h2-font-color="b(white)">Proudly made in Canada 🍁</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hydrogen | An open-source, utility-first CSS tool.</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' | prepend: site.baseurl }}">
+  <link rel="manifest" href="{{ '/assets/favicons/site.webmanifest' | prepend: site.baseurl }}">
+  <link rel="mask-icon" href="{{ '/assets/favicons/safari-pinned-tab.svg' | prepend: site.baseurl }}" color="#9d5cff">
+  <link rel="shortcut icon" href="{{ '/assets/favicons/favicon.ico' | prepend: site.baseurl }}">
+  <meta name="msapplication-TileColor" content="#9d5cff">
+  <meta name="msapplication-config" content="{{ '/assets/favicons/browserconfig.xml' | prepend: site.baseurl }}">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Typekit -->
+  <link rel="stylesheet" href="https://use.typekit.net/iep7euw.css">
+
+  <!-- Hydrogen CSS -->
+  <link rel="stylesheet" href="{{ '/assets/styles/hydrogen.css' | prepend: site.baseurl }}">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="{{ '/assets/styles/app.css' | prepend: site.baseurl }}">
+
+</head>
+<h2
+  id="{{ include.id }}"
+  data-h2-text-align="b(center) m(left)"
+  data-h2-font-family="b(Gibson)"
+  data-h2-font-size="b(h2)"
+  data-h2-font-color="b(black)"
+  data-h2-font-weight="b(600)"
+  data-h2-padding="b(top, larger) b(bottom, smaller)">
+  {% if include.icon %}<span data-h2-font-size="b(h3)">{{ include.icon }} </span>{% endif %}
+  {{ include.name }}
+</h2>
+<h3
+  id="{{ include.id }}"
+  data-h2-font-size="b(h3)"
+  data-h2-font-color="b(theme-1)"
+  data-h2-font-weight="b(200)"
+  data-h2-padding="b(top, larger) b(bottom, smaller)">{{ include.name }}</h3>
+<h4
+  id="{{ include.id }}"
+  data-h2-font-size="b(h4)"
+  data-h2-font-color="b(black)"
+  data-h2-font-weight="b(600)"
+  data-h2-padding="b(top, larger) b(bottom, smaller)">{{ include.name }}</h4>
+<script type="text/javascript" src="{{ '/assets/scripts/app.js' | prepend: site.baseurl }}"></script>
+<p 
+  data-h2-font-size="b(h5)"
+  data-h2-padding="b(top, larger) b(bottom, small)"
+  data-h2-font-color="b(theme-1)"
+  data-h2-font-weight="b(600)"
+  >Navigate</p>
+<a href="#what">What is Hydrogen?</a><br>
+{% capture usage %}
+  <a href="#install">Installation</a><br>
+  <a href="#usage">Getting Started</a><br>
+  <a href="#mediaQueries">Media Queries</a><br>
+  <a href="#colors">Color and Gradients</a><br>
+  <a href="#whitespace">Whitespace</a>
+{% endcapture %}
+
+{% include components/accordion.html title="How to Use Hydrogen" content=usage %}
+<a href="#commands">Commands</a><br>
+
+{% capture functional %}
+  <a href="#configFolders">Folders</a><br>
+  <a href="#configMedia">Media Queries</a><br>
+  <a href="#configMediaWarnings">Media Query Warnings</a><br>
+  <a href="#configDebug">Debug</a><br>
+{% endcapture %}
+
+{% capture themes %}
+  <a href="#configThemeBorders">Border Weights</a><br>
+  <a href="#configThemeColors">Colors</a><br>
+  <a href="#configThemeContainers">Containers</a><br>
+  <a href="#configThemeFlexGrid">Flex Grid</a><br>
+  <a href="#configThemeFonts">Fonts</a><br>
+  <a href="#configThemeFontBaseSize">Font Base Size</a><br>
+  <a href="#configThemeFontScale">Font Scale</a><br>
+  <a href="#configThemeGradients">Gradients</a><br>
+  <a href="#configThemeRadius">Radius</a><br>
+  <a href="#configThemeShadows">Shadows</a><br>
+  <a href="#configThemeWhitespace">Whitespace Scale</a><br>
+{% endcapture %}
+
+{% capture configuration %}
+  {% include components/accordion.html title="System Configuration" content=functional %}
+  {% include components/accordion.html title="Theme Settings" content=themes %}
+{% endcapture %}
+
+{% include components/accordion.html title="Configuration and Themes" content=configuration %}
+
+{% capture attributes %}
+  {% assign groups = site.attributes | group_by: "category" | sort: "name" %}
+  {% for group in groups %}
+    {% for item in group.items %}
+      <a href="#{{ item.pageID }}">{{ item.title }}</a><br>
+    {%endfor%}
+  {% endfor %}
+{% endcapture %}
+
+{% include components/accordion.html title="Style Attributes" content=attributes %}

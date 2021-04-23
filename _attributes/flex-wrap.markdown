@@ -7,7 +7,18 @@ category: "Flex Properties"
 title: Flex Wrap
 description: Sets the element's flex-wrap value.
 syntax: 
-  - data-h2-flex-wrap="MEDIA(VALUE)"
+  - data-h2-flex-wrap="MEDIA(WRAP)"
 notes:
+options:
+  - title: MEDIA
+    type: media
+    content:
+  - title: WRAP
+    type: custom
+    content: "<pre>
+      nowrap\n
+      wrap\n
+      wrap-reverse
+    </pre>"
 examples:
 ---

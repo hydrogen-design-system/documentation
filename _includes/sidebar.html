@@ -1,46 +1,48 @@
 <p 
-  data-h2-font-size="base(h5)"
-  data-h2-padding="base(top, larger) base(bottom, medium) base(left, small)"
-  data-h2-font-color="base(theme-1)"
-  data-h2-font-weight="base(700)"
+  data-h2-font-size="b(h5)"
+  data-h2-padding="b(top, larger) b(bottom, small)"
+  data-h2-font-color="b(theme-1)"
+  data-h2-font-weight="b(600)"
   >Navigate</p>
-<a href="#">Installation</a><br>
-<a href="#">Basic Commands</a><br>
+<a href="#what">What is Hydrogen?</a><br>
+{% capture usage %}
+  <a href="#install">Installation</a><br>
+  <a href="#usage">Getting Started</a><br>
+  <a href="#mediaQueries">Media Queries</a><br>
+  <a href="#colors">Color and Gradients</a><br>
+  <a href="#whitespace">Whitespace</a>
+{% endcapture %}
+
+{% include components/accordion.html title="How to Use Hydrogen" content=usage %}
+<a href="#commands">Commands</a><br>
 
 {% capture functional %}
-  <a href="#">Folders</a><br>
-  <a href="#">Media Queries</a><br>
-  <a href="#">Media Query Warnings</a><br>
-  <a href="#">Debug</a><br>
+  <a href="#configFolders">Folders</a><br>
+  <a href="#configMedia">Media Queries</a><br>
+  <a href="#configMediaWarnings">Media Query Warnings</a><br>
+  <a href="#configDebug">Debug</a><br>
 {% endcapture %}
 
 {% capture themes %}
-  <a href="#">Border Weights</a><br>
-  <a href="#">Colors</a><br>
-  <a href="#">Containers</a><br>
-  <a href="#">Flex Grid</a><br>
-  <a href="#">Fonts</a><br>
-  <a href="#">Font Base Size</a><br>
-  <a href="#">Font Scale</a><br>
-  <a href="#">Gradients</a><br>
-  <a href="#">Radius</a><br>
-  <a href="#">Shadows</a><br>
-  <a href="#">Whitespace Scale</a><br>
+  <a href="#configThemeBorders">Border Weights</a><br>
+  <a href="#configThemeColors">Colors</a><br>
+  <a href="#configThemeContainers">Containers</a><br>
+  <a href="#configThemeFlexGrid">Flex Grid</a><br>
+  <a href="#configThemeFonts">Fonts</a><br>
+  <a href="#configThemeFontBaseSize">Font Base Size</a><br>
+  <a href="#configThemeFontScale">Font Scale</a><br>
+  <a href="#configThemeGradients">Gradients</a><br>
+  <a href="#configThemeRadius">Radius</a><br>
+  <a href="#configThemeShadows">Shadows</a><br>
+  <a href="#configThemeWhitespace">Whitespace Scale</a><br>
 {% endcapture %}
 
 {% capture configuration %}
-  {% include components/accordion.html title="Functional" content=functional %}
-  {% include components/accordion.html title="Themes" content=themes %}
+  {% include components/accordion.html title="System Configuration" content=functional %}
+  {% include components/accordion.html title="Theme Settings" content=themes %}
 {% endcapture %}
 
-{% include components/accordion.html title="Configuration" content=configuration %}
-
-{% capture usage %}
-  <a href="#">Media Queries</a><br>
-  <a href="#">Color and Gradients</a>
-{% endcapture %}
-
-{% include components/accordion.html title="Basic Usage" content=usage %}
+{% include components/accordion.html title="Configuration and Themes" content=configuration %}
 
 {% capture attributes %}
   {% assign groups = site.attributes | group_by: "category" | sort: "name" %}
@@ -51,4 +53,4 @@
   {% endfor %}
 {% endcapture %}
 
-{% include components/accordion.html title="Attributes" content=attributes %}
+{% include components/accordion.html title="Style Attributes" content=attributes %}
