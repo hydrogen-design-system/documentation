@@ -1,0 +1,115 @@
+.accordion-trigger {
+  background: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.accordion-trigger-label {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: 1px;
+}
+
+.accordion-trigger-content p {
+  line-height: 1;
+}
+
+.accordion-trigger-icon-add {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: .5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+}
+
+.accordion-trigger-icon-remove {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: .5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+}
+
+.accordion > .accordion-content {
+  display: none;
+  padding-left: 1.5rem;
+}
+
+.accordion.accordion-active > .accordion-trigger .accordion-trigger-icon-add {
+  display: none;
+}
+
+.accordion.accordion-active > .accordion-trigger .accordion-trigger-icon-remove {
+  display: block;
+}
+
+.accordion.accordion-active > .accordion-content {
+  display: block;
+}
+
+.sidebar {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: inline-block;
+  line-height: 1;
+}
+
+.sidebar >.accordion >.accordion-trigger{
+  margin: 0 0 .5rem 0;
+}
+
+.sidebar >.accordion .accordion >.accordion-trigger{
+  margin: 0 0 .5rem 0;
+}
+
+pre {
+  background: rgba(240, 240, 240, 1);
+  border-radius: 10px;
+  font-size: .8rem;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+p+p {
+  margin-top: 1rem !important;
+}
+
+code {
+  background: rgba(240, 240, 240, 1);
+  border-radius: 5px;
+  font-size: .8rem;
+  padding: .05rem .3rem;
+}
+
+h2 + h3,
+h3 + h4 {
+  /* padding-top: 2rem !important; */
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul {
+  margin: .5rem 0 !important;
+}
+
+ul li {
+  margin: 0 0 .5rem 0;
+}

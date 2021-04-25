@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body data-h2-reset data-h2-typography>
+      <div 
+        data-h2-bg-color="b(black)"
+        data-h2-font-family="b(Gibson)">
+        <div 
+          data-h2-container="b(center, full)"
+          data-h2-padding="b(top-bottom, xxl)"
+          data-h2-text-align="b(center)">
+          <img 
+            alt="Hydrogen's current release." 
+            src="https://img.shields.io/github/package-json/v/hydrogen-design-system/hydrogen.css?color=9864e8&label=release"
+            style="vertical-align: middle;">
+          <h1
+            data-h2-font-color="b(white)"
+            data-h2-font-size="b(h1)"
+            data-h2-margin="b(top-bottom, m)"
+            data-h2-font-weight="b(600)">Hydrogen</h1>
+          <p data-h2-font-color="b(white)">An open-source, utility-first CSS tool.</p>
+        </div>
+      </div>
+      <div 
+        data-h2-container="b(center, full)"
+        data-h2-font-family="b(Gibson)"
+        data-h2-font-color="b(font)">
+        <div data-h2-flex-grid="b(top, expanded, flush, s) m(stretch, expanded, flush, xxl)">
+          <div data-h2-flex-item="b(1of1) m(1of4)">
+            <div style="height: 100%;">
+              <div 
+                data-h2-position="m(sticky)" 
+                data-h2-location="m(top, none)"
+                data-h2-padding="m(bottom, xxl)"
+                class="sidebar">
+                {% include sidebar.html %}
+              </div>
+            </div>
+          </div>
+          <div data-h2-flex-item="b(1of1) m(3of4)">
+            <div data-h2-padding="b(bottom, xxl)">
+              {% include sections/about.html %}
+              {% include heading-2.html icon="💬" name="How to Use Hydrogen" %}
+              {% include heading-3.html name="Installation" id="install" %}
+              <p>First, we'll need to install <a href="https://nodejs.org/en/" title="Learn more about installing Node and NPM." target="_blank">NPM</a> if you don't already have it on your machine. From there, in a command prompt/terminal window, navigate to the root of your project and enter:</p>
+              <pre>npm install @hydrogen-design-system/hydrogen.css --save-dev</pre>
+              <p>After the installation completes, you can run:</p>
+              <pre>npx h2-init</pre>
+              <p>The above command will prompt you to enter two folder locations: your markup folder and your styles/CSS folder. Simply enter the path from the root of your project (e.g. <code>src/my/markup</code>). Once you've submitted these paths, Hydrogen will automagically create a <code>hydrogen.config.json</code> file in the root of your project. <span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This file will be where you can customize Hydrogen's settings and theme.</span></p>
+              {% include heading-3.html name="Getting Started" id="usage" %}
+              <p>In order to start using Hydrogen, you need to enable it on your project. <a href="#commands" title="Learn more about compiling Hydrogen.">After compiling Hydrogen</a>, a complete CSS file will appear in your specified styles folder, so include this file in your page's <code>head</code> element.</p>
+<pre>&lt;head&gt;
+  &lt;link rel="stylesheet" href="path/to/hydrogen.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div data-h2-bg-color="b(black)"&gt;
+    &lt;span data-h2-font-color="b(theme-1)"&gt;My Hydrogen styles work here!&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</pre>
+              <p data-h2-margin="b(bottom, s)">Hydrogen contains a handful of basic reset and typography CSS that might affect your existing styles. You can find out more about these styles below if you're trying to determine what might be altering your project's original CSS.</p>
+              {% capture basicCSS %}<pre>
+html {
+  box-sizing: border-box;
+  font-size: $h2-font-base-size;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0; // Resets the default 8px value.
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+// Margin Resets
+blockquote,
+dl,
+fieldset,
+figure {
+  margin: 0;
+}
+
+// Max Image Widths
+img,
+iframe {
+  max-width: 100%;
+}
+// Headings
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+}
+h1 {
+  font-size: $h2-font-size-h1;
+  margin-top: calc((((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+}
+h2 {
+  font-size: $h2-font-size-h2;
+  margin-top: calc(((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: $h2-font-size-h3;
+  margin-top: calc((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h4 {
+  font-size: $h2-font-size-h4;
+  margin-top: calc(1rem * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h5 {
+  font-size: $h2-font-size-h5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h6 {
+  font-size: $h2-font-size-h6;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+// Copy
+p, 
+div {
+  font-size: $h2-font-size-default
+}
+p {
+  margin-top: 1rem;
+}
+p+p {
+  margin-top: calc(1rem / #{$h2-whitespace-scale});
+}
+span {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+// Styled Typography
+em {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic;
+}
+strong {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+}
+// Anchors
+a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  transition: color .2s ease;
+}
+// Lists
+ul,
+ol {
+  margin: 0;
+  margin-top: 1rem;
+}
+li {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: calc(1rem / #{$h2-whitespace-scale});
+  &:last-child {
+    margin-bottom: 0;
+  }
+}</pre>
+{% endcapture %}
+              {% include components/accordion.html title="Hydrogen's Reset Styles" content=basicCSS %}
+              {% include heading-3.html name="Syntax" id="syntax" %}
+              <p>To begin, let's disect how a Hydrogen attribute works so that we can better understand how to use them.</p>
+              <pre>data-h2-PROPERTY="MEDIA(ARGUMENTS)"</pre>
+              <p>Hydrogen attributes have 4 distinct pieces to them:</p>
+              <ul>
+                <li><code>data-h2-</code>: this is how custom <code>data-attributes</code> are defined in HTML. The <code>h2</code> bit ensures that Hydrogen's attributes are namespaced and won't interfere with other frameworks.</li>
+                <li><code>PROPERTY</code>: the property portion is where we specify which CSS property we want to style. <a href="#backgroundColor" title="View a list of properties available in Hydrogen.">A list can be found starting with background color below.</a></li>
+                <li><code>MEDIA()</code>: this is how we define at which media query we want our styles to apply at. You can learn more about how to use media queries and which ones are installed by default below.</li>
+                <li><code>ARGUMENTS</code>: each property has its own special set of arguments, outlined in the documentation below, that will define how the element is styled.</li>
+              </ul>
+              {% include heading-3.html name="Media Queries" id="mediaQueries" %}
+              <p>Media queries in Hydrogen are designed to allow you to granularly control each property when you need it. Rather than being forced to write unique styles for a particular element, you can directly target that element's property at the exact query you need right in your markup.</p>
+              <p>Hydrogen comes with a default set of 4 media queries out of the box:</p>
+<pre>
+b
+s (48em)
+m (64em)
+l (100em)
+</pre>
+              <p>Using a media query is simple:</p>
+              <pre>data-h2-bg-color="b(black) m(theme-1) l(theme-2)"</pre>
+              <p>Renders something like this (try resizing your screen!):</p>
+              <div data-h2-bg-color="b(black) m(theme-1) l(theme-2)" data-h2-padding="b(all, l)" data-h2-margin="b(bottom, m)"></div>
+              <p>If the built in media queries don't suit your needs, you can <a href="#configMedia" title="Learn more about setting custom media values in your configuration file.">customize them</a> in your <code>hydrogen.config.json</code> file.</p>
+              {% include heading-3.html name="Color and Gradients" id="colors" %}
+              <p>Hydrogen comes with a set of 5 pre-installed colors, but we know that color is almost always something you're going to want to control. In this section, we want to explain how color is used in the context of property arguments, rather than highlight the colors themselves. <a href="#configThemeColors" title="Learn more about configuring colors.">You can customize the exact palette for your application by following the instructions in the Themes section.</a></p>
+<pre>
+black
+white
+purple
+blue
+pink
+</pre>
+              <p>When colors are built in Hydrogen, a light and dark version of each colors is created, and there is the option for each one to enable automatic generation of opacity variations. Hydrogen's default colors have this opacity option disabled, but these can be extremely helpful if your application frequently uses variations in its UI.</p>
+              <p><span data-h2-font-color="b(theme-1)" data-h2-font-weight="b(600)">The simplest way to reference a color in a property argument is to simply use its name</span>: <code>data-h2-bg-color="b(purple)"</code>. Sometimes however, we want to tap into the automatically created lighter, darker, or transparent versions of a color, and to so, colors have some prefix and suffix syntax that can be optionally included:</p>
+              <ul>
+                <li><code>[dark]COLOR</code> for light/dark versions</li>
+                <li><code>COLOR[.6]</code> for referencing an opacity</li>
+              </ul>
+              <div data-h2-flex-grid="b(top, expanded, flush, m)">
+                <div data-h2-flex-item="b(1of1) m(1of2)">
+                  <p>For referencing light and dark variations of your color, you can use the following:</p>
+<pre>
+light
+dark
+
+
+
+
+
+</pre>
+                </div>
+                <div data-h2-flex-item="b(1of1) m(1of2)">
+                  <p>For referencing opacity values when you've enabled them, you can use the following increments:</p>
+<pre>
+0
+.1
+.2
+...
+.8
+.9
+1
+</pre>
+                </div>
+              </div>
+              <p>These values can even be combined to target a transparent dark variation, for example: <code>data-bg-color="b([dark]purple[.5])"</code></p>
+              {% include heading-4.html name="Gradients" id="gradients" %}
+              <p>Hydrogen doesn't ship with any gradients enabled by default, but you can optionally configure them in the <a href="#configThemeGradients" title="Learn more about configuring gradients.">gradients section of your configuration file</a>.</p>
+              <p data-h2-font-color="b(theme-1)" data-h2-font-weight="b(600)">Gradients are supported by the following properties:</p>
+<pre>
+bg-color
+</pre>
+              <p>When they are enabled, you can reference them in place of a color value by using the following syntax: <code>TYPE-ANGLE[COLORSTOP1][COLORSTOP2]</code>.</p>
+              <p>More specifically, radial gradients will not accept an angle value, while linear gradients require them. These angle values are assigned in your configuration file.</p>
+              <p data-h2-font-weight="b(600)">Examples:</p>
+<pre>
+linear-45[purple][blue]
+radial[pink][purple]
+linear-270[purple][blue][pink]
+</pre>
+              {% include heading-3.html name="Whitespace" id="whitespace" %}
+              <p>Whitespace in Hydrogen works within certain constraints. In order to help ensure the flow of whitespace is consistent in your app and you aren't worrying about arbitary values for margins, padding, and the like, Hydrogen generates a set of whitespace values for you using the <code>whitespaceScale</code> option in your configuration file.</p>
+              <p>By default, the <code>whitespaceScale</code> value is set to 1.5, and this means that, starting with <code>1rem</code>, whitespace values are calculated like this:</p>
+<pre>
+none (0rem)
+xxs (0.4444rem)
+xs (0.6666rem)
+s (1rem)
+m (1.5rem)
+l (2.25rem)
+xl (3.375rem)
+xxl (5.0625rem)
+</pre>
+              <p>These values can be used in any property that has a <code>WHITESPACE</code> argument.</p>
+              {% include sections/commands.html %}
+              {% include heading-2.html icon="🔨" name="Configuration and Themes" id="configuration"%}
+              <p>After running <code>npx h2-init</code>, a <code>hydrogen.config.json</code> file will be located in the root of your project. In this file, you can specify a variety of options that will modify how Hydrogen works and the theme it applies to its stylesheet.</p>
+              {% include heading-3.html name="Functional Configuration" %}
+              {% include heading-4.html name="Setting Up Project Folders" id="configFolders" %}
+              <p>If you have run <code>npx h2-init</code> these configuration lines are probably already set. These options indicate to Hydrogen where it should find your markup and where it should spit out its final CSS file.</p>
+<pre>"folders": {
+  "markup": "path/to/markup/folder",
+  "styles": "path/to/css/folder"
+}</pre>
+              <p>While by default the folders configuration contains only one option for markup, this configuration can also be set to an array if your project has multiple markup locations:</p>
+<pre>"folders": {
+  "markup": [
+    "first/path/to/markup/folder",
+    "second/path/to/markup/folder"
+  ],
+  "styles": "path/to/css/folder"
+}</pre>
+              {% include heading-4.html name="Choosing Media Queries" id="configMedia" %}
+              <p>By default, Hydrogen comes with 4 default media queries, one of which (<code>b</code> for "base") will always be available on your project. You can configure your own media queries by modifying the list below in your configuration file to suit your project's needs. If you're happy with the default options, you can omit this from your configuration file.</p>
+<pre>"media": [
+  {
+    "name": "s",
+    "value": "48em"
+  },
+  {
+    "name": "m",
+    "value": "64em"
+  },
+  {
+    "name": "l",
+    "value": "100em"
+  }
+]</pre>
+              {% include heading-4.html name="Media Query Warnings" id="configMediaWarnings" %}
+              <p>This option is set to <code>false</code> by default. Setting this to <code>true</code> will allow warning messages to appear in your console during a production build to indicate if there are media queries being used in your markup that aren't included in the <code>media</code> configuration outlined above. These messages can be helpful to find typos or queries that simply don't exist.</p>
+              <pre>"mediaWarnings": true,</pre>
+              {% include heading-4.html name="Debug Settings" id="configDebug" %}
+              <p>This option is set to <code>false</code> by default. Setting this to <code>true</code> will prevent Hydrogen from cleaning up its cache (found in your CSS folder). This can be helpful to inspect the various output files during Hydrogen's build to locate problems or bugs.</p>
+              <pre>"debug": true,</pre>
+              {% include heading-3.html name="Theme Settings" %}
+              {% include heading-4.html name="Border Settings" id="configThemeBorders" %}
+              <p>This setting allows you to create custom, named border weights. The <code>name</code> value will be how you reference border weight in your attribute arguments, while the <code>weight</code> value will be the corresponding value in CSS. Below are the default settings.</p>
+<pre>
+"borderWeights": [
+  {
+    "name": "s",
+    "weight": "1px"
+  },
+  {
+    "name": "m",
+    "weight": ".5rem"
+  },
+  {
+    "name": "l",
+    "weight": "1rem"
+  }
+]
+</pre>
+              {% include heading-4.html name="Colors" id="configThemeColors" %}
+              <p>This setting allows you to theme Hydrogen's colors. The <code>name</code> value will be how you reference color in your attribute arguments, the <code>color</code> value will be the corresponding value in CSS and can accept RGB, RGBA, and HEX values, and finally, the <code>opacity</code> value can be set to true or false, which tells Hydrogen to build an opacity map for that color, so that it can be <a href="#color" title="Learn more about how opacity works.">referenced using the opacity suffixes</a>. Below are the default values.</p>
+<pre>
+"colors": [
+  {
+    "name": "white",
+    "color": "rgba(255, 255, 255, 1)",
+    "opacity": false
+  },
+  {
+    "name": "black",
+    "color": "rgba(20, 20, 30, 1)",
+    "opacity": false
+  },
+  {
+    "name": "purple",
+    "color": "#9D5CFF",
+    "opacity": false
+  },
+  {
+    "name": "blue",
+    "color": "#5CFFEE",
+    "opacity": false
+  },
+  {
+    "name": "pink",
+    "color": "#FF5C6D",
+    "opacity": false
+  }
+]
+</pre>
+              {% include heading-4.html name="Containers" id="configThemeContainers" %}
+              <p>This setting allows you to create custom container widths. The <code>name</code> value will be how you reference widths in your attribute arguments, while the <code>maxWidth</code> value will be the container's maximum width. Hydrogen will automatically generate alignments for all of your containers. Below are the default values.</p>
+<pre>
+"containers": [
+  {
+    "name": "s",
+    "maxWidth": "39rem"
+  },
+  {
+    "name": "m",
+    "maxWidth": "60rem"
+  },
+  {
+    "name": "l",
+    "maxWidth": "80rem"
+  }
+]
+</pre>
+              {% include heading-4.html name="Flex Grid Settings" id="configThemeFlexGrid" %}
+              <p>This setting allows you to enable the flex grid and set how many columns it should generate. Below are the default values.</p>
+<pre>
+"flexgrid": {
+  "enabled": false,
+  "columns": 12
+},
+</pre>
+              {% include heading-4.html name="Font Families" id="configThemeFonts" %}
+              <p>This setting allows you to create distinct, named font families. The <code>name</code> value will be how you reference the font family in your attribute arguments. The <code>loadType</code> value can be set to <code>system</code>, <code>webfont</code>, or <code>font-face</code> to tell Hydrogen how it should be loaded. The <code>value</code> option is the CSS you want to be used to display this font - don't forget to include a system fallback in this line! Finally, the <code>url</code> value will tell font-face style families where the font files should be loaded from. Below are the default values.</p>
+<pre>
+"fonts": [
+  {
+    "name": "sans",
+    "loadType": "system",
+    "value": "sans-serif",
+    "url": null
+  },
+  {
+    "name": "serif",
+    "loadType": "system",
+    "value": "serif",
+    "url": null
+  },{
+    "name": "script",
+    "loadType": "system",
+    "value": "script",
+    "url": null
+  },
+  {
+    "name": "mono",
+    "loadType": "system",
+    "value": "monospace",
+    "url": null
+  }
+]
+</pre>
+              {% include heading-4.html name="Font Base Size" id="configThemeFontBaseSize" %}
+              <p>This option will set a font size value on your project's <code>&lt;html&gt;</code> element and determines the base size of type on your page. By default, browsers set the default font size (1rem) to 16px. By using a percentage value, you can choose to make this 16px lr (over 100%) or ser (under 100%). Below is the default value.</p>
+<pre>
+"fontBaseSize": "112.5%"
+</pre>
+              {% include heading-4.html name="Font Scale" id="configThemeFontScale" %}
+              <p>This option determines the exponential rate at which the typography sizes are generated. Heading sizes are determined by multiplying the font base size by this value on a scale. You can learn more about choosing a value for your font scale using <a href="https://type-scale.com/" title="Learn more about choosing a type scale." target="_blank">this handy Type Scale tool</a>.</p>
+<pre>
+"fontScale": "1.25"
+</pre>
+              {% include heading-4.html name="Gradients" id="configThemeGradients" %}
+              <p>Hydrogen doesn't come with gradients enabled by default, but using this setting, you can create custom gradients and make them available for properties that accept them. Below are examples of both radial and linear gradients. The <code>type</code> value allows you to select the gradient type. The <code>angle</code> value is only applicable for linear gradients and determines that angle at which the gradient will travel. The <code>colorStops</code> array allows you to define as many color stops as you need, as well as their position. These gradient configurations will automatically generate a gradient option following the <a href="#colors" title="Learn more about how gradients are produced.">syntax outlined in the color section</a>.</p>
+<pre>
+"gradients": [
+  {
+    "type": "radial",
+    "colorStops": [
+      {
+        "name": "purple",
+        "color": "#9D5CFF"
+      },
+      {
+        "name": "blue",
+        "color": "#5CFFEE"
+      },
+      {
+        "name": "pink",
+        "color": "#FF5C6D"
+      }
+    ]
+  },
+  {
+    "type": "linear",
+    "angle": "135deg",
+    "colorStops": [
+      {
+        "name": "purple",
+        "color": "#9D5CFF"
+      },
+      {
+        "name": "blue",
+        "color": "#5CFFEE"
+      }
+    ]
+  }
+]
+</pre>
+              {% include heading-4.html name="Radius" id="configThemeRadius" %}
+              <p>This option allows you to set custom radius values. The <code>name</code> will be how you reference the radius in your attribute arguments. The <code>value</code> option is the radius CSS value you want. Below are the default options.</p>
+<pre>
+"radius": [
+  {
+    "name": "s",
+    "value": "10px"
+  },
+  {
+    "name": "m",
+    "value": "50rem"
+  },{
+    "name": "l",
+    "value": "100%"
+  }
+]
+</pre>
+              {% include heading-4.html name="Shadows" id="configThemeShadows" %}
+              <p>This setting allows you to create custom shadow values. The <code>name</code> will be how you reference the shadow in your attribute arguments. The <code>value</code> option is the <code>box-shadow</code> CSS you want your shadow to use. Below are the default options.</p>
+<pre>
+"shadows": [
+  {
+    "name": "xs",
+    "value": "0 0.1rem 0.2rem 0 rgba(0, 0, 0, .2)"
+  },
+  {
+    "name": "s",
+    "value": "0 0.25rem 0.5rem -0.05rem rgba(0, 0, 0, .2)"
+  },
+  {
+    "name": "m",
+    "value": "0 0.4rem 0.7rem -0.1rem rgba(0, 0, 0, .2)"
+  },
+  {
+    "name": "l",
+    "value": "0 0.55rem 1rem -0.2rem rgba(0, 0, 0, .2)"
+  },
+  {
+    "name": "xl",
+    "value": "0 0.7rem 1.5rem -0.3rem rgba(0, 0, 0, .2)"
+  }
+]
+</pre>
+              {% include heading-4.html name="Whitespace Scale" id="configThemeWhitespace" %}
+              <p>This setting allows you to control the exponential values of how <a href="#whitespace" title="Learn more about how whitespace works in Hydrogen.">whitespace</a> is calculated.</p>
+<pre>
+"whitespaceScale": "1.5"
+</pre>
+              {% include heading-2.html icon="🎨" name="Style Attributes" %}
+              {% assign groups = site.attributes | group_by: "category" | sort: "name" %}
+              {% for group in groups %}
+                {% assign counter = 0 %}
+                {% for item in group.items %}
+                  {% assign counter = counter | plus: 1 %}
+                  {% if group.name == item.title %}
+                    {% if counter == 1 %}
+                      {% include heading-3.html name=group.name id=item.pageID %}
+                    {% endif %}
+                    {% include attribute.html 
+                      pageID=item.pageID
+                      name=item.title
+                      description=item.description
+                      syntax=item.syntax
+                      notes=item.notes
+                      options=item.options
+                      examples=item.examples
+                      content=item.content %}
+                  {% else %}
+                    {% if counter == 1 %}
+                      {% include heading-3.html name=group.name %}
+                    {% endif %}
+                    {% include attribute.html 
+                      type="child"
+                      pageID=item.pageID
+                      name=item.title
+                      description=item.description
+                      syntax=item.syntax
+                      notes=item.notes
+                      options=item.options
+                      examples=item.examples
+                      content=item.content %}
+                  {% endif %}
+                {%endfor%}
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+      {% include footer.html %}
+      {% include scripts.html %}
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<div class="accordion">
+  {% if include.style == 'compact' %}
+    <button 
+      aria-expanded="false" 
+      class="accordion-trigger" 
+      tabindex="0" 
+      type="button"
+      data-h2-padding="b(top-bottom, none)">
+  {% else %}
+    <button 
+      aria-expanded="false" 
+      class="accordion-trigger" 
+      tabindex="0" 
+      type="button"
+      data-h2-padding="b(top-bottom, xxs)">
+  {% endif %}
+    <span class="accordion-trigger-label">Click to view...</span>
+    <span 
+      aria-hidden="true" 
+      class="accordion-trigger-icon-add"
+      data-h2-font-color="b(theme-1)">▸</span>
+    <span 
+      aria-hidden="true" 
+      class="accordion-trigger-icon-remove"
+      data-h2-font-color="b(theme-1)">▾</span>
+    <div class="accordion-trigger-content">
+      <span data-h2-font-family="b(Gibson)">{{ include.title }}</span>
+      {% if include.subtitle %}
+        <span data-h2-font-family="b(Gibson)">{{ include.subtitle }}</span>
+      {% endif %}
+    </div>
+  </button>
+  <div 
+    aria-hidden="true" 
+    class="accordion-content">
+    {{ include.content }}
+  </div>
+</div>

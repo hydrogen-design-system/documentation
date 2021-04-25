@@ -1,0 +1,79 @@
+{% if include.type == 'child' %}
+  {% capture title %}{{ include.name }}{% endcapture %}
+  {% capture pageID %}{{ include.pageID }}{% endcapture %}
+  {% include heading-4.html name=title id=pageID %}
+{% else %}
+  <!-- {% capture title %}{{ include.name }}{% endcapture %}
+  {% capture pageID %}{{ include.pageID }}{% endcapture %}
+  {% include heading-3.html name=title id=pageID%} -->
+{% endif %}
+<p>{{ include.description }}</p>
+<p
+  data-h2-font-weight="b(600)"
+  data-h2-margin="b(top, m) b(bottom, xxs)">Syntax:</p>
+{% for syntax in include.syntax %}
+  <pre>{{ syntax }}</pre>
+{% endfor %}
+{% for note in include.notes %}
+  <p>{{ note }}</p>
+{% endfor %}
+{% if include.options %}
+  <p
+    data-h2-font-weight="b(600)"
+    data-h2-margin="b(top, m) b(bottom, xxs)">Default Arguments:</p>
+{% endif %}
+{% for option in include.options %}
+  {% capture codeTitle %}<code>{{ option.title }}</code>{% endcapture %}
+  {% if option.type == "color" %}
+    {% capture colorContent %}
+      <p>Please see the <a href="#colors">color section</a> for how to use colors.</p>
+    {% endcapture %}
+    {% include components/accordion.html title=codeTitle content=colorContent %}
+  {% elsif option.type == "media" %}
+    {% capture mediaContent %}
+      <p>Please see the <a href="#mediaQueries">media query section</a> for how to use media queries.</p>
+    {% endcapture %}
+    {% include components/accordion.html title=codeTitle content=mediaContent %}
+  {% elsif option.type == "whitespace" %}
+    {% capture whitespaceContent %}
+<pre>
+smallest
+smaller
+small
+medium
+large
+larger
+largest
+</pre>
+    {% endcapture %}
+    {% include components/accordion.html title=codeTitle content=whitespaceContent %}
+  {% elsif option.type == "side" %}
+    {% capture sideContent %}
+<pre>
+all
+top
+right
+bottom
+left
+top-bottom
+top-right
+top-left
+right-left
+bottom-right
+bottom-left
+</pre>
+    {% endcapture %}
+    {% include components/accordion.html title=codeTitle content=sideContent %}
+  {% else %}
+    {% include components/accordion.html title=codeTitle content=option.content %}
+  {% endif %}
+{% endfor %}
+{% if include.examples %}
+  <p
+    data-h2-font-weight="b(600)"
+    data-h2-margin="b(top, m) b(bottom, xxs)">Examples:</p>
+{% endif %}
+{% for example in include.examples %}
+  {{ example }}
+{% endfor %}
+{{ include.content }}
