@@ -16,26 +16,28 @@ options:
   - title: SHADOW
     type: custom
     content: "<pre>
-      small\n
-      medium\n
-      large
+      xs\n
+      s\n
+      m\n
+      l\n
+      xl
     </pre>"
 examples:
-  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - "<div data-h2-flex-grid='b(top, expanded, flush, m)'>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(smaller)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(xs)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(small)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(s)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(medium)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(m)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(large)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(l)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(larger)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(xl)'></div>
       </div>
     </div>"
 ---

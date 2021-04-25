@@ -1,15 +1,18 @@
-[data-hydrogen] [data-h2-flex-grid] > [data-h2-flex-item] {
+[data-h2-flex-grid] > [data-h2-flex-item] {
   flex: 0 0 100%;
   max-width: 100%;
   min-width: 0;
 }
 
 html {
+  box-sizing: border-box;
   font-size: 112.5%;
 }
+html * {
+  box-sizing: border-box;
+}
 
-[data-hydrogen] body,
-body[data-hydrogen] {
+body {
   margin: 0;
   max-width: 100%;
   min-height: 100vh;
@@ -17,66 +20,92 @@ body[data-hydrogen] {
   width: 100%;
 }
 
-[data-hydrogen] {
-  box-sizing: border-box;
-}
-[data-hydrogen] * {
-  box-sizing: border-box;
-}
-[data-hydrogen] blockquote,
-[data-hydrogen] dl,
-[data-hydrogen] fieldset,
-[data-hydrogen] figure {
+blockquote,
+dl,
+fieldset,
+figure {
   margin: 0;
 }
-[data-hydrogen] img,
-[data-hydrogen] iframe {
+
+img,
+iframe {
   max-width: 100%;
 }
-[data-hydrogen] h1, [data-hydrogen] h2, [data-hydrogen] h3, [data-hydrogen] h4, [data-hydrogen] h5, [data-hydrogen] h6, [data-hydrogen] p {
+
+h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
-  margin: 0;
 }
-[data-hydrogen] h1 {
+
+h1 {
   font-size: calc(calc(calc(calc(calc(1rem*1.25)*1.25)*1.25)*1.25)*1.25);
+  margin-top: calc((((1rem * 1.5) * 1.5) * 1.5) * 1.5);
 }
-[data-hydrogen] h2 {
+
+h2 {
   font-size: calc(calc(calc(calc(1rem*1.25)*1.25)*1.25)*1.25);
+  margin-top: calc(((1rem * 1.5) * 1.5) * 1.5);
+  margin-bottom: 1rem;
 }
-[data-hydrogen] h3 {
+
+h3 {
   font-size: calc(calc(calc(1rem*1.25)*1.25)*1.25);
+  margin-top: calc((1rem * 1.5) * 1.5);
+  margin-bottom: 1rem;
 }
-[data-hydrogen] h4 {
+
+h4 {
   font-size: calc(calc(1rem*1.25)*1.25);
+  margin-top: calc(1rem * 1.5);
+  margin-bottom: 1rem;
 }
-[data-hydrogen] h5 {
+
+h5 {
   font-size: calc(1rem*1.25);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-[data-hydrogen] h6 {
+
+h6 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p,
+div {
   font-size: 1rem;
 }
-[data-hydrogen] p, [data-hydrogen] div {
-  font-size: 1rem;
+
+p {
+  margin-top: 1rem;
 }
-[data-hydrogen] span {
+
+p + p {
+  margin-top: calc(1rem / 1.5);
+}
+
+span {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
 }
-[data-hydrogen] em {
+
+em {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
   font-style: italic;
 }
-[data-hydrogen] strong {
+
+strong {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
   font-weight: 600;
 }
-[data-hydrogen] a {
+
+a {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -84,21 +113,24 @@ body[data-hydrogen] {
   text-decoration: underline;
   transition: color 0.2s ease;
 }
-[data-hydrogen] ul,
-[data-hydrogen] ol {
+
+ul,
+ol {
   margin: 0;
+  margin-top: 1rem;
 }
-[data-hydrogen] ul li,
-[data-hydrogen] ol li {
+
+li {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
+  margin-top: calc(1rem / 1.5);
 }
-[data-hydrogen] ul li:last-child,
-[data-hydrogen] ol li:last-child {
+li:last-child {
   margin-bottom: 0;
 }
-[data-hydrogen] [data-h2-container] {
+
+[data-h2-container] {
   margin: 0 auto;
   width: 90%;
 }

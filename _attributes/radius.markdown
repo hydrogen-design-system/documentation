@@ -18,26 +18,27 @@ options:
   - title: RADIUS
     type: custom
     content: "<pre>
-      small\n
-      medium\n
-      large
+      none\n
+      s\n
+      m\n
+      l
     </pre>"
 examples:
-  - <div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - <div data-h2-flex-grid='b(top, expanded, flush, m)'>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(medium)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(m)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(l)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small, small, large, large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(s, s, l, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(large, small, medium, large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(l, s, m, l)'></div>
       </div>
     </div>
 ---

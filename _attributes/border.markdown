@@ -28,26 +28,26 @@ options:
   - title: WEIGHT
     type: custom
     content: "<pre>
-      small\n
-      medium\n
-      large
+      s\n
+      m\n
+      l
     </pre>"
 examples:
-  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - "<div data-h2-flex-grid='b(top, expanded, flush, m)'>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-1, all, solid, small)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+          <div data-h2-border='b(theme-1, all, solid, s)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
         </div>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-2, top, dashed, large)' data-h2-padding='b(all, medium)'></div>
+          <div data-h2-border='b(theme-2, top, dashed, l)' data-h2-padding='b(all, m)'></div>
         </div>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-3, top-bottom, solid, medium)' data-h2-padding='b(all, medium)'></div>
+          <div data-h2-border='b(theme-3, top-bottom, solid, m)' data-h2-padding='b(all, m)'></div>
         </div>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-4, all, dashed, small)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+          <div data-h2-border='b(theme-4, all, dashed, s)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
         </div>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-5, all, solid, large)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+          <div data-h2-border='b(theme-5, all, solid, l)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
         </div>
       </div>"
 ---

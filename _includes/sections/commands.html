@@ -1,0 +1,7 @@
+{% include heading-2.html icon="📃" name="Commands" id="commands" %}
+<!-- {% include heading-3.html name="Watch" %} -->
+<!-- <p><code>npx h2-watch</code> will tell Hydrogen to continuously watch for changes to your <code>hydrogen.config.json</code> file, as well as your markup, and will automatically compile Hydrogen with your new changes. This is useful for when you need to make a lot of changes to your theme and want to see real output while you're working.</p> -->
+{% include heading-3.html name="Compile" %}
+<p><code>npx h2-compile</code> will tell Hydrogen to compile its whole CSS file once, based on your current configuration. This will output Hydrogen in its entirety, so you'll be able to add and remove markup with little friction or waiting for a compile to finish.<span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This is probably the command you'll use most</span> and is helpful if you're actively developing on your project.</p>
+{% include heading-3.html name="Build" %}
+<p><code>npx h2-build</code> should be used when you're ready to deploy your project, as it will compile Hydrogen by searching through your markup and create a CSS file that contains only the parts of Hydrogen that you've used, rather than the whole system, thus reducing Hydrogen's file size drastically. You can learn more about this in the "<a href="#what" title="Learn about how Hydrogen creates its production file.">What is Hydrogen?</a>" section.</p>

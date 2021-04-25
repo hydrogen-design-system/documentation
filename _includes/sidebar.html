@@ -1,56 +1,118 @@
 <p 
   data-h2-font-size="b(h5)"
-  data-h2-padding="b(top, larger) b(bottom, small)"
+  data-h2-padding="b(top, xl) b(bottom, s)"
   data-h2-font-color="b(theme-1)"
   data-h2-font-weight="b(600)"
+  data-h2-margin="b(all, none)"
   >Navigate</p>
-<a href="#what">What is Hydrogen?</a><br>
+<a 
+  href="#what"
+  data-h2-margin="b(left, m) b(bottom, xxs)">What is Hydrogen?</a><br>
 {% capture usage %}
-  <a href="#install">Installation</a><br>
-  <a href="#usage">Getting Started</a><br>
-  <a href="#mediaQueries">Media Queries</a><br>
-  <a href="#colors">Color and Gradients</a><br>
-  <a href="#whitespace">Whitespace</a>
+  <a 
+    href="#install"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Installation</a><br>
+  <a 
+    href="#usage"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Getting Started</a><br>
+  <a 
+    href="#mediaQueries"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Media Queries</a><br>
+  <a 
+    href="#colors"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Color and Gradients</a><br>
+  <a 
+    href="#whitespace"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Whitespace</a>
 {% endcapture %}
 
-{% include components/accordion.html title="How to Use Hydrogen" content=usage %}
-<a href="#commands">Commands</a><br>
+{% include components/accordion.html title="How to Use Hydrogen" content=usage style="compact" %}
+<a 
+  href="#commands"
+  data-h2-margin="b(left, m) b(bottom, xxs)">Commands</a><br>
 
 {% capture functional %}
-  <a href="#configFolders">Folders</a><br>
-  <a href="#configMedia">Media Queries</a><br>
-  <a href="#configMediaWarnings">Media Query Warnings</a><br>
-  <a href="#configDebug">Debug</a><br>
+  <a 
+    href="#configFolders"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Folders</a><br>
+  <a 
+    href="#configMedia"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Media Queries</a><br>
+  <a 
+    href="#configMediaWarnings"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Media Query Warnings</a><br>
+  <a 
+    href="#configDebug"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Debug</a><br>
 {% endcapture %}
 
 {% capture themes %}
-  <a href="#configThemeBorders">Border Weights</a><br>
-  <a href="#configThemeColors">Colors</a><br>
-  <a href="#configThemeContainers">Containers</a><br>
-  <a href="#configThemeFlexGrid">Flex Grid</a><br>
-  <a href="#configThemeFonts">Fonts</a><br>
-  <a href="#configThemeFontBaseSize">Font Base Size</a><br>
-  <a href="#configThemeFontScale">Font Scale</a><br>
-  <a href="#configThemeGradients">Gradients</a><br>
-  <a href="#configThemeRadius">Radius</a><br>
-  <a href="#configThemeShadows">Shadows</a><br>
-  <a href="#configThemeWhitespace">Whitespace Scale</a><br>
+  <a 
+    href="#configThemeBorders"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Border Weights</a><br>
+  <a 
+    href="#configThemeColors"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Colors</a><br>
+  <a 
+    href="#configThemeContainers"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Containers</a><br>
+  <a 
+    href="#configThemeFlexGrid"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Flex Grid</a><br>
+  <a 
+    href="#configThemeFonts"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Fonts</a><br>
+  <a 
+    href="#configThemeFontBaseSize"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Font Base Size</a><br>
+  <a 
+    href="#configThemeFontScale"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Font Scale</a><br>
+  <a 
+    href="#configThemeGradients"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Gradients</a><br>
+  <a 
+    href="#configThemeRadius"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Radius</a><br>
+  <a 
+    href="#configThemeShadows"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Shadows</a><br>
+  <a 
+    href="#configThemeWhitespace"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Whitespace Scale</a><br>
 {% endcapture %}
 
 {% capture configuration %}
-  {% include components/accordion.html title="System Configuration" content=functional %}
-  {% include components/accordion.html title="Theme Settings" content=themes %}
+  {% include components/accordion.html title="System Configuration" content=functional style="compact" %}
+  {% include components/accordion.html title="Theme Settings" content=themes style="compact" %}
 {% endcapture %}
 
-{% include components/accordion.html title="Configuration and Themes" content=configuration %}
+{% include components/accordion.html title="Configuration and Themes" content=configuration style="compact" %}
 
 {% capture attributes %}
   {% assign groups = site.attributes | group_by: "category" | sort: "name" %}
   {% for group in groups %}
+    {% assign counter = 0 %}
     {% for item in group.items %}
-      <a href="#{{ item.pageID }}">{{ item.title }}</a><br>
+      {% assign counter = counter | plus: 1 %}
+      {% if group.name == item.title %}
+        {% if counter == 1 %}
+          <a 
+            href="#{{ item.pageID }}"
+            data-h2-margin="b(left, m) b(bottom, xxs)">{{ item.title }}</a><br>
+        {% endif %}
+      {% else %}
+        {% if counter == 1 %}
+          <span 
+            data-h2-display="b(block)"
+            data-h2-margin="b(left, m) b(bottom, xxs)">{{ group.name }}</span>
+        {% endif %}
+        <a 
+          href="#{{ item.pageID }}"
+          data-h2-margin="b(left, l) b(bottom, xxs)">{{ item.title }}</a><br>
+      {% endif %}
     {%endfor%}
   {% endfor %}
 {% endcapture %}
 
-{% include components/accordion.html title="Style Attributes" content=attributes %}
+{% include components/accordion.html title="Style Attributes" content=attributes style="compact" %}

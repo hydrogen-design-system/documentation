@@ -36,39 +36,39 @@ options:
     type: whitespace
     content:
 examples:
-  - <div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - <div data-h2-flex-grid='b(top, expanded, flush, m)'>
       <div data-h2-flex-item='b(1of3)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
-      </div>
-      <div data-h2-flex-item='b(1of3)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of3)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, l)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of3)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
     </div>
 ---

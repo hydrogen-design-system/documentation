@@ -1,9 +1,19 @@
 <div class="accordion">
-  <button 
-    aria-expanded="false" 
-    class="accordion-trigger" 
-    tabindex="0" 
-    type="button">
+  {% if include.style == 'compact' %}
+    <button 
+      aria-expanded="false" 
+      class="accordion-trigger" 
+      tabindex="0" 
+      type="button"
+      data-h2-padding="b(top-bottom, none)">
+  {% else %}
+    <button 
+      aria-expanded="false" 
+      class="accordion-trigger" 
+      tabindex="0" 
+      type="button"
+      data-h2-padding="b(top-bottom, xxs)">
+  {% endif %}
     <span class="accordion-trigger-label">Click to view...</span>
     <span 
       aria-hidden="true" 
@@ -14,17 +24,15 @@
       class="accordion-trigger-icon-remove"
       data-h2-font-color="b(theme-1)">▾</span>
     <div class="accordion-trigger-content">
-      <p>{{ include.title }}</p>
+      <span data-h2-font-family="b(Gibson)">{{ include.title }}</span>
       {% if include.subtitle %}
-        <p>{{ include.subtitle }}</p>
+        <span data-h2-font-family="b(Gibson)">{{ include.subtitle }}</span>
       {% endif %}
     </div>
   </button>
   <div 
     aria-hidden="true" 
     class="accordion-content">
-    <p>
-      {{ include.content }}
-    </p>
+    {{ include.content }}
   </div>
 </div>

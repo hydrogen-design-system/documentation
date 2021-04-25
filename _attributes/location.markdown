@@ -20,7 +20,7 @@ options:
     type: whitespace
     content: 
 examples:
-  - <div data-h2-bg-color='b(theme-1)' data-h2-position='b(relative)' data-h2-padding='b(all, largest)'>
-      <div data-h2-location='b(top-right, medium)' data-h2-position='b(absolute)' data-h2-bg-color='b(black)' data-h2-padding='b(all, large)'></div>
+  - <div data-h2-bg-color='b(theme-1)' data-h2-position='b(relative)' data-h2-padding='b(all, xxl)'>
+      <div data-h2-location='b(top-right, m)' data-h2-position='b(absolute)' data-h2-bg-color='b(black)' data-h2-padding='b(all, l)'></div>
     </div>
 ---

@@ -1,12 +1,9 @@
-.accordion > .accordion-trigger {
+.accordion-trigger {
   background: none;
   border: none;
   border-radius: 0;
   cursor: pointer;
-  padding-top: 0;
   padding-left: 1.5rem;
-  padding-bottom: 0;
-  padding-right: 0;
   position: relative;
   text-align: left;
   width: 100%;
@@ -47,7 +44,7 @@
 
 .accordion > .accordion-content {
   display: none;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .accordion.accordion-active > .accordion-trigger .accordion-trigger-icon-add {
@@ -70,11 +67,6 @@
 .sidebar a {
   display: inline-block;
   line-height: 1;
-  margin: 0 0 .5rem 1.5rem;
-}
-
-.sidebar >a {
-  margin: 0 0 .6rem 1.5rem;
 }
 
 .sidebar >.accordion >.accordion-trigger{
@@ -88,6 +80,7 @@
 pre {
   background: rgba(240, 240, 240, 1);
   border-radius: 10px;
+  font-size: .8rem;
   max-width: 100%;
   overflow-x: auto;
   padding: 1rem;
@@ -100,6 +93,7 @@ p+p {
 code {
   background: rgba(240, 240, 240, 1);
   border-radius: 5px;
+  font-size: .8rem;
   padding: .05rem .3rem;
 }
 

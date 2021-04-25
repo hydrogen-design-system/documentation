@@ -21,21 +21,21 @@ options:
     type: color
     content: 
 examples:
-  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - "<div data-h2-flex-grid='b(top, expanded, flush, m)'>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-3)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        <div data-h2-bg-color='b(theme-3)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-4)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        <div data-h2-bg-color='b(theme-4)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(linear-135[1][2])' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        <div data-h2-bg-color='b(linear-135[1][2])' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
       </div>
     </div>"
 ---
@@ -69,26 +69,26 @@ options:
   - title: WEIGHT
     type: custom
     content: "<pre>
-      small\n
-      medium\n
-      large
+      s\n
+      m\n
+      l
     </pre>"
 examples:
-  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - "<div data-h2-flex-grid='b(top, expanded, flush, m)'>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-1, all, solid, small)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+          <div data-h2-border='b(theme-1, all, solid, s)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
         </div>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-2, top, dashed, large)' data-h2-padding='b(all, medium)'></div>
+          <div data-h2-border='b(theme-2, top, dashed, l)' data-h2-padding='b(all, m)'></div>
         </div>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-3, top-bottom, solid, medium)' data-h2-padding='b(all, medium)'></div>
+          <div data-h2-border='b(theme-3, top-bottom, solid, m)' data-h2-padding='b(all, m)'></div>
         </div>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-4, all, dashed, small)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+          <div data-h2-border='b(theme-4, all, dashed, s)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
         </div>
         <div data-h2-flex-item='b(1of1) m(1of5)'>
-          <div data-h2-border='b(theme-5, all, solid, large)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+          <div data-h2-border='b(theme-5, all, solid, l)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
         </div>
       </div>"
 ---
@@ -117,14 +117,14 @@ options:
   - title: SIZE
     type: custom
     content: "<pre>
-      small\n
-      medium\n
-      large\n
+      s\n
+      m\n
+      l\n
       full
     </pre>"
 examples:
-  - <div data-h2-bg-color='b(linear-135[1][2])' data-h2-padding='b(top-bottom, large)'>
-      <div data-h2-container='b(center, small)' data-h2-bg-color='b(black)' data-h2-padding='b(top-bottom, large)'></div>
+  - <div data-h2-bg-color='b(linear-135[1][2])' data-h2-padding='b(top-bottom, l)'>
+      <div data-h2-container='b(center, s)' data-h2-bg-color='b(black)' data-h2-padding='b(top-bottom, l)'></div>
     </div>
 ---
 ---
@@ -306,39 +306,39 @@ options:
     type: whitespace
     content:
 examples:
-  - <div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - <div data-h2-flex-grid='b(top, expanded, flush, m)'>
       <div data-h2-flex-item='b(1of3)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
-      </div>
-      <div data-h2-flex-item='b(1of3)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of3)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, l)'></div>
+      </div>
+      <div data-h2-flex-item='b(1of3)'>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of2) m(1of8)'>
-        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, large)'></div>
+        <div data-h2-bg-color='b(theme-2)' data-h2-padding='b(all, l)'></div>
       </div>
     </div>
 ---
@@ -569,8 +569,8 @@ options:
     type: whitespace
     content: 
 examples:
-  - <div data-h2-bg-color='b(theme-1)' data-h2-position='b(relative)' data-h2-padding='b(all, largest)'>
-      <div data-h2-location='b(top-right, medium)' data-h2-position='b(absolute)' data-h2-bg-color='b(black)' data-h2-padding='b(all, large)'></div>
+  - <div data-h2-bg-color='b(theme-1)' data-h2-position='b(relative)' data-h2-padding='b(all, xxl)'>
+      <div data-h2-location='b(top-right, m)' data-h2-position='b(absolute)' data-h2-bg-color='b(black)' data-h2-padding='b(all, l)'></div>
     </div>
 ---
 ---
@@ -697,26 +697,27 @@ options:
   - title: RADIUS
     type: custom
     content: "<pre>
-      small\n
-      medium\n
-      large
+      none\n
+      s\n
+      m\n
+      l
     </pre>"
 examples:
-  - <div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - <div data-h2-flex-grid='b(top, expanded, flush, m)'>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(s)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(medium)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(m)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(l)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(small, small, large, large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(s, s, l, l)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, medium)' data-h2-radius='b(large, small, medium, large)'></div>
+        <div data-h2-bg-color='b(theme-1)' data-h2-padding='b(all, m)' data-h2-radius='b(l, s, m, l)'></div>
       </div>
     </div>
 ---
@@ -738,26 +739,28 @@ options:
   - title: SHADOW
     type: custom
     content: "<pre>
-      small\n
-      medium\n
-      large
+      xs\n
+      s\n
+      m\n
+      l\n
+      xl
     </pre>"
 examples:
-  - "<div data-h2-flex-grid='b(top, expanded, flush, medium)'>
+  - "<div data-h2-flex-grid='b(top, expanded, flush, m)'>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(smaller)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(xs)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(small)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(s)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(medium)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(m)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(large)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(l)'></div>
       </div>
       <div data-h2-flex-item='b(1of1) m(1of5)'>
-        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, medium)' data-h2-radius='b(small)' data-h2-shadow='b(larger)'></div>
+        <div data-h2-bg-color='b(white)' data-h2-padding='b(all, m)' data-h2-radius='b(s)' data-h2-shadow='b(xl)'></div>
       </div>
     </div>"
 ---
@@ -835,13 +838,13 @@ examples:
 <!DOCTYPE html>
 <html lang="en">
     {% include head.html %}
-    <body data-hydrogen>
+    <body data-h2-reset data-h2-typography>
       <div 
         data-h2-bg-color="b(black)"
         data-h2-font-family="b(Gibson)">
         <div 
           data-h2-container="b(center, full)"
-          data-h2-padding="b(top-bottom, largest)"
+          data-h2-padding="b(top-bottom, xxl)"
           data-h2-text-align="b(center)">
           <img 
             alt="Hydrogen's current release." 
@@ -850,7 +853,7 @@ examples:
           <h1
             data-h2-font-color="b(white)"
             data-h2-font-size="b(h1)"
-            data-h2-margin="b(top-bottom, medium)"
+            data-h2-margin="b(top-bottom, m)"
             data-h2-font-weight="b(600)">Hydrogen</h1>
           <p data-h2-font-color="b(white)">An open-source, utility-first CSS tool.</p>
         </div>
@@ -859,20 +862,20 @@ examples:
         data-h2-container="b(center, full)"
         data-h2-font-family="b(Gibson)"
         data-h2-font-color="b(font)">
-        <div data-h2-flex-grid="b(top, expanded, flush, small) m(stretch, expanded, flush, largest)">
+        <div data-h2-flex-grid="b(top, expanded, flush, s) m(stretch, expanded, flush, xxl)">
           <div data-h2-flex-item="b(1of1) m(1of4)">
-            <div>
+            <div style="height: 100%;">
               <div 
                 data-h2-position="m(sticky)" 
                 data-h2-location="m(top, none)"
-                data-h2-padding="m(bottom, largest)"
+                data-h2-padding="m(bottom, xxl)"
                 class="sidebar">
                 {% include sidebar.html %}
               </div>
             </div>
           </div>
           <div data-h2-flex-item="b(1of1) m(3of4)">
-            <div data-h2-padding="b(bottom, largest)">
+            <div data-h2-padding="b(bottom, xxl)">
               {% include sections/about.html %}
               {% include heading-2.html icon="💬" name="How to Use Hydrogen" %}
               {% include heading-3.html name="Installation" id="install" %}
@@ -882,15 +885,135 @@ examples:
               <pre>npx h2-init</pre>
               <p>The above command will prompt you to enter two folder locations: your markup folder and your styles/CSS folder. Simply enter the path from the root of your project (e.g. <code>src/my/markup</code>). Once you've submitted these paths, Hydrogen will automagically create a <code>hydrogen.config.json</code> file in the root of your project. <span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This file will be where you can customize Hydrogen's settings and theme.</span></p>
               {% include heading-3.html name="Getting Started" id="usage" %}
-              <p>In order to start using Hydrogen, you need to enable it on your project. <a href="#commands" title="Learn more about compiling Hydrogen.">After compiling Hydrogen</a>, a complete CSS file will appear in your specified styles folder, so include this file in your page's <code>head</code> element. Once this is done, enable Hydrogen's styles by placing the <code>data-hydrogen</code> attribute on your page's <code>body</code> element or any other particular element where you need Hydrogen's properties.</p>
+              <p>In order to start using Hydrogen, you need to enable it on your project. <a href="#commands" title="Learn more about compiling Hydrogen.">After compiling Hydrogen</a>, a complete CSS file will appear in your specified styles folder, so include this file in your page's <code>head</code> element.</p>
 <pre>&lt;head&gt;
   &lt;link rel="stylesheet" href="path/to/hydrogen.css"&gt;
 &lt;/head&gt;
-&lt;body data-hydrogen&gt;
+&lt;body&gt;
   &lt;div data-h2-bg-color="b(black)"&gt;
     &lt;span data-h2-font-color="b(theme-1)"&gt;My Hydrogen styles work here!&lt;/span&gt;
   &lt;/div&gt;
 &lt;/body&gt;</pre>
+              <p data-h2-margin="b(bottom, s)">Hydrogen contains a handful of basic reset and typography CSS that might affect your existing styles. You can find out more about these styles below if you're trying to determine what might be altering your project's original CSS.</p>
+              {% capture basicCSS %}<pre>
+html {
+  box-sizing: border-box;
+  font-size: $h2-font-base-size;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0; // Resets the default 8px value.
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+// Margin Resets
+blockquote,
+dl,
+fieldset,
+figure {
+  margin: 0;
+}
+
+// Max Image Widths
+img,
+iframe {
+  max-width: 100%;
+}
+// Headings
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+}
+h1 {
+  font-size: $h2-font-size-h1;
+  margin-top: calc((((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+}
+h2 {
+  font-size: $h2-font-size-h2;
+  margin-top: calc(((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: $h2-font-size-h3;
+  margin-top: calc((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h4 {
+  font-size: $h2-font-size-h4;
+  margin-top: calc(1rem * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h5 {
+  font-size: $h2-font-size-h5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h6 {
+  font-size: $h2-font-size-h6;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+// Copy
+p, 
+div {
+  font-size: $h2-font-size-default
+}
+p {
+  margin-top: 1rem;
+}
+p+p {
+  margin-top: calc(1rem / #{$h2-whitespace-scale});
+}
+span {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+// Styled Typography
+em {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic;
+}
+strong {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+}
+// Anchors
+a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  transition: color .2s ease;
+}
+// Lists
+ul,
+ol {
+  margin: 0;
+  margin-top: 1rem;
+}
+li {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: calc(1rem / #{$h2-whitespace-scale});
+  &:last-child {
+    margin-bottom: 0;
+  }
+}</pre>
+{% endcapture %}
+              {% include components/accordion.html title="Hydrogen's Reset Styles" content=basicCSS %}
               {% include heading-3.html name="Syntax" id="syntax" %}
               <p>To begin, let's disect how a Hydrogen attribute works so that we can better understand how to use them.</p>
               <pre>data-h2-PROPERTY="MEDIA(ARGUMENTS)"</pre>
@@ -913,7 +1036,7 @@ l (100em)
               <p>Using a media query is simple:</p>
               <pre>data-h2-bg-color="b(black) m(theme-1) l(theme-2)"</pre>
               <p>Renders something like this (try resizing your screen!):</p>
-              <div data-h2-bg-color="b(black) m(theme-1) l(theme-2)" data-h2-padding="b(all, large)" data-h2-margin="b(bottom, medium)"></div>
+              <div data-h2-bg-color="b(black) m(theme-1) l(theme-2)" data-h2-padding="b(all, l)" data-h2-margin="b(bottom, m)"></div>
               <p>If the built in media queries don't suit your needs, you can <a href="#configMedia" title="Learn more about setting custom media values in your configuration file.">customize them</a> in your <code>hydrogen.config.json</code> file.</p>
               {% include heading-3.html name="Color and Gradients" id="colors" %}
               <p>Hydrogen comes with a set of 5 pre-installed colors, but we know that color is almost always something you're going to want to control. In this section, we want to explain how color is used in the context of property arguments, rather than highlight the colors themselves. <a href="#configThemeColors" title="Learn more about configuring colors.">You can customize the exact palette for your application by following the instructions in the Themes section.</a></p>
@@ -930,7 +1053,7 @@ pink
                 <li><code>[dark]COLOR</code> for light/dark versions</li>
                 <li><code>COLOR[.6]</code> for referencing an opacity</li>
               </ul>
-              <div data-h2-flex-grid="b(top, expanded, flush, medium)">
+              <div data-h2-flex-grid="b(top, expanded, flush, m)">
                 <div data-h2-flex-item="b(1of1) m(1of2)">
                   <p>For referencing light and dark variations of your color, you can use the following:</p>
 <pre>
@@ -959,7 +1082,7 @@ dark
               <p>These values can even be combined to target a transparent dark variation, for example: <code>data-bg-color="b([dark]purple[.5])"</code></p>
               {% include heading-4.html name="Gradients" id="gradients" %}
               <p>Hydrogen doesn't ship with any gradients enabled by default, but you can optionally configure them in the <a href="#configThemeGradients" title="Learn more about configuring gradients.">gradients section of your configuration file</a>.</p>
-              <p>Gradients are supported by the following properties:</p>
+              <p data-h2-font-color="b(theme-1)" data-h2-font-weight="b(600)">Gradients are supported by the following properties:</p>
 <pre>
 bg-color
 </pre>
@@ -976,23 +1099,17 @@ linear-270[purple][blue][pink]
               <p>By default, the <code>whitespaceScale</code> value is set to 1.5, and this means that, starting with <code>1rem</code>, whitespace values are calculated like this:</p>
 <pre>
 none (0rem)
-smallest (0.4444rem)
-smaller (0.6666rem)
-small (1rem)
-medium (1.5rem)
-large (2.25rem)
-larger (3.375rem)
-largest (5.0625rem)
+xxs (0.4444rem)
+xs (0.6666rem)
+s (1rem)
+m (1.5rem)
+l (2.25rem)
+xl (3.375rem)
+xxl (5.0625rem)
 </pre>
               <p>These values can be used in any property that has a <code>WHITESPACE</code> argument.</p>
-              {% include heading-2.html icon="📃" name="Commands" id="commands" %}
-              {% include heading-3.html name="Watch" %}
-              <p><code>npx h2-watch</code> will tell Hydrogen to continuously watch for changes to your <code>hydrogen.config.json</code> file and will automatically compile Hydrogen with your new changes. This is useful for when you need to make a lot of changes to your theme and want to see real output while you're working.</p>
-              {% include heading-3.html name="Compile" %}
-              <p><code>npx h2-compile</code> will tell Hydrogen to compile its whole CSS file once, based on your current configuration. <span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This is probably the command you'll use most</span> and is helpful if you're actively developing on your project.</p>
-              {% include heading-3.html name="Build" %}
-              <p><code>npx h2-build</code> is where the magic truly happens. You should use this command when you're ready to deploy your project, as it will compile Hydrogen by searching through your markup and creating a CSS file that contains only the parts of Hydrogen that you've used, rather than the whole system, thus reducing Hydrogen's file size drastically. You can learn more about this in the "<a href="#what" title="Learn about how Hydrogen creates its production file.">What is Hydrogen?</a>" section.</p>
-              {% include heading-2.html icon="🔨" name="Configuration and Themes" %}
+              {% include sections/commands.html %}
+              {% include heading-2.html icon="🔨" name="Configuration and Themes" id="configuration"%}
               <p>After running <code>npx h2-init</code>, a <code>hydrogen.config.json</code> file will be located in the root of your project. In this file, you can specify a variety of options that will modify how Hydrogen works and the theme it applies to its stylesheet.</p>
               {% include heading-3.html name="Functional Configuration" %}
               {% include heading-4.html name="Setting Up Project Folders" id="configFolders" %}
@@ -1037,15 +1154,15 @@ largest (5.0625rem)
 <pre>
 "borderWeights": [
   {
-    "name": "small",
+    "name": "s",
     "weight": "1px"
   },
   {
-    "name": "medium",
+    "name": "m",
     "weight": ".5rem"
   },
   {
-    "name": "large",
+    "name": "l",
     "weight": "1rem"
   }
 ]
@@ -1086,15 +1203,15 @@ largest (5.0625rem)
 <pre>
 "containers": [
   {
-    "name": "small",
+    "name": "s",
     "maxWidth": "39rem"
   },
   {
-    "name": "medium",
+    "name": "m",
     "maxWidth": "60rem"
   },
   {
-    "name": "large",
+    "name": "l",
     "maxWidth": "80rem"
   }
 ]
@@ -1137,7 +1254,7 @@ largest (5.0625rem)
 ]
 </pre>
               {% include heading-4.html name="Font Base Size" id="configThemeFontBaseSize" %}
-              <p>This option will set a font size value on your project's <code>&lt;html&gt;</code> element and determines the base size of type on your page. By default, browsers set the default font size (1rem) to 16px. By using a percentage value, you can choose to make this 16px larger (over 100%) or smaller (under 100%). Below is the default value.</p>
+              <p>This option will set a font size value on your project's <code>&lt;html&gt;</code> element and determines the base size of type on your page. By default, browsers set the default font size (1rem) to 16px. By using a percentage value, you can choose to make this 16px lr (over 100%) or ser (under 100%). Below is the default value.</p>
 <pre>
 "fontBaseSize": "112.5%"
 </pre>
@@ -1188,14 +1305,14 @@ largest (5.0625rem)
 <pre>
 "radius": [
   {
-    "name": "small",
+    "name": "s",
     "value": "10px"
   },
   {
-    "name": "medium",
+    "name": "m",
     "value": "50rem"
   },{
-    "name": "large",
+    "name": "l",
     "value": "100%"
   }
 ]
@@ -1205,23 +1322,23 @@ largest (5.0625rem)
 <pre>
 "shadows": [
   {
-    "name": "smaller",
+    "name": "xs",
     "value": "0 0.1rem 0.2rem 0 rgba(0, 0, 0, .2)"
   },
   {
-    "name": "small",
+    "name": "s",
     "value": "0 0.25rem 0.5rem -0.05rem rgba(0, 0, 0, .2)"
   },
   {
-    "name": "medium",
+    "name": "m",
     "value": "0 0.4rem 0.7rem -0.1rem rgba(0, 0, 0, .2)"
   },
   {
-    "name": "large",
+    "name": "l",
     "value": "0 0.55rem 1rem -0.2rem rgba(0, 0, 0, .2)"
   },
   {
-    "name": "larger",
+    "name": "xl",
     "value": "0 0.7rem 1.5rem -0.3rem rgba(0, 0, 0, .2)"
   }
 ]
@@ -1278,11 +1395,21 @@ largest (5.0625rem)
 </html>
 
 <div class="accordion">
-  <button 
-    aria-expanded="false" 
-    class="accordion-trigger" 
-    tabindex="0" 
-    type="button">
+  {% if include.style == 'compact' %}
+    <button 
+      aria-expanded="false" 
+      class="accordion-trigger" 
+      tabindex="0" 
+      type="button"
+      data-h2-padding="b(top-bottom, none)">
+  {% else %}
+    <button 
+      aria-expanded="false" 
+      class="accordion-trigger" 
+      tabindex="0" 
+      type="button"
+      data-h2-padding="b(top-bottom, xxs)">
+  {% endif %}
     <span class="accordion-trigger-label">Click to view...</span>
     <span 
       aria-hidden="true" 
@@ -1293,35 +1420,81 @@ largest (5.0625rem)
       class="accordion-trigger-icon-remove"
       data-h2-font-color="b(theme-1)">▾</span>
     <div class="accordion-trigger-content">
-      <p>{{ include.title }}</p>
+      <span data-h2-font-family="b(Gibson)">{{ include.title }}</span>
       {% if include.subtitle %}
-        <p>{{ include.subtitle }}</p>
+        <span data-h2-font-family="b(Gibson)">{{ include.subtitle }}</span>
       {% endif %}
     </div>
   </button>
   <div 
     aria-hidden="true" 
     class="accordion-content">
-    <p>
-      {{ include.content }}
-    </p>
+    {{ include.content }}
   </div>
 </div>
 {% include heading-2.html icon="💡" name="What is Hydrogen?" id="what" %}
 <div
   data-h2-bg-color="b(theme-1[.1])"
   data-h2-font-color="b(theme-1)"
-  data-h2-border="b(theme-1, all, solid, small)"
-  data-h2-padding="b(all, medium)">
+  data-h2-border="b(theme-1, all, solid, s)"
+  data-h2-padding="b(right-left, s)"
+  data-h2-radius="b(s)"
+  data-h2-margin="b(top-bottom, m)">
   <p 
     data-h2-font-color="b(theme-1)"
-    data-h2-font-weight="b(600)">Hydrogen is a design and development tool for building coherent web interfaces without writing any CSS.</p>
+    data-h2-font-weight="b(600)">Hydrogen is a utility-first CSS tool for styling web interfaces without writing CSS.</p>
+  <p data-h2-font-color="b(theme-1)">It leverages data-attributes to allow the styling of elements right in your markup, rather than creating your own classes. Hydrogen offers a comprehensive library of tools and configurations for easy, seamless development. When you're ready to publish your project, it then processes your markup and creates a custom CSS file that contains only the code you've used, reducing its own footprint.</p>
 </div>
-<p>Here are the core concepts behind Hydrogen:</p>
+<div data-h2-flex-grid="b(middle, expanded, flush, m)">
+  <div data-h2-flex-item="b(1of1) m(1of2)">
+<pre>
+&lt;div 
+  data-h2-bg-color="b(white)"
+  data-h2-padding="b(top-bottom, m) m(all, l)"
+  data-h2-radius="b(s)"
+  data-h2-shadow="b(s) m(m)"&gt;
+  &lt;p 
+    data-h2-text-align="b(center)"&gt;
+    Welcome to &lt;span data-h2-font-color="b(purple)"&gt;Hydrogen&lt;/span&gt;!
+  &lt;/p&gt;
+&lt;/div&gt;
+</pre>
+  </div>
+  <div data-h2-flex-item="b(1of1) m(1of2)">
+    <div 
+      data-h2-bg-color="b(white)"
+      data-h2-padding="b(top-bottom, s) m(all, l)"
+      data-h2-radius="b(s)"
+      data-h2-shadow="b(s) m(m)">
+      <p 
+        data-h2-text-align="b(center)">
+        Welcome to <span data-h2-font-color="b(theme-1)">Hydrogen</span>!
+      </p>
+    </div>
+  </div>
+</div>
+{% include heading-3.html name="Data Attributes?" %}
+<p>Why use <code>data-attributes</code> over <code>class</code>?</p>
+<p>There's been a lot of discussion around classes performing better than data attributes, and we took this into consideration when designing Hydrogen. A lot of traditional class practices like BEM are effective, but can result in some really complex, bloated class attributes, which can have impacts on our ability to consume and write code. One of Hydrogen's primary goals is to make the end-user experience AND the developer experience easier, and so we decided to use data attributes for a few reasons:</p>
 <ul>
-  <li>Hydrogen uses HTML5 custom <code>data-attributes</code> to allow you to style your web project.</li>
-  <li>It is a utility style tool that generates a CSS file based on a JSON configuration file.</li>
+  <li>they provide consistent namespacing</li>
+  <li>they provide a context and a value</li>
+  <li>their values are flexible, and allow for modifiers</li>
+  <li>they allow for complex combinations</li>
+  <li>they're easy to manipulate with JavaScript</li>
 </ul>
+<p>In combination with Hydrogen's ability to generate a custom CSS file that contains only what you've used, the performance trade-offs are worth the improved experience. It was of the utmost importance that Hydrogen considered maintenance and legibility so that markup could be easily understood while retaining good performance and a small footprint.</p>
+{% include heading-3.html name="Customization?" %}
+<p>Hydrogen offers customization of both style and syntax through a comprehensive JSON configuration file. Include as many media queries, colors, gradients, and more as your project needs to get the job done. The <a href="#configuration" title="Learn more about how to configure Hydrogen.">Configuration and Themes</a> section of the documentation offers more detail about how this file works.</p>
+{% include heading-3.html name="File Size?" %}
+<p>When you're ready to publish your project to the world, Hydrogen's build script will process your HTML, React, etc. and find exactly the attributes your project is using. It then compiles a CSS file that is specifically designed for your project. No bloat, no unused classes or CSS. By doing so, Hydrogen's file size drops drastically, improving both page load speeds and the performance of the data-attributes themselves.</p>
+{% include heading-2.html icon="📃" name="Commands" id="commands" %}
+<!-- {% include heading-3.html name="Watch" %} -->
+<!-- <p><code>npx h2-watch</code> will tell Hydrogen to continuously watch for changes to your <code>hydrogen.config.json</code> file, as well as your markup, and will automatically compile Hydrogen with your new changes. This is useful for when you need to make a lot of changes to your theme and want to see real output while you're working.</p> -->
+{% include heading-3.html name="Compile" %}
+<p><code>npx h2-compile</code> will tell Hydrogen to compile its whole CSS file once, based on your current configuration. This will output Hydrogen in its entirety, so you'll be able to add and remove markup with little friction or waiting for a compile to finish.<span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This is probably the command you'll use most</span> and is helpful if you're actively developing on your project.</p>
+{% include heading-3.html name="Build" %}
+<p><code>npx h2-build</code> should be used when you're ready to deploy your project, as it will compile Hydrogen by searching through your markup and create a CSS file that contains only the parts of Hydrogen that you've used, rather than the whole system, thus reducing Hydrogen's file size drastically. You can learn more about this in the "<a href="#what" title="Learn about how Hydrogen creates its production file.">What is Hydrogen?</a>" section.</p>
 {% if include.type == 'child' %}
   {% capture title %}{{ include.name }}{% endcapture %}
   {% capture pageID %}{{ include.pageID }}{% endcapture %}
@@ -1334,7 +1507,7 @@ largest (5.0625rem)
 <p>{{ include.description }}</p>
 <p
   data-h2-font-weight="b(600)"
-  data-h2-margin="b(top, medium) b(bottom, smallest)">Syntax:</p>
+  data-h2-margin="b(top, m) b(bottom, xxs)">Syntax:</p>
 {% for syntax in include.syntax %}
   <pre>{{ syntax }}</pre>
 {% endfor %}
@@ -1344,7 +1517,7 @@ largest (5.0625rem)
 {% if include.options %}
   <p
     data-h2-font-weight="b(600)"
-    data-h2-margin="b(top, medium) b(bottom, smallest)">Default Arguments:</p>
+    data-h2-margin="b(top, m) b(bottom, xxs)">Default Arguments:</p>
 {% endif %}
 {% for option in include.options %}
   {% capture codeTitle %}<code>{{ option.title }}</code>{% endcapture %}
@@ -1395,7 +1568,7 @@ bottom-left
 {% if include.examples %}
   <p
     data-h2-font-weight="b(600)"
-    data-h2-margin="b(top, medium) b(bottom, smallest)">Examples:</p>
+    data-h2-margin="b(top, m) b(bottom, xxs)">Examples:</p>
 {% endif %}
 {% for example in include.examples %}
   {{ example }}
@@ -1406,8 +1579,8 @@ bottom-left
   data-h2-font-family="b(Gibson)">
   <div 
     data-h2-container="b(center, full)"
-    data-h2-padding="b(top-bottom, large)">
-    <div data-h2-flex-grid="b(middle, expanded, flush, small)">
+    data-h2-padding="b(top-bottom, l)">
+    <div data-h2-flex-grid="b(middle, expanded, flush, s)">
       <div 
         data-h2-flex-item="b(1of1) m(1of2)"
         data-h2-text-align="b(center) m(left)">
@@ -1458,7 +1631,8 @@ bottom-left
   data-h2-font-size="b(h2)"
   data-h2-font-color="b(black)"
   data-h2-font-weight="b(600)"
-  data-h2-padding="b(top, larger) b(bottom, smaller)">
+  data-h2-margin="b(top, none)"
+  data-h2-padding="b(top, xl)">
   {% if include.icon %}<span data-h2-font-size="b(h3)">{{ include.icon }} </span>{% endif %}
   {{ include.name }}
 </h2>
@@ -1467,67 +1641,131 @@ bottom-left
   data-h2-font-size="b(h3)"
   data-h2-font-color="b(theme-1)"
   data-h2-font-weight="b(200)"
-  data-h2-padding="b(top, larger) b(bottom, smaller)">{{ include.name }}</h3>
+  data-h2-margin="b(top, none)"
+  data-h2-padding="b(top, xl)">{{ include.name }}</h3>
 <h4
   id="{{ include.id }}"
   data-h2-font-size="b(h4)"
   data-h2-font-color="b(black)"
   data-h2-font-weight="b(600)"
-  data-h2-padding="b(top, larger) b(bottom, smaller)">{{ include.name }}</h4>
+  data-h2-margin="b(top, none)"
+  data-h2-padding="b(top, xl)">{{ include.name }}</h4>
 <script type="text/javascript" src="{{ '/assets/scripts/app.js' | prepend: site.baseurl }}"></script>
 <p 
   data-h2-font-size="b(h5)"
-  data-h2-padding="b(top, larger) b(bottom, small)"
+  data-h2-padding="b(top, xl) b(bottom, s)"
   data-h2-font-color="b(theme-1)"
   data-h2-font-weight="b(600)"
+  data-h2-margin="b(all, none)"
   >Navigate</p>
-<a href="#what">What is Hydrogen?</a><br>
+<a 
+  href="#what"
+  data-h2-margin="b(left, m) b(bottom, xxs)">What is Hydrogen?</a><br>
 {% capture usage %}
-  <a href="#install">Installation</a><br>
-  <a href="#usage">Getting Started</a><br>
-  <a href="#mediaQueries">Media Queries</a><br>
-  <a href="#colors">Color and Gradients</a><br>
-  <a href="#whitespace">Whitespace</a>
+  <a 
+    href="#install"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Installation</a><br>
+  <a 
+    href="#usage"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Getting Started</a><br>
+  <a 
+    href="#mediaQueries"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Media Queries</a><br>
+  <a 
+    href="#colors"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Color and Gradients</a><br>
+  <a 
+    href="#whitespace"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Whitespace</a>
 {% endcapture %}
 
-{% include components/accordion.html title="How to Use Hydrogen" content=usage %}
-<a href="#commands">Commands</a><br>
+{% include components/accordion.html title="How to Use Hydrogen" content=usage style="compact" %}
+<a 
+  href="#commands"
+  data-h2-margin="b(left, m) b(bottom, xxs)">Commands</a><br>
 
 {% capture functional %}
-  <a href="#configFolders">Folders</a><br>
-  <a href="#configMedia">Media Queries</a><br>
-  <a href="#configMediaWarnings">Media Query Warnings</a><br>
-  <a href="#configDebug">Debug</a><br>
+  <a 
+    href="#configFolders"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Folders</a><br>
+  <a 
+    href="#configMedia"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Media Queries</a><br>
+  <a 
+    href="#configMediaWarnings"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Media Query Warnings</a><br>
+  <a 
+    href="#configDebug"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Debug</a><br>
 {% endcapture %}
 
 {% capture themes %}
-  <a href="#configThemeBorders">Border Weights</a><br>
-  <a href="#configThemeColors">Colors</a><br>
-  <a href="#configThemeContainers">Containers</a><br>
-  <a href="#configThemeFlexGrid">Flex Grid</a><br>
-  <a href="#configThemeFonts">Fonts</a><br>
-  <a href="#configThemeFontBaseSize">Font Base Size</a><br>
-  <a href="#configThemeFontScale">Font Scale</a><br>
-  <a href="#configThemeGradients">Gradients</a><br>
-  <a href="#configThemeRadius">Radius</a><br>
-  <a href="#configThemeShadows">Shadows</a><br>
-  <a href="#configThemeWhitespace">Whitespace Scale</a><br>
+  <a 
+    href="#configThemeBorders"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Border Weights</a><br>
+  <a 
+    href="#configThemeColors"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Colors</a><br>
+  <a 
+    href="#configThemeContainers"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Containers</a><br>
+  <a 
+    href="#configThemeFlexGrid"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Flex Grid</a><br>
+  <a 
+    href="#configThemeFonts"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Fonts</a><br>
+  <a 
+    href="#configThemeFontBaseSize"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Font Base Size</a><br>
+  <a 
+    href="#configThemeFontScale"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Font Scale</a><br>
+  <a 
+    href="#configThemeGradients"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Gradients</a><br>
+  <a 
+    href="#configThemeRadius"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Radius</a><br>
+  <a 
+    href="#configThemeShadows"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Shadows</a><br>
+  <a 
+    href="#configThemeWhitespace"
+    data-h2-margin="b(left, m) b(bottom, xxs)">Whitespace Scale</a><br>
 {% endcapture %}
 
 {% capture configuration %}
-  {% include components/accordion.html title="System Configuration" content=functional %}
-  {% include components/accordion.html title="Theme Settings" content=themes %}
+  {% include components/accordion.html title="System Configuration" content=functional style="compact" %}
+  {% include components/accordion.html title="Theme Settings" content=themes style="compact" %}
 {% endcapture %}
 
-{% include components/accordion.html title="Configuration and Themes" content=configuration %}
+{% include components/accordion.html title="Configuration and Themes" content=configuration style="compact" %}
 
 {% capture attributes %}
   {% assign groups = site.attributes | group_by: "category" | sort: "name" %}
   {% for group in groups %}
+    {% assign counter = 0 %}
     {% for item in group.items %}
-      <a href="#{{ item.pageID }}">{{ item.title }}</a><br>
+      {% assign counter = counter | plus: 1 %}
+      {% if group.name == item.title %}
+        {% if counter == 1 %}
+          <a 
+            href="#{{ item.pageID }}"
+            data-h2-margin="b(left, m) b(bottom, xxs)">{{ item.title }}</a><br>
+        {% endif %}
+      {% else %}
+        {% if counter == 1 %}
+          <span 
+            data-h2-display="b(block)"
+            data-h2-margin="b(left, m) b(bottom, xxs)">{{ group.name }}</span>
+        {% endif %}
+        <a 
+          href="#{{ item.pageID }}"
+          data-h2-margin="b(left, l) b(bottom, xxs)">{{ item.title }}</a><br>
+      {% endif %}
     {%endfor%}
   {% endfor %}
 {% endcapture %}
 
-{% include components/accordion.html title="Style Attributes" content=attributes %}
+{% include components/accordion.html title="Style Attributes" content=attributes style="compact" %}

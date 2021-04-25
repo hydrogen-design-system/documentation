@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include head.html %}
-    <body data-hydrogen>
+    <body data-h2-reset data-h2-typography>
       <div 
         data-h2-bg-color="b(black)"
         data-h2-font-family="b(Gibson)">
         <div 
           data-h2-container="b(center, full)"
-          data-h2-padding="b(top-bottom, largest)"
+          data-h2-padding="b(top-bottom, xxl)"
           data-h2-text-align="b(center)">
           <img 
             alt="Hydrogen's current release." 
@@ -16,7 +16,7 @@
           <h1
             data-h2-font-color="b(white)"
             data-h2-font-size="b(h1)"
-            data-h2-margin="b(top-bottom, medium)"
+            data-h2-margin="b(top-bottom, m)"
             data-h2-font-weight="b(600)">Hydrogen</h1>
           <p data-h2-font-color="b(white)">An open-source, utility-first CSS tool.</p>
         </div>
@@ -25,20 +25,20 @@
         data-h2-container="b(center, full)"
         data-h2-font-family="b(Gibson)"
         data-h2-font-color="b(font)">
-        <div data-h2-flex-grid="b(top, expanded, flush, small) m(stretch, expanded, flush, largest)">
+        <div data-h2-flex-grid="b(top, expanded, flush, s) m(stretch, expanded, flush, xxl)">
           <div data-h2-flex-item="b(1of1) m(1of4)">
-            <div>
+            <div style="height: 100%;">
               <div 
                 data-h2-position="m(sticky)" 
                 data-h2-location="m(top, none)"
-                data-h2-padding="m(bottom, largest)"
+                data-h2-padding="m(bottom, xxl)"
                 class="sidebar">
                 {% include sidebar.html %}
               </div>
             </div>
           </div>
           <div data-h2-flex-item="b(1of1) m(3of4)">
-            <div data-h2-padding="b(bottom, largest)">
+            <div data-h2-padding="b(bottom, xxl)">
               {% include sections/about.html %}
               {% include heading-2.html icon="💬" name="How to Use Hydrogen" %}
               {% include heading-3.html name="Installation" id="install" %}
@@ -48,15 +48,135 @@
               <pre>npx h2-init</pre>
               <p>The above command will prompt you to enter two folder locations: your markup folder and your styles/CSS folder. Simply enter the path from the root of your project (e.g. <code>src/my/markup</code>). Once you've submitted these paths, Hydrogen will automagically create a <code>hydrogen.config.json</code> file in the root of your project. <span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This file will be where you can customize Hydrogen's settings and theme.</span></p>
               {% include heading-3.html name="Getting Started" id="usage" %}
-              <p>In order to start using Hydrogen, you need to enable it on your project. <a href="#commands" title="Learn more about compiling Hydrogen.">After compiling Hydrogen</a>, a complete CSS file will appear in your specified styles folder, so include this file in your page's <code>head</code> element. Once this is done, enable Hydrogen's styles by placing the <code>data-hydrogen</code> attribute on your page's <code>body</code> element or any other particular element where you need Hydrogen's properties.</p>
+              <p>In order to start using Hydrogen, you need to enable it on your project. <a href="#commands" title="Learn more about compiling Hydrogen.">After compiling Hydrogen</a>, a complete CSS file will appear in your specified styles folder, so include this file in your page's <code>head</code> element.</p>
 <pre>&lt;head&gt;
   &lt;link rel="stylesheet" href="path/to/hydrogen.css"&gt;
 &lt;/head&gt;
-&lt;body data-hydrogen&gt;
+&lt;body&gt;
   &lt;div data-h2-bg-color="b(black)"&gt;
     &lt;span data-h2-font-color="b(theme-1)"&gt;My Hydrogen styles work here!&lt;/span&gt;
   &lt;/div&gt;
 &lt;/body&gt;</pre>
+              <p data-h2-margin="b(bottom, s)">Hydrogen contains a handful of basic reset and typography CSS that might affect your existing styles. You can find out more about these styles below if you're trying to determine what might be altering your project's original CSS.</p>
+              {% capture basicCSS %}<pre>
+html {
+  box-sizing: border-box;
+  font-size: $h2-font-base-size;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0; // Resets the default 8px value.
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+// Margin Resets
+blockquote,
+dl,
+fieldset,
+figure {
+  margin: 0;
+}
+
+// Max Image Widths
+img,
+iframe {
+  max-width: 100%;
+}
+// Headings
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+}
+h1 {
+  font-size: $h2-font-size-h1;
+  margin-top: calc((((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+}
+h2 {
+  font-size: $h2-font-size-h2;
+  margin-top: calc(((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: $h2-font-size-h3;
+  margin-top: calc((1rem * #{$h2-whitespace-scale}) * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h4 {
+  font-size: $h2-font-size-h4;
+  margin-top: calc(1rem * #{$h2-whitespace-scale});
+  margin-bottom: 1rem;
+}
+h5 {
+  font-size: $h2-font-size-h5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h6 {
+  font-size: $h2-font-size-h6;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+// Copy
+p, 
+div {
+  font-size: $h2-font-size-default
+}
+p {
+  margin-top: 1rem;
+}
+p+p {
+  margin-top: calc(1rem / #{$h2-whitespace-scale});
+}
+span {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+// Styled Typography
+em {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic;
+}
+strong {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+}
+// Anchors
+a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  transition: color .2s ease;
+}
+// Lists
+ul,
+ol {
+  margin: 0;
+  margin-top: 1rem;
+}
+li {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: calc(1rem / #{$h2-whitespace-scale});
+  &:last-child {
+    margin-bottom: 0;
+  }
+}</pre>
+{% endcapture %}
+              {% include components/accordion.html title="Hydrogen's Reset Styles" content=basicCSS %}
               {% include heading-3.html name="Syntax" id="syntax" %}
               <p>To begin, let's disect how a Hydrogen attribute works so that we can better understand how to use them.</p>
               <pre>data-h2-PROPERTY="MEDIA(ARGUMENTS)"</pre>
@@ -79,7 +199,7 @@ l (100em)
               <p>Using a media query is simple:</p>
               <pre>data-h2-bg-color="b(black) m(theme-1) l(theme-2)"</pre>
               <p>Renders something like this (try resizing your screen!):</p>
-              <div data-h2-bg-color="b(black) m(theme-1) l(theme-2)" data-h2-padding="b(all, large)" data-h2-margin="b(bottom, medium)"></div>
+              <div data-h2-bg-color="b(black) m(theme-1) l(theme-2)" data-h2-padding="b(all, l)" data-h2-margin="b(bottom, m)"></div>
               <p>If the built in media queries don't suit your needs, you can <a href="#configMedia" title="Learn more about setting custom media values in your configuration file.">customize them</a> in your <code>hydrogen.config.json</code> file.</p>
               {% include heading-3.html name="Color and Gradients" id="colors" %}
               <p>Hydrogen comes with a set of 5 pre-installed colors, but we know that color is almost always something you're going to want to control. In this section, we want to explain how color is used in the context of property arguments, rather than highlight the colors themselves. <a href="#configThemeColors" title="Learn more about configuring colors.">You can customize the exact palette for your application by following the instructions in the Themes section.</a></p>
@@ -96,7 +216,7 @@ pink
                 <li><code>[dark]COLOR</code> for light/dark versions</li>
                 <li><code>COLOR[.6]</code> for referencing an opacity</li>
               </ul>
-              <div data-h2-flex-grid="b(top, expanded, flush, medium)">
+              <div data-h2-flex-grid="b(top, expanded, flush, m)">
                 <div data-h2-flex-item="b(1of1) m(1of2)">
                   <p>For referencing light and dark variations of your color, you can use the following:</p>
 <pre>
@@ -125,7 +245,7 @@ dark
               <p>These values can even be combined to target a transparent dark variation, for example: <code>data-bg-color="b([dark]purple[.5])"</code></p>
               {% include heading-4.html name="Gradients" id="gradients" %}
               <p>Hydrogen doesn't ship with any gradients enabled by default, but you can optionally configure them in the <a href="#configThemeGradients" title="Learn more about configuring gradients.">gradients section of your configuration file</a>.</p>
-              <p>Gradients are supported by the following properties:</p>
+              <p data-h2-font-color="b(theme-1)" data-h2-font-weight="b(600)">Gradients are supported by the following properties:</p>
 <pre>
 bg-color
 </pre>
@@ -142,23 +262,17 @@ linear-270[purple][blue][pink]
               <p>By default, the <code>whitespaceScale</code> value is set to 1.5, and this means that, starting with <code>1rem</code>, whitespace values are calculated like this:</p>
 <pre>
 none (0rem)
-smallest (0.4444rem)
-smaller (0.6666rem)
-small (1rem)
-medium (1.5rem)
-large (2.25rem)
-larger (3.375rem)
-largest (5.0625rem)
+xxs (0.4444rem)
+xs (0.6666rem)
+s (1rem)
+m (1.5rem)
+l (2.25rem)
+xl (3.375rem)
+xxl (5.0625rem)
 </pre>
               <p>These values can be used in any property that has a <code>WHITESPACE</code> argument.</p>
-              {% include heading-2.html icon="📃" name="Commands" id="commands" %}
-              {% include heading-3.html name="Watch" %}
-              <p><code>npx h2-watch</code> will tell Hydrogen to continuously watch for changes to your <code>hydrogen.config.json</code> file and will automatically compile Hydrogen with your new changes. This is useful for when you need to make a lot of changes to your theme and want to see real output while you're working.</p>
-              {% include heading-3.html name="Compile" %}
-              <p><code>npx h2-compile</code> will tell Hydrogen to compile its whole CSS file once, based on your current configuration. <span data-h2-font-weight="b(600)" data-h2-font-color="b(theme-1)">This is probably the command you'll use most</span> and is helpful if you're actively developing on your project.</p>
-              {% include heading-3.html name="Build" %}
-              <p><code>npx h2-build</code> is where the magic truly happens. You should use this command when you're ready to deploy your project, as it will compile Hydrogen by searching through your markup and creating a CSS file that contains only the parts of Hydrogen that you've used, rather than the whole system, thus reducing Hydrogen's file size drastically. You can learn more about this in the "<a href="#what" title="Learn about how Hydrogen creates its production file.">What is Hydrogen?</a>" section.</p>
-              {% include heading-2.html icon="🔨" name="Configuration and Themes" %}
+              {% include sections/commands.html %}
+              {% include heading-2.html icon="🔨" name="Configuration and Themes" id="configuration"%}
               <p>After running <code>npx h2-init</code>, a <code>hydrogen.config.json</code> file will be located in the root of your project. In this file, you can specify a variety of options that will modify how Hydrogen works and the theme it applies to its stylesheet.</p>
               {% include heading-3.html name="Functional Configuration" %}
               {% include heading-4.html name="Setting Up Project Folders" id="configFolders" %}
@@ -203,15 +317,15 @@ largest (5.0625rem)
 <pre>
 "borderWeights": [
   {
-    "name": "small",
+    "name": "s",
     "weight": "1px"
   },
   {
-    "name": "medium",
+    "name": "m",
     "weight": ".5rem"
   },
   {
-    "name": "large",
+    "name": "l",
     "weight": "1rem"
   }
 ]
@@ -252,15 +366,15 @@ largest (5.0625rem)
 <pre>
 "containers": [
   {
-    "name": "small",
+    "name": "s",
     "maxWidth": "39rem"
   },
   {
-    "name": "medium",
+    "name": "m",
     "maxWidth": "60rem"
   },
   {
-    "name": "large",
+    "name": "l",
     "maxWidth": "80rem"
   }
 ]
@@ -303,7 +417,7 @@ largest (5.0625rem)
 ]
 </pre>
               {% include heading-4.html name="Font Base Size" id="configThemeFontBaseSize" %}
-              <p>This option will set a font size value on your project's <code>&lt;html&gt;</code> element and determines the base size of type on your page. By default, browsers set the default font size (1rem) to 16px. By using a percentage value, you can choose to make this 16px larger (over 100%) or smaller (under 100%). Below is the default value.</p>
+              <p>This option will set a font size value on your project's <code>&lt;html&gt;</code> element and determines the base size of type on your page. By default, browsers set the default font size (1rem) to 16px. By using a percentage value, you can choose to make this 16px lr (over 100%) or ser (under 100%). Below is the default value.</p>
 <pre>
 "fontBaseSize": "112.5%"
 </pre>
@@ -354,14 +468,14 @@ largest (5.0625rem)
 <pre>
 "radius": [
   {
-    "name": "small",
+    "name": "s",
     "value": "10px"
   },
   {
-    "name": "medium",
+    "name": "m",
     "value": "50rem"
   },{
-    "name": "large",
+    "name": "l",
     "value": "100%"
   }
 ]
@@ -371,23 +485,23 @@ largest (5.0625rem)
 <pre>
 "shadows": [
   {
-    "name": "smaller",
+    "name": "xs",
     "value": "0 0.1rem 0.2rem 0 rgba(0, 0, 0, .2)"
   },
   {
-    "name": "small",
+    "name": "s",
     "value": "0 0.25rem 0.5rem -0.05rem rgba(0, 0, 0, .2)"
   },
   {
-    "name": "medium",
+    "name": "m",
     "value": "0 0.4rem 0.7rem -0.1rem rgba(0, 0, 0, .2)"
   },
   {
-    "name": "large",
+    "name": "l",
     "value": "0 0.55rem 1rem -0.2rem rgba(0, 0, 0, .2)"
   },
   {
-    "name": "larger",
+    "name": "xl",
     "value": "0 0.7rem 1.5rem -0.3rem rgba(0, 0, 0, .2)"
   }
 ]

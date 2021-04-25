@@ -2,15 +2,55 @@
 <div
   data-h2-bg-color="b(theme-1[.1])"
   data-h2-font-color="b(theme-1)"
-  data-h2-border="b(theme-1, all, solid, small)"
-  data-h2-padding="b(all, medium)"
-  data-h2-radius="b(all, small)">
+  data-h2-border="b(theme-1, all, solid, s)"
+  data-h2-padding="b(right-left, s)"
+  data-h2-radius="b(s)"
+  data-h2-margin="b(top-bottom, m)">
   <p 
     data-h2-font-color="b(theme-1)"
-    data-h2-font-weight="b(600)">Hydrogen is a design and development tool for building coherent web interfaces without writing any CSS.</p>
+    data-h2-font-weight="b(600)">Hydrogen is a utility-first CSS tool for styling web interfaces without writing CSS.</p>
+  <p data-h2-font-color="b(theme-1)">It leverages data-attributes to allow the styling of elements right in your markup, rather than creating your own classes. Hydrogen offers a comprehensive library of tools and configurations for easy, seamless development. When you're ready to publish your project, it then processes your markup and creates a custom CSS file that contains only the code you've used, reducing its own footprint.</p>
 </div>
-<p>Here are the core concepts behind Hydrogen:</p>
+<div data-h2-flex-grid="b(middle, expanded, flush, m)">
+  <div data-h2-flex-item="b(1of1) m(1of2)">
+<pre>
+&lt;div 
+  data-h2-bg-color="b(white)"
+  data-h2-padding="b(top-bottom, m) m(all, l)"
+  data-h2-radius="b(s)"
+  data-h2-shadow="b(s) m(m)"&gt;
+  &lt;p 
+    data-h2-text-align="b(center)"&gt;
+    Welcome to &lt;span data-h2-font-color="b(purple)"&gt;Hydrogen&lt;/span&gt;!
+  &lt;/p&gt;
+&lt;/div&gt;
+</pre>
+  </div>
+  <div data-h2-flex-item="b(1of1) m(1of2)">
+    <div 
+      data-h2-bg-color="b(white)"
+      data-h2-padding="b(top-bottom, s) m(all, l)"
+      data-h2-radius="b(s)"
+      data-h2-shadow="b(s) m(m)">
+      <p 
+        data-h2-text-align="b(center)">
+        Welcome to <span data-h2-font-color="b(theme-1)">Hydrogen</span>!
+      </p>
+    </div>
+  </div>
+</div>
+{% include heading-3.html name="Data Attributes?" %}
+<p>Why use <code>data-attributes</code> over <code>class</code>?</p>
+<p>There's been a lot of discussion around classes performing better than data attributes, and we took this into consideration when designing Hydrogen. A lot of traditional class practices like BEM are effective, but can result in some really complex, bloated class attributes, which can have impacts on our ability to consume and write code. One of Hydrogen's primary goals is to make the end-user experience AND the developer experience easier, and so we decided to use data attributes for a few reasons:</p>
 <ul>
-  <li>Hydrogen uses HTML5 custom <code>data-attributes</code> to allow you to style your web project.</li>
-  <li>It is a utility style tool that generates a CSS file based on a JSON configuration file.</li>
+  <li>they provide consistent namespacing</li>
+  <li>they provide a context and a value</li>
+  <li>their values are flexible, and allow for modifiers</li>
+  <li>they allow for complex combinations</li>
+  <li>they're easy to manipulate with JavaScript</li>
 </ul>
+<p>In combination with Hydrogen's ability to generate a custom CSS file that contains only what you've used, the performance trade-offs are worth the improved experience. It was of the utmost importance that Hydrogen considered maintenance and legibility so that markup could be easily understood while retaining good performance and a small footprint.</p>
+{% include heading-3.html name="Customization?" %}
+<p>Hydrogen offers customization of both style and syntax through a comprehensive JSON configuration file. Include as many media queries, colors, gradients, and more as your project needs to get the job done. The <a href="#configuration" title="Learn more about how to configure Hydrogen.">Configuration and Themes</a> section of the documentation offers more detail about how this file works.</p>
+{% include heading-3.html name="File Size?" %}
+<p>When you're ready to publish your project to the world, Hydrogen's build script will process your HTML, React, etc. and find exactly the attributes your project is using. It then compiles a CSS file that is specifically designed for your project. No bloat, no unused classes or CSS. By doing so, Hydrogen's file size drops drastically, improving both page load speeds and the performance of the data-attributes themselves.</p>
