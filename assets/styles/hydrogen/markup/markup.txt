@@ -1015,7 +1015,7 @@ li {
 {% endcapture %}
               {% include components/accordion.html title="Hydrogen's Reset Styles" content=basicCSS %}
               {% include heading-3.html name="Syntax" id="syntax" %}
-              <p>To begin, let's disect how a Hydrogen attribute works so that we can better understand how to use them.</p>
+              <p>To begin, let's dissect how a Hydrogen attribute works so that we can better understand how to use them.</p>
               <pre>data-h2-PROPERTY="MEDIA(ARGUMENTS)"</pre>
               <p>Hydrogen attributes have 4 distinct pieces to them:</p>
               <ul>
@@ -1095,7 +1095,7 @@ radial[pink][purple]
 linear-270[purple][blue][pink]
 </pre>
               {% include heading-3.html name="Whitespace" id="whitespace" %}
-              <p>Whitespace in Hydrogen works within certain constraints. In order to help ensure the flow of whitespace is consistent in your app and you aren't worrying about arbitary values for margins, padding, and the like, Hydrogen generates a set of whitespace values for you using the <code>whitespaceScale</code> option in your configuration file.</p>
+              <p>Whitespace in Hydrogen works within certain constraints. In order to help ensure the flow of whitespace is consistent in your app and you aren't worrying about arbitrary values for margins, padding, and the like, Hydrogen generates a set of whitespace values for you using the <code>whitespaceScale</code> option in your configuration file.</p>
               <p>By default, the <code>whitespaceScale</code> value is set to 1.5, and this means that, starting with <code>1rem</code>, whitespace values are calculated like this:</p>
 <pre>
 none (0rem)
